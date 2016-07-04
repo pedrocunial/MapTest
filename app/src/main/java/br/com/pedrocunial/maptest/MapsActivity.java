@@ -52,12 +52,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private GoogleMap       mMap;
     private Random          random;
-    private LatLng          home;
-    private LatLng          insper;
     private LatLng          cesar;
     private LocationRequest mLocationRequest;
     private GoogleApiClient mGoogleApiClient;
-    private Thread          routeTracer;
 
     private final String TAG           = "MapApp";
     private final int    LONG_INTERVAL = 5000;
