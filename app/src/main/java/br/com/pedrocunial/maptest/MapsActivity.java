@@ -1,12 +1,22 @@
 package br.com.pedrocunial.maptest;
 
+import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.location.Criteria;
 import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 
+import com.google.android.gms.location.LocationListener;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -27,10 +37,14 @@ import java.util.Random;
 import static br.com.pedrocunial.maptest.model.JSONParser.getJSONFromUrl;
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     private GoogleMap mMap;
     private Random    random;
+    private LatLng    home;
+    private LatLng    insper;
+    private LatLng    cesar;
+    private LatLng    position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,23 +68,68 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap   = googleMap;
+        mMap = googleMap;
         random = new Random();
 
         double[] homeLatLng = this.getLatLongFromPlace("Rua Gomes de Carvalho, 638");
-        LatLng home = new LatLng(homeLatLng[0], homeLatLng[1]);
+        home = new LatLng(homeLatLng[0], homeLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(home).title("Home"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(home));
         mMap.moveCamera(CameraUpdateFactory.zoomTo(17));
 
         double[] insperLatLng = this.getLatLongFromPlace("Rua Quata, 300");
-        LatLng insper = new LatLng(insperLatLng[0], insperLatLng[1]);
+        insper = new LatLng(insperLatLng[0], insperLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(insper).title("Insper"));
 
-        final String url      = makeURL(home, insper);
-        final String urlVolta = makeURL(insper, home);
+        double[] cesarLatLng = this.getLatLongFromPlace("Rua do Brum, 77 - Recife");
+        cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
+        mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
+
+        // Get LocationManager object from System Service LOCATION_SERVICE
+        LocationManager locationManager =
+                (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+
+        // Create a criteria object to retrieve provider
+        Criteria criteria = new Criteria();
+
+        // Get the name of the best provider
+        String provider = locationManager.getBestProvider(criteria, true);
+
+        // Get Current Location
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
+                Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        Location myLocation = locationManager.getLastKnownLocation(provider);
+
+        // Get latitude of the current location
+        double latitude = myLocation.getLatitude();
+
+        // Get longitude of the current location
+        double longitude = myLocation.getLongitude();
+
+        // Create a LatLng object for the current location
+        LatLng position = new LatLng(latitude, longitude);
+
+        // Show the current location in Google Map
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(position));
+
+        String url = makeURL(position, cesar);
         new connectAsyncTask(url).execute();
-        new connectAsyncTask(urlVolta).execute();
+
+//        String url      = makeURL(home, insper);
+//        String urlVolta = makeURL(insper, home);
+//        new connectAsyncTask(url).execute();
+//        new connectAsyncTask(urlVolta).execute();
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -157,6 +216,17 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         }
 
         return poly;
+    }
+
+    @Override
+    public void onLocationChanged(Location location) {
+        double lat = location.getLatitude();
+        double lng = location.getLongitude();
+
+        LatLng position = new LatLng(lat, lng);
+
+        final String url = makeURL(position, cesar);
+        new connectAsyncTask(url).execute();
     }
 
     private class connectAsyncTask extends AsyncTask<Void, Void, String> {
