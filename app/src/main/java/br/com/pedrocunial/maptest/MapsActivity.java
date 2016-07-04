@@ -22,6 +22,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import static br.com.pedrocunial.maptest.model.JSONParser.getJSONFromUrl;
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
@@ -29,6 +30,7 @@ import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private Random    random;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,21 +54,23 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+        mMap   = googleMap;
+        random = new Random();
 
         double[] homeLatLng = this.getLatLongFromPlace("Rua Gomes de Carvalho, 638");
         LatLng home = new LatLng(homeLatLng[0], homeLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(home).title("Home"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(home));
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(17));
 
         double[] insperLatLng = this.getLatLongFromPlace("Rua Quata, 300");
         LatLng insper = new LatLng(insperLatLng[0], insperLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(insper).title("Insper"));
 
-        final String url  = makeURL(home, insper);
-
+        final String url      = makeURL(home, insper);
+        final String urlVolta = makeURL(insper, home);
         new connectAsyncTask(url).execute();
-
+        new connectAsyncTask(urlVolta).execute();
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -93,7 +97,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         return latLng;
     }
 
-    public void drawPath(String result) {
+    public void drawPath(String result, int color) {
 
         try {
             //Tranform the string into a json object
@@ -112,7 +116,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 Polyline line = mMap.addPolyline(new PolylineOptions()
                         .add(new LatLng(src.latitude, src.longitude), new LatLng(dest.latitude,   dest.longitude))
                         .width(4)
-                        .color(Color.BLUE).geodesic(true));
+                        .color(color).geodesic(true));
             }
         } catch (JSONException e) {
             e.printStackTrace();
@@ -161,12 +165,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         connectAsyncTask(String urlPass) {
             url = urlPass;
-            System.out.println("Hi");
         }
         @Override
         protected void onPreExecute() {
             // TODO Auto-generated method stub
-            System.out.println("Starting onPreExecute");
             super.onPreExecute();
             progressDialog = new ProgressDialog(MapsActivity.this);
             progressDialog.setMessage("Fetching route, Please wait...");
@@ -181,11 +183,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
             progressDialog.hide();
-            System.out.println("Hello ppls");
 
             if(result != null) {
-                System.out.println("Drew it!");
-                drawPath(result);
+                int color = random.nextInt(0xFFFFFF) + 0xFF000000;
+                drawPath(result, color);
             }
         }
     }
