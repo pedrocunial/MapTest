@@ -1,7 +1,6 @@
 package br.com.pedrocunial.maptest;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Geocoder;
@@ -10,10 +9,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v4.widget.DrawerLayout;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -35,26 +35,31 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithPopUpAlert;
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
+import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
 
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 
-public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback,
+public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener,
         MapsInterface {
 
     private GoogleMap       mMap;
-    private Random          random;
     private LatLng          cesar;
     private LocationRequest mLocationRequest;
     private GoogleApiClient mGoogleApiClient;
 
+    // For the sandwich menu
+    private String[]     options;
+    private DrawerLayout mDrawerLayout;
+    private ListView     mDrawerList;
+
     private final String TAG           = "MapApp";
+    private final String NAME          = "Jose Carlos Silva";
     private final int    LONG_INTERVAL = 5000;
     private final int    ZOOM          = 17;
 
@@ -68,7 +73,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        random = new Random();
+        options    = new String[5];
+        options[0] = NAME;
+        String[] sandwich = getResources().getStringArray(R.array.sandwich);
+
+        for(int i=0; i<(options.length-1); i++) {
+            options[i+1] = sandwich[i];
+        }
+
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList   = (ListView) findViewById(R.id.left_drawer);
+
+        // Set the adapter for the list view
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.activity_maps, options));
+        // Set the list's click listener
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         buildGoogleApiClient();
     }
@@ -254,6 +274,5 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Log.i(TAG, "GoogleApiClient connection has failed");
-
     }
 }
