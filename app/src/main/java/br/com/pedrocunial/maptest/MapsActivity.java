@@ -1,6 +1,7 @@
 package br.com.pedrocunial.maptest;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Geocoder;
@@ -9,7 +10,9 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -39,7 +42,7 @@ import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
 
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
+public class MapsActivity extends AppCompatActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener,
@@ -67,8 +70,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         random = new Random();
 
-        Log.i(TAG, String.valueOf(ZOOM));
-
         buildGoogleApiClient();
     }
 
@@ -87,7 +88,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void buildGoogleApiClient() {
-        // Starts the google api client (which is an assynchronous task
+        // Starts the google api client (which is an asynchronous task)
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addApi(LocationServices.API)
                 .addConnectionCallbacks(this)
@@ -126,7 +127,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         double[] latLng = new double[2];
 
         try {
-            Geocoder                       selectedPlaceGeocoder = new Geocoder(this);
+            Geocoder selectedPlaceGeocoder = new Geocoder(this);
             List<android.location.Address> address;
 
             address = selectedPlaceGeocoder.getFromLocationName(place, 5);

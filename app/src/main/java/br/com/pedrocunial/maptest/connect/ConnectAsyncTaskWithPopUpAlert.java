@@ -32,7 +32,7 @@ public class ConnectAsyncTaskWithPopUpAlert extends AsyncTask<Void, Void, String
     protected void onPreExecute() {
         super.onPreExecute();
         progressDialog = new ProgressDialog(activity.getContext());
-        progressDialog.setMessage("Traçando a rota, por favor espere...");
+        progressDialog.setMessage("Traçando a rota, por favor aguarde...");
         progressDialog.setIndeterminate(true);
         progressDialog.show();
     }
