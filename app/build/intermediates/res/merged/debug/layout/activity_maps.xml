@@ -15,7 +15,7 @@
 
 
     <!-- The navigation drawer -->
-    <ListView android:id="@+id/left_drawer"
+    <TextView android:id="@+id/left_drawer"
               android:layout_width="240dp"
               android:layout_height="match_parent"
               android:layout_gravity="start"
@@ -23,6 +23,7 @@
               android:divider="@android:color/transparent"
               android:dividerHeight="0dp"
               android:background="#FFF"/>
+
 
 </android.support.v4.widget.DrawerLayout>
 
