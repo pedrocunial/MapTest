@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml
@@ -41,7 +41,7 @@ ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.
 	android:name
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:14:22-78
 application
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:16:5-50:19
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:16:5-49:19
 MERGED from [com.android.support:appcompat-v7:23.3.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-vector-drawable:23.3.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.3.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/AndroidManifest.xml:22:5-20
@@ -162,34 +162,32 @@ MERGED from [com.android.support:support-v4:23.3.0] /home/summerjob/Documents/CE
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:17:9-35
 	android:icon
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:18:9-43
-	android:largeHeap
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:21:9-33
 	android:theme
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:22:9-40
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:21:9-40
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:32:9-34:55
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:31:9-33:55
 	android:value
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:34:13-52
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:33:13-58
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:32:13-58
 activity#br.com.pedrocunial.maptest.MapsActivity
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:36:9-44:20
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:35:9-43:20
 	android:label
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:38:13-56
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:37:13-56
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:37:13-41
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:36:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:38:13-42:29
 action#android.intent.action.MAIN
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:39:17-69
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:39:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:41:27-74
 meta-data#com.google.android.gms.version
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:46:9-48:69
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:45:9-47:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
@@ -224,9 +222,9 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjo
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:48:13-66
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:47:13-66
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:47:13-58
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:46:13-58
 uses-sdk
 INJECTED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.3.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/AndroidManifest.xml:21:5-23:78

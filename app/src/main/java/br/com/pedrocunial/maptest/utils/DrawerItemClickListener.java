@@ -9,7 +9,8 @@ import android.widget.AdapterView;
  */
 
 public class DrawerItemClickListener implements android.widget.AdapterView.OnItemClickListener {
-    @Override public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         selectItem(position);
     }
 
