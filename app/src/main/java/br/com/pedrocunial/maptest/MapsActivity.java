@@ -1,30 +1,22 @@
 package br.com.pedrocunial.maptest;
 
 import android.Manifest;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.graphics.Color;
-import android.location.Criteria;
 import android.location.Geocoder;
 import android.location.Location;
-import android.location.LocationManager;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.location.places.Places;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -42,13 +34,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static br.com.pedrocunial.maptest.model.JSONParser.getJSONFromUrl;
+import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithPopUpAlert;
+import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
+
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
-        LocationListener {
+        LocationListener,
+        MapsInterface {
 
     private GoogleMap       mMap;
     private Random          random;
@@ -124,7 +119,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
 
         String url = makeURL(brum, cesar);
-        new connectAsyncTask(url).execute();
+        new ConnectAsyncTaskWithPopUpAlert(url, this).execute();
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -173,6 +168,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         } catch (JSONException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public Context getContext() {
+        return MapsActivity.this;
     }
 
     private List<LatLng> decodePoly(String encoded) {
@@ -224,7 +224,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.animateCamera(CameraUpdateFactory.newLatLng(position));
 
         String url  = makeURL(position, cesar);
-        new connectAsyncTaskWithoutAlert(url).execute();
+        new ConnectAsyncTaskWithoutAlert(url, this).execute();
         Log.i(TAG, "Complete!");
     }
 
@@ -232,18 +232,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onConnected(@Nullable Bundle bundle) {
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(LONG_INTERVAL); // Update location every five seconds
+        mLocationRequest.setInterval(LONG_INTERVAL); // Update location every 'x' milliseconds
 
+
+        // Permission check
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
                 PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,
                 Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient, mLocationRequest,
@@ -260,63 +255,4 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Log.i(TAG, "GoogleApiClient connection has failed");
 
     }
-
-    private class connectAsyncTask extends AsyncTask<Void, Void, String> {
-        private ProgressDialog progressDialog;
-        String url;
-
-        connectAsyncTask(String urlPass) {
-            url = urlPass;
-        }
-        @Override
-        protected void onPreExecute() {
-            // TODO Auto-generated method stub
-            super.onPreExecute();
-            progressDialog = new ProgressDialog(MapsActivity.this);
-            progressDialog.setMessage("Fetching route, Please wait...");
-            progressDialog.setIndeterminate(true);
-            progressDialog.show();
-        }
-        @Override
-        protected String doInBackground(Void... params) {
-            return getJSONFromUrl(url);
-        }
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-            progressDialog.hide();
-
-            if(result != null) {
-                int color = random.nextInt(0xFFFFFF) + 0xFF000000;
-                drawPath(result, color);
-            }
-        }
-    }
-
-    private class connectAsyncTaskWithoutAlert extends AsyncTask<Void, Void, String> {
-        String url;
-
-        connectAsyncTaskWithoutAlert(String urlPass) {
-            url = urlPass;
-        }
-        @Override
-        protected void onPreExecute() {
-            // TODO Auto-generated method stub
-            super.onPreExecute();
-        }
-        @Override
-        protected String doInBackground(Void... params) {
-            return getJSONFromUrl(url);
-        }
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-
-            if(result != null) {
-                int color = random.nextInt(0xFFFFFF) + 0xFF000000;
-                drawPath(result, color);
-            }
-        }
-    }
-
 }
