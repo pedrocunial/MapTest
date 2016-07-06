@@ -5,7 +5,7 @@
     android:layout_height="match_parent">
 
     <!-- The main content view -->
-    <com.google.android.gms.maps.MapView
+    <fragment
               xmlns:tools="http://schemas.android.com/tools"
               android:id="@+id/map"
               android:name="com.google.android.gms.maps.SupportMapFragment"
