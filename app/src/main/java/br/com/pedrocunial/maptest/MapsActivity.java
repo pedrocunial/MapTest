@@ -10,8 +10,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -22,7 +24,6 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -55,9 +56,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleApiClient mGoogleApiClient;
 
     // For the sandwich menu
-    private String[]     options;
-    private DrawerLayout mDrawerLayout;
-    private ListView     mDrawerList;
+    private String[]              options;
+    private DrawerLayout          mDrawerLayout;
+    private ListView              mDrawerList;
+    private String                mActivityTitle;
+    private ActionBarDrawerToggle mDrawerToggle;
 
     private final String TAG           = "MapApp";
     private final String NAME          = "Jose Carlos Silva";
@@ -75,6 +78,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+
 
         options    = new String[5];
         options[0] = NAME;
@@ -84,16 +90,27 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             options[i+1] = sandwich[i];
         }
 
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList   = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout  = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mActivityTitle = getTitle().toString();
+        mDrawerList    = (ListView) findViewById(R.id.left_drawer);
 
         // Set the adapter for the list view
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, options);
         mDrawerList.setAdapter(adapter);
+
         // Set the list's click listener
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
         buildGoogleApiClient();
+    }
+
+    private void setupDrawer() {
+        mDrawerToggle = new MyActionBarDrawerToggle();
+
+        mDrawerToggle.setDrawerIndicatorEnabled(true);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+
     }
 
     @Override
@@ -277,5 +294,26 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Log.i(TAG, "GoogleApiClient connection has failed");
+    }
+
+    private class MyActionBarDrawerToggle extends ActionBarDrawerToggle {
+        public MyActionBarDrawerToggle() {
+            super(MapsActivity.this, MapsActivity.this.mDrawerLayout, R.string.drawer_open,
+                    R.string.drawer_close);
+        }
+
+        /** Called when a drawer has settled in a completely open state. */
+        public void onDrawerOpened(View drawerView) {
+            super.onDrawerOpened(drawerView);
+            getSupportActionBar().setTitle("Navigation!");
+            invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+        }
+
+        /** Called when a drawer has settled in a completely closed state. */
+        public void onDrawerClosed(View view) {
+            super.onDrawerClosed(view);
+            getSupportActionBar().setTitle(mActivityTitle);
+            invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+        }
     }
 }
