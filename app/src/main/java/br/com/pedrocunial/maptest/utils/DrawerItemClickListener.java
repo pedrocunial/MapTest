@@ -8,28 +8,29 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import br.com.pedrocunial.maptest.AboutActivity;
+import br.com.pedrocunial.maptest.MapsInterface;
 
 /**
  * Created by summerjob on 05/07/16.
  */
 
-public class DrawerItemClickListener extends AppCompatActivity implements android.widget.AdapterView.OnItemClickListener {
+public class DrawerItemClickListener implements android.widget.AdapterView.OnItemClickListener {
 
-    private Context mainContext;
+    private MapsInterface activity;
 
     private final String TAG = this.toString();
+
+    public DrawerItemClickListener(MapsInterface activity) {
+        this.activity = activity;
+    }
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         selectItem(position);
     }
 
-    public void setContext(Context context) {
-        mainContext = context;
-    }
-
     private void selectItem(int position) {
-
+        // Getting chosen option
         switch(position) {
             case 0: // Profile
                 Log.i(TAG, "Profile");
@@ -47,6 +48,6 @@ public class DrawerItemClickListener extends AppCompatActivity implements androi
                 Log.i(TAG, "Sair");
                 break;
         }
-       startActivity(new Intent(mainContext, AboutActivity.class));
+        activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
     }
 }

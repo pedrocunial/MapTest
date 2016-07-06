@@ -1,6 +1,7 @@
 package br.com.pedrocunial.maptest;
 
 import android.content.Context;
+import android.content.Intent;
 
 import com.google.android.gms.maps.GoogleMap;
 
@@ -13,4 +14,5 @@ public interface MapsInterface {
     void drawPath(String result, int color);
     Context getContext();
 
+    void startActivity(Intent intent);
 }

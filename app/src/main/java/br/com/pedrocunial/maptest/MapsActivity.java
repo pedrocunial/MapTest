@@ -35,6 +35,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -46,7 +47,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithPopUpAlert;
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
 
@@ -132,9 +132,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mDrawerToggle.syncState();
 
         // Set the list's click listener
-        DrawerItemClickListener mDrawerClickListener = new DrawerItemClickListener();
-        mDrawerClickListener.setContext(this);
-        mDrawerList.setOnItemClickListener(mDrawerClickListener);
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener(this));
     }
 
     @Override
@@ -280,10 +278,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LatLng position = new LatLng(lat, lng);
 
         mMap.clear();
-        mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
-        mMap.addMarker(new MarkerOptions().position(position).title("You!").icon(
-                BitmapDescriptorFactory.fromResource(R.drawable.car)));
+        Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        mMap.addMarker(new MarkerOptions().position(position).title("You!")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(position));
+
+        locationMarker.showInfoWindow();
 
         String url  = makeURL(position, cesar);
         new ConnectAsyncTaskWithoutAlert(url, this).execute();
@@ -295,7 +295,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         mLocationRequest.setInterval(LONG_INTERVAL); // Update location every 'x' milliseconds
-
 
         // Permission check
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
