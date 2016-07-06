@@ -3,12 +3,14 @@ package br.com.pedrocunial.maptest;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,7 +19,9 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -67,6 +71,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private final int    LONG_INTERVAL = 5000;
     private final String TAG           = "MapApp";
     private final String NAME          = "Jose Carlos Silva";
+    private final int    SDK           = android.os.Build.VERSION.SDK_INT;
 
 
     @Override
@@ -96,23 +101,21 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void setupDrawer() {
         // Sets up the drawer menu (hamburger menu)
-        String[] options  = new String[5];
-        String[] sandwich = getResources().getStringArray(R.array.sandwich);
-
-        options[0] = NAME;
-
-        for(int i = 0; i<(options.length-1); i++) {
-            options[i+1] = sandwich[i];
-        }
-
-        mDrawerList   = (ListView) findViewById(R.id.left_drawer);
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        String[] options = getResources().getStringArray(R.array.sandwich);
+        mDrawerList      = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout    = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         // Set the adapter for the list view
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, options);
 
-        View headerView = getLayoutInflater().inflate(R.layout.header, null);
+        View      headerView  = getLayoutInflater().inflate(R.layout.header, null);
+        Drawable  picture     = ContextCompat.getDrawable(MapsActivity.this, R.drawable.bob);
+        ImageView pictureView = (ImageView) headerView.findViewById(R.id.profile_image);
+        TextView  nameView    = (TextView)  headerView.findViewById(R.id.textView1);
+
+        pictureView.setBackground(picture);
+        nameView.setText(NAME);
 
         assert mDrawerList != null;
         mDrawerList.setAdapter(adapter);
