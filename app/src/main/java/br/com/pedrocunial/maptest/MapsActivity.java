@@ -219,7 +219,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 Polyline line = mMap.addPolyline(new PolylineOptions()
                         .add(new LatLng(src.latitude, src.longitude),
                                 new LatLng(dest.latitude, dest.longitude))
-                        .width(4)
+                        .width((int) (ZOOM * LINE_THICKNESS))
                         .color(color).geodesic(true));
             }
         } catch (JSONException e) {
@@ -250,7 +250,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             int dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
             lat += dlat;
 
-            shift = 0;
+            shift  = 0;
             result = 0;
             do {
                 b = encoded.charAt(index++) - 63;

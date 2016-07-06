@@ -2,8 +2,8 @@
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="sandwich">
         <item>Visitas do dia</item>
-        <item>Sobre</item>
         <item>Ajuda</item>
+        <item>Sobre</item>
         <item>Sair</item>
     </string-array>
     <attr format="reference" name="drawerArrowStyle"/>
