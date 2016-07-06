@@ -132,7 +132,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mDrawerToggle.syncState();
 
         // Set the list's click listener
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        DrawerItemClickListener mDrawerClickListener = new DrawerItemClickListener();
+        mDrawerClickListener.setContext(this);
+        mDrawerList.setOnItemClickListener(mDrawerClickListener);
     }
 
     @Override
