@@ -2,8 +2,8 @@
 <resources>
     <string-array name="sandwich">
         <item>Visitas do dia</item>
-        <item>Sobre</item>
         <item>Ajuda</item>
+        <item>Sobre</item>
         <item>Sair</item>
     </string-array>
 </resources>

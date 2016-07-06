@@ -33,6 +33,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -67,11 +68,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private DrawerLayout          mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private final int    ZOOM          = 17;
-    private final int    LONG_INTERVAL = 5000;
-    private final String TAG           = "MapApp";
-    private final String NAME          = "Jose Carlos Silva";
-    private final int    SDK           = android.os.Build.VERSION.SDK_INT;
+    private final int    ZOOM           = 19;
+    private final int    LONG_INTERVAL  = 5000;
+    private final double LINE_THICKNESS = 1;
+    private final String TAG            = "MapApp";
+    private final String NAME           = "Jose Carlos Silva";
+    private final int    SDK            = android.os.Build.VERSION.SDK_INT;
 
 
     @Override
@@ -173,14 +175,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
-
-        double[] brumLatLng = this.getLatLongFromPlace("Rua do Brum 77 - Recife");
-        LatLng brum = new LatLng(brumLatLng[0], brumLatLng[1]);
-        mMap.addMarker(new MarkerOptions().position(brum).title("Brum"));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
 
-        String url = makeURL(brum, cesar);
-        new ConnectAsyncTaskWithPopUpAlert(url, this).execute();
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -281,7 +277,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         LatLng position = new LatLng(lat, lng);
 
-        mMap.addMarker(new MarkerOptions().position(position).title("You!"));
+        mMap.clear();
+        mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        mMap.addMarker(new MarkerOptions().position(position).title("You!").icon(
+                BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(position));
 
         String url  = makeURL(position, cesar);
