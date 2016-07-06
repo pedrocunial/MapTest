@@ -17,4 +17,6 @@ public class DrawerItemClickListener implements android.widget.AdapterView.OnIte
     private void selectItem(int position) {
         Log.i("jiboia", "clicou!");
     }
+
+
 }

@@ -10,9 +10,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -24,6 +26,7 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -50,22 +53,20 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LocationListener,
         MapsInterface {
 
-    private GoogleMap       mMap;
-    private LatLng          cesar;
-    private LocationRequest mLocationRequest;
-    private GoogleApiClient mGoogleApiClient;
+    private LatLng             cesar;
+    private GoogleMap          mMap;
+    private LocationRequest    mLocationRequest;
+    private GoogleApiClient    mGoogleApiClient;
 
-    // For the sandwich menu
-    private String[]              options;
-    private DrawerLayout          mDrawerLayout;
-    private ListView              mDrawerList;
     private String                mActivityTitle;
+    private ListView              mDrawerList;
+    private DrawerLayout          mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
 
+    private final int    ZOOM          = 17;
+    private final int    LONG_INTERVAL = 5000;
     private final String TAG           = "MapApp";
     private final String NAME          = "Jose Carlos Silva";
-    private final int    LONG_INTERVAL = 5000;
-    private final int    ZOOM          = 17;
 
 
     @Override
@@ -78,39 +79,55 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
-
-
-        options    = new String[5];
-        options[0] = NAME;
-        String[] sandwich = getResources().getStringArray(R.array.sandwich);
-
-        for(int i=0; i<(options.length-1); i++) {
-            options[i+1] = sandwich[i];
-        }
-
-        mDrawerLayout  = (DrawerLayout) findViewById(R.id.drawer_layout);
         mActivityTitle = getTitle().toString();
-        mDrawerList    = (ListView) findViewById(R.id.left_drawer);
 
-        // Set the adapter for the list view
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, options);
-        mDrawerList.setAdapter(adapter);
-
-        // Set the list's click listener
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        setupDrawer();
 
         buildGoogleApiClient();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+        if(mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     private void setupDrawer() {
+        // Sets up the drawer menu (hamburger menu)
+        String[] options  = new String[5];
+        String[] sandwich = getResources().getStringArray(R.array.sandwich);
+
+        options[0] = NAME;
+
+        for(int i = 0; i<(options.length-1); i++) {
+            options[i+1] = sandwich[i];
+        }
+
+        mDrawerList   = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        // Set the adapter for the list view
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, options);
+
+        View headerView = getLayoutInflater().inflate(R.layout.header, null);
+
+        assert mDrawerList != null;
+        mDrawerList.setAdapter(adapter);
+        mDrawerList.addHeaderView(headerView);
+
+        // Makes the menu toggleable
         mDrawerToggle = new MyActionBarDrawerToggle();
 
-        mDrawerToggle.setDrawerIndicatorEnabled(true);
-        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        mDrawerToggle.syncState();
 
+        // Set the list's click listener
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
     }
 
     @Override
@@ -305,7 +322,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         /** Called when a drawer has settled in a completely open state. */
         public void onDrawerOpened(View drawerView) {
             super.onDrawerOpened(drawerView);
-            getSupportActionBar().setTitle("Navigation!");
+            getSupportActionBar().setTitle("Opções");
             invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
         }
 
