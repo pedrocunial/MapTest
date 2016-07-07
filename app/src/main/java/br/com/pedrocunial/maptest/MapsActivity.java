@@ -19,6 +19,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -47,6 +48,7 @@ import java.util.List;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
+import br.com.pedrocunial.maptest.utils.FooterOnClickListener;
 import br.com.pedrocunial.maptest.utils.ImageOptions;
 
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
@@ -66,6 +68,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private GoogleMap          mMap;
     private LocationRequest    mLocationRequest;
     private GoogleApiClient    mGoogleApiClient;
+    private LinearLayout       footerLayout;  // Map footer
+
 
     // Drawer Navigation
     private String                mActivityTitle;
@@ -178,13 +182,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         dest = "CESAR - Recife";
 
-        destinationView       = (TextView)  findViewById(R.id.dest);
-        problemIdentifierView = (ImageView) findViewById(R.id.image_identifier);
+        footerLayout          = (LinearLayout) findViewById(R.id.footer);
+        destinationView       = (TextView)     findViewById(R.id.dest);
+        problemIdentifierView = (ImageView)    findViewById(R.id.image_identifier);
 
+        assert footerLayout          != null;
         assert destinationView       != null;
         assert problemIdentifierView != null;
         destinationView.setText(dest);
         problemIdentifierView.setImageResource(ImageOptions.getRandomImage());
+        footerLayout.setOnClickListener(new FooterOnClickListener());
 
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
