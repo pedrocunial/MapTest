@@ -3,17 +3,25 @@ package br.com.pedrocunial.maptest;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.location.Geocoder;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -22,10 +30,12 @@ import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapView;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
@@ -35,9 +45,9 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
-import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithPopUpAlert;
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
 
@@ -49,20 +59,28 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LocationListener,
         MapsInterface {
 
-    private GoogleMap       mMap;
-    private LatLng          cesar;
-    private LocationRequest mLocationRequest;
-    private GoogleApiClient mGoogleApiClient;
+    private boolean isHamburgerMenuOn = false;
 
-    // For the sandwich menu
-    private String[]     options;
-    private DrawerLayout mDrawerLayout;
-    private ListView     mDrawerList;
+    private String             dest;
+    private LatLng             cesar;
+    private TextView           destinationView;
+    private ImageView          problemIdentifierView;
+    private GoogleMap          mMap;
+    private LocationRequest    mLocationRequest;
+    private GoogleApiClient    mGoogleApiClient;
 
-    private final String TAG           = "MapApp";
-    private final String NAME          = "Jose Carlos Silva";
-    private final int    LONG_INTERVAL = 5000;
-    private final int    ZOOM          = 17;
+    // Drawer Navigation
+    private String                mActivityTitle;
+    private ListView              mDrawerList;
+    private DrawerLayout          mDrawerLayout;
+    private ActionBarDrawerToggle mDrawerToggle;
+
+    private final int    ZOOM           = 19;
+    private final int    LONG_INTERVAL  = 5000;
+    private final double LINE_THICKNESS = 1;
+    private final String TAG            = "MapApp";
+    private final String NAME           = "Jose Carlos Silva";
+    private final int    SDK            = android.os.Build.VERSION.SDK_INT;
 
 
     @Override
@@ -75,25 +93,53 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        mActivityTitle = getTitle().toString();
 
-        options    = new String[5];
-        options[0] = NAME;
-        String[] sandwich = getResources().getStringArray(R.array.sandwich);
-
-        for(int i=0; i<(options.length-1); i++) {
-            options[i+1] = sandwich[i];
-        }
-
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-        mDrawerList   = (ListView) findViewById(R.id.left_drawer);
-
-        // Set the adapter for the list view
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, options);
-        mDrawerList.setAdapter(adapter);
-        // Set the list's click listener
-        mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
+        setupDrawer();
 
         buildGoogleApiClient();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(final MenuItem item) {
+        if(mDrawerToggle.onOptionsItemSelected(item)) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setupDrawer() {
+        // Sets up the drawer menu (hamburger menu)
+        String[] options = getResources().getStringArray(R.array.sandwich);
+        mDrawerList      = (ListView) findViewById(R.id.left_drawer);
+        mDrawerLayout    = (DrawerLayout) findViewById(R.id.drawer_layout);
+
+        // Set the adapter for the list view
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1, options);
+
+        View      headerView  = getLayoutInflater().inflate(R.layout.header, null);
+        Drawable  picture     = ContextCompat.getDrawable(MapsActivity.this, R.drawable.bob);
+        ImageView pictureView = (ImageView) headerView.findViewById(R.id.profile_image);
+        TextView  nameView    = (TextView)  headerView.findViewById(R.id.textView1);
+
+        pictureView.setBackground(picture);
+        nameView.setText(NAME);
+
+        assert mDrawerList != null;
+        mDrawerList.setAdapter(adapter);
+        mDrawerList.addHeaderView(headerView);
+
+        // Makes the menu toggleable
+        mDrawerToggle = new MyActionBarDrawerToggle();
+
+        mDrawerLayout.addDrawerListener(mDrawerToggle);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        mDrawerToggle.syncState();
+
+        // Set the list's click listener
+        mDrawerList.setOnItemClickListener(new DrawerItemClickListener(this));
     }
 
     @Override
@@ -132,18 +178,22 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        double[] cesarLatLng = this.getLatLongFromPlace("CESAR - Recife");
+        dest = "CESAR - Recife";
+
+        destinationView       = (TextView)  findViewById(R.id.dest);
+        problemIdentifierView = (ImageView) findViewById(R.id.image_identifier);
+
+        assert destinationView       != null;
+        assert problemIdentifierView != null;
+        destinationView.setText(dest);
+        problemIdentifierView.setImageResource(R.drawable.autoshutdown);
+
+        double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
-
-        double[] brumLatLng = this.getLatLongFromPlace("Rua do Brum 77 - Recife");
-        LatLng brum = new LatLng(brumLatLng[0], brumLatLng[1]);
-        mMap.addMarker(new MarkerOptions().position(brum).title("Brum"));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
 
-        String url = makeURL(brum, cesar);
-        new ConnectAsyncTaskWithPopUpAlert(url, this).execute();
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -186,7 +236,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 Polyline line = mMap.addPolyline(new PolylineOptions()
                         .add(new LatLng(src.latitude, src.longitude),
                                 new LatLng(dest.latitude, dest.longitude))
-                        .width(4)
+                        .width((int) (ZOOM * LINE_THICKNESS))
                         .color(color).geodesic(true));
             }
         } catch (JSONException e) {
@@ -217,7 +267,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             int dlat = ((result & 1) != 0 ? ~(result >> 1) : (result >> 1));
             lat += dlat;
 
-            shift = 0;
+            shift  = 0;
             result = 0;
             do {
                 b = encoded.charAt(index++) - 63;
@@ -244,8 +294,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         LatLng position = new LatLng(lat, lng);
 
-        mMap.addMarker(new MarkerOptions().position(position).title("You!"));
+        mMap.clear();
+        Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        mMap.addMarker(new MarkerOptions().position(position).title("You!")
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(position));
+
+        locationMarker.showInfoWindow();
 
         String url  = makeURL(position, cesar);
         new ConnectAsyncTaskWithoutAlert(url, this).execute();
@@ -257,7 +312,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mLocationRequest = LocationRequest.create();
         mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
         mLocationRequest.setInterval(LONG_INTERVAL); // Update location every 'x' milliseconds
-
 
         // Permission check
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
@@ -277,5 +331,39 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
         Log.i(TAG, "GoogleApiClient connection has failed");
+    }
+
+    @Override
+    public void onBackPressed() {
+        // We need to override android's default back button soo that it closes the drawer if
+        // it's open instead of quitting the app
+        if(isHamburgerMenuOn) {
+            mDrawerLayout.closeDrawers();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    private class MyActionBarDrawerToggle extends ActionBarDrawerToggle {
+        public MyActionBarDrawerToggle() {
+            super(MapsActivity.this, MapsActivity.this.mDrawerLayout, R.string.drawer_open,
+                    R.string.drawer_close);
+        }
+
+        /** Called when a drawer has settled in a completely open state. */
+        public void onDrawerOpened(View drawerView) {
+            super.onDrawerOpened(drawerView);
+            getSupportActionBar().setTitle("Opções");
+            isHamburgerMenuOn = true;
+            invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+        }
+
+        /** Called when a drawer has settled in a completely closed state. */
+        public void onDrawerClosed(View view) {
+            super.onDrawerClosed(view);
+            getSupportActionBar().setTitle(mActivityTitle);
+            isHamburgerMenuOn = false;
+            invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
+        }
     }
 }
