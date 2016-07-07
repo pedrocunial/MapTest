@@ -34,7 +34,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Rua Bione, 220 - Recife"
+                    android:id="@+id/dest"
                     android:textSize="20sp"
                     android:maxLines="1"/>
 
@@ -69,7 +69,6 @@
             android:id="@+id/image_identifier"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/code4"
             android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>

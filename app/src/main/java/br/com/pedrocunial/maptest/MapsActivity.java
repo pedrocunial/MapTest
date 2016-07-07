@@ -45,6 +45,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
@@ -60,11 +61,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private boolean isHamburgerMenuOn = false;
 
+    private String             dest;
     private LatLng             cesar;
+    private TextView           destinationView;
+    private ImageView          problemIdentifierView;
     private GoogleMap          mMap;
     private LocationRequest    mLocationRequest;
     private GoogleApiClient    mGoogleApiClient;
 
+    // Drawer Navigation
     private String                mActivityTitle;
     private ListView              mDrawerList;
     private DrawerLayout          mDrawerLayout;
@@ -173,7 +178,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        double[] cesarLatLng = this.getLatLongFromPlace("CESAR - Recife");
+        dest = "CESAR - Recife";
+
+        destinationView       = (TextView)  findViewById(R.id.dest);
+        problemIdentifierView = (ImageView) findViewById(R.id.image_identifier);
+
+        assert destinationView       != null;
+        assert problemIdentifierView != null;
+        destinationView.setText(dest);
+        problemIdentifierView.setImageResource(R.drawable.autoshutdown);
+
+        double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
