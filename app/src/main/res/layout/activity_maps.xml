@@ -11,49 +11,6 @@
         android:orientation="horizontal"
         android:gravity="bottom">
 
-        <!--&lt;!&ndash; Footer &ndash;&gt;-->
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="60dp"-->
-            <!--android:background="#FFF"-->
-            <!--android:id="@+id/footer"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_alignParentBottom="true">-->
-
-            <!--&lt;!&ndash; Behind the problem symbol &ndash;&gt;-->
-            <!--<Space-->
-                <!--android:layout_width="120dp"-->
-                <!--android:layout_height="match_parent"/>-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="match_parent"-->
-                <!--android:orientation="vertical">-->
-
-                <!--&lt;!&ndash; Address &ndash;&gt;-->
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:id="@+id/dest"-->
-                    <!--android:textSize="20sp"-->
-                    <!--android:maxLines="1"/>-->
-
-                <!--<Space-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="15sp"/>-->
-
-                <!--&lt;!&ndash; TBD &ndash;&gt;-->
-                <!--<TextView-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="#12345"-->
-                    <!--android:textSize="12sp"-->
-                    <!--android:maxLines="1"/>-->
-
-            <!--</LinearLayout>-->
-
-        <!--</LinearLayout>-->
-
         <include layout="@layout/footer"/>
 
         <!-- Map -->
@@ -67,6 +24,12 @@
             tools:context="br.com.pedrocunial.maptest.MapsActivity"/>
 
         <include layout="@layout/expanded_footer"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/large_image_identifier"
+            android:layout_above="@+id/image_identifier"/>
 
         <!-- Problem symbol -->
         <ImageView

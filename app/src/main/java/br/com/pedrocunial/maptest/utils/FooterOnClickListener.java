@@ -11,34 +11,39 @@ import android.widget.LinearLayout;
  */
 public class FooterOnClickListener implements View.OnClickListener {
 
-    private float        y;
     private boolean      isLarge;
     private ImageView    icon;
+    private ImageView    iconLarge;
     private LinearLayout footer;
     private LinearLayout largeFooter;
 
-    private final String TAG   = this.toString();
+    private final String TAG = this.toString();
 
     public FooterOnClickListener(Context context, boolean isLarge,
                                  LinearLayout footer, LinearLayout largeFooter,
-                                 ImageView icon) {
+                                 ImageView icon, ImageView iconLarge) {
         this.isLarge     = isLarge;
         this.footer      = footer;
         this.largeFooter = largeFooter;
         this.icon        = icon;
-        this.y           = Converter.pxFromDp(context, 140);
+        this.iconLarge   = iconLarge;
     }
 
     @Override
     public void onClick(View v) {
         if(isLarge) {
+            Log.i(TAG, "Ficou pequeno");
             largeFooter.setVisibility(View.INVISIBLE);
             footer.setVisibility(View.VISIBLE);
-            icon.setY(y);
+            icon.setVisibility(View.VISIBLE);
+            iconLarge.setVisibility(View.INVISIBLE);
+
         } else {
+            Log.i(TAG, "Ficou grande, birl");
             largeFooter.setVisibility(View.VISIBLE);
             footer.setVisibility(View.INVISIBLE);
-            icon.setY(0);
+            icon.setVisibility(View.INVISIBLE);
+            iconLarge.setVisibility(View.VISIBLE);
         }
         isLarge = !isLarge;
     }

@@ -75,6 +75,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private TextView           destinationView;
     private TextView           problemCodeView;
     private ImageView          problemIdentifierView;
+    private ImageView          largeProblemIdentifierView;
     private GoogleMap          mMap;
     private LinearLayout       footerLayout;  // Map footer
     private LinearLayout       largeFooterLayout;
@@ -190,10 +191,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap        = googleMap;
-        dest        = "CESAR - Recife";
-        clientName  = "Alberto de Jesus";
-        problemCode = "#12345";
+        mMap            = googleMap;
+        dest            = "CESAR - Recife";
+        clientName      = "Alberto de Jesus";
+        problemCode     = "#12345";
 
         genericProblemOverview = "Problema no controle";
 
@@ -207,6 +208,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         problemIdentifierView = (ImageView)    findViewById(R.id.image_identifier);
 
         genericProblemOverviewView = (TextView) findViewById(R.id.generic_problem_overview);
+        largeProblemIdentifierView = (ImageView) findViewById(R.id.large_image_identifier);
 
         assert destinationView            != null;
         assert largeDestinationView       != null;
@@ -215,23 +217,29 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert clientNameView             != null;
         assert problemIdentifierView      != null;
         assert genericProblemOverviewView != null;
+        assert largeProblemIdentifierView != null;
         destinationView.setText(dest);
         largeDestinationView.setText(dest);
         problemCodeView.setText(problemCode);
         largeProblemCodeView.setText(problemCode);
         clientNameView.setText(clientName);
         genericProblemOverviewView.setText(genericProblemOverview);
-        problemIdentifierView.setImageResource(ImageOptions.getRandomImage());
+
+        int randomImage = ImageOptions.getRandomImage();
+        problemIdentifierView.setImageResource(randomImage);
+        largeProblemIdentifierView.setImageResource(randomImage);
 
         assert footerLayout      != null;
         assert largeFooterLayout != null;
         isFooterLarge         = false;
         footerOnClickListener = new FooterOnClickListener(MapsActivity.this,
-                isFooterLarge, footerLayout, largeFooterLayout, problemIdentifierView);
+                isFooterLarge, footerLayout, largeFooterLayout,
+                problemIdentifierView, largeProblemIdentifierView);
         footerLayout.setOnClickListener(footerOnClickListener);
         footerLayout.setVisibility(View.VISIBLE);
         largeFooterLayout.setOnClickListener(footerOnClickListener);
         largeFooterLayout.setVisibility(View.INVISIBLE);
+        largeProblemIdentifierView.setVisibility(View.INVISIBLE);
 
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);

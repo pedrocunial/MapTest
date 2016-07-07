@@ -1,6 +1,7 @@
 package br.com.pedrocunial.maptest.connect;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.AsyncTask;
 
 import java.util.Random;
@@ -36,8 +37,7 @@ public class ConnectAsyncTaskWithoutAlert extends AsyncTask<Void, Void, String> 
         super.onPostExecute(result);
 
         if(result != null) {
-            int color = random.nextInt(0xFFFFFF) + 0xFF000000;
-            activity.drawPath(result, color);
+            activity.drawPath(result, Color.BLUE);
         }
     }
 }
