@@ -66,6 +66,8 @@
             android:layout_height="match_parent"
             tools:context="br.com.pedrocunial.maptest.MapsActivity"/>
 
+        <include layout="@layout/expanded_footer"/>
+
         <!-- Problem symbol -->
         <ImageView
             android:id="@+id/image_identifier"

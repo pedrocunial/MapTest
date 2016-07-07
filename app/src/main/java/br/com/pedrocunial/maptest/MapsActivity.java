@@ -42,6 +42,7 @@ import com.google.android.gms.maps.model.PolylineOptions;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -60,15 +61,25 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         MapsInterface {
 
     private boolean isHamburgerMenuOn = false;
+    private boolean isFooterLarge;
 
-    private String             dest;
     private LatLng             cesar;
+    private String             dest;
+    private String             problemCode;
+    private String             genericProblemOverview;
+    private String             clientName;
+    private TextView           largeDestinationView;
+    private TextView           largeProblemCodeView;
+    private TextView           clientNameView;
+    private TextView           genericProblemOverviewView;
     private TextView           destinationView;
+    private TextView           problemCodeView;
     private ImageView          problemIdentifierView;
     private GoogleMap          mMap;
+    private LinearLayout       footerLayout;  // Map footer
+    private LinearLayout       largeFooterLayout;
     private LocationRequest    mLocationRequest;
     private GoogleApiClient    mGoogleApiClient;
-    private LinearLayout       footerLayout;  // Map footer
 
 
     // Drawer Navigation
@@ -84,6 +95,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private final String NAME           = "Jose Carlos Silva";
     private final int    SDK            = android.os.Build.VERSION.SDK_INT;
 
+    private FooterOnClickListener footerOnClickListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -178,20 +190,48 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap = googleMap;
+        mMap        = googleMap;
+        dest        = "CESAR - Recife";
+        clientName  = "Alberto de Jesus";
+        problemCode = "#12345";
 
-        dest = "CESAR - Recife";
+        genericProblemOverview = "Problema no controle";
 
         footerLayout          = (LinearLayout) findViewById(R.id.footer);
+        largeFooterLayout     = (LinearLayout) findViewById(R.id.extended_footer);
         destinationView       = (TextView)     findViewById(R.id.dest);
+        problemCodeView       = (TextView)     findViewById(R.id.problem_code);
+        largeDestinationView  = (TextView)     findViewById(R.id.extended_dest);
+        largeProblemCodeView  = (TextView)     findViewById(R.id.extended_problem_code);
+        clientNameView        = (TextView)     findViewById(R.id.client_name);
         problemIdentifierView = (ImageView)    findViewById(R.id.image_identifier);
 
-        assert footerLayout          != null;
-        assert destinationView       != null;
-        assert problemIdentifierView != null;
+        genericProblemOverviewView = (TextView) findViewById(R.id.generic_problem_overview);
+
+        assert destinationView            != null;
+        assert largeDestinationView       != null;
+        assert problemCodeView            != null;
+        assert largeProblemCodeView       != null;
+        assert clientNameView             != null;
+        assert problemIdentifierView      != null;
+        assert genericProblemOverviewView != null;
         destinationView.setText(dest);
+        largeDestinationView.setText(dest);
+        problemCodeView.setText(problemCode);
+        largeProblemCodeView.setText(problemCode);
+        clientNameView.setText(clientName);
+        genericProblemOverviewView.setText(genericProblemOverview);
         problemIdentifierView.setImageResource(ImageOptions.getRandomImage());
-        footerLayout.setOnClickListener(new FooterOnClickListener());
+
+        assert footerLayout      != null;
+        assert largeFooterLayout != null;
+        isFooterLarge         = false;
+        footerOnClickListener = new FooterOnClickListener(MapsActivity.this,
+                isFooterLarge, footerLayout, largeFooterLayout, problemIdentifierView);
+        footerLayout.setOnClickListener(footerOnClickListener);
+        footerLayout.setVisibility(View.VISIBLE);
+        largeFooterLayout.setOnClickListener(footerOnClickListener);
+        largeFooterLayout.setVisibility(View.INVISIBLE);
 
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
