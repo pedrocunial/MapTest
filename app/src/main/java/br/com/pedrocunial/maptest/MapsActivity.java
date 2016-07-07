@@ -58,6 +58,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         LocationListener,
         MapsInterface {
 
+    private boolean isHamburgerMenuOn = false;
+
     private LatLng             cesar;
     private GoogleMap          mMap;
     private LocationRequest    mLocationRequest;
@@ -316,6 +318,17 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         Log.i(TAG, "GoogleApiClient connection has failed");
     }
 
+    @Override
+    public void onBackPressed() {
+        // We need to override android's default back button soo that it closes the drawer if
+        // it's open instead of quitting the app
+        if(isHamburgerMenuOn) {
+            mDrawerLayout.closeDrawers();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
     private class MyActionBarDrawerToggle extends ActionBarDrawerToggle {
         public MyActionBarDrawerToggle() {
             super(MapsActivity.this, MapsActivity.this.mDrawerLayout, R.string.drawer_open,
@@ -326,6 +339,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         public void onDrawerOpened(View drawerView) {
             super.onDrawerOpened(drawerView);
             getSupportActionBar().setTitle("Opções");
+            isHamburgerMenuOn = true;
             invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
         }
 
@@ -333,6 +347,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         public void onDrawerClosed(View view) {
             super.onDrawerClosed(view);
             getSupportActionBar().setTitle(mActivityTitle);
+            isHamburgerMenuOn = false;
             invalidateOptionsMenu(); // creates call to onPrepareOptionsMenu()
         }
     }
