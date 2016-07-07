@@ -182,12 +182,12 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         dest = "CESAR - Recife";
 
         destinationView       = (TextView)  findViewById(R.id.dest);
-        problemIdentifierView = (ImageView) findViewById(ImageOptions.getRandomImage());
+        problemIdentifierView = (ImageView) findViewById(R.id.image_identifier);
 
         assert destinationView       != null;
         assert problemIdentifierView != null;
         destinationView.setText(dest);
-        problemIdentifierView.setImageResource(R.drawable.autoshutdown);
+        problemIdentifierView.setImageResource(ImageOptions.getRandomImage());
 
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
