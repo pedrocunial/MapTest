@@ -50,6 +50,7 @@ import java.util.List;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
+import br.com.pedrocunial.maptest.utils.ImageOptions;
 
 import static br.com.pedrocunial.maptest.model.PathGoogleMap.makeURL;
 
@@ -181,7 +182,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         dest = "CESAR - Recife";
 
         destinationView       = (TextView)  findViewById(R.id.dest);
-        problemIdentifierView = (ImageView) findViewById(R.id.image_identifier);
+        problemIdentifierView = (ImageView) findViewById(ImageOptions.getRandomImage());
 
         assert destinationView       != null;
         assert problemIdentifierView != null;
