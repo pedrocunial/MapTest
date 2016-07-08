@@ -1,5 +1,10 @@
 package br.com.pedrocunial.maptest.utils;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
 import br.com.pedrocunial.maptest.R;
 
 /**
@@ -29,11 +34,20 @@ public enum ImageOptions {
 
     private final int image;
 
+    private static final List<ImageOptions> VALUES =
+            Collections.unmodifiableList(Arrays.asList(values()));
+    private static final int    SIZE   = VALUES.size();
+    private static final Random RANDOM = new Random();
+
     ImageOptions(int image) {
         this.image = image;
     }
 
     public int getImage() {
         return image;
+    }
+
+    public static int getRandomImage() {
+        return VALUES.get(RANDOM.nextInt(SIZE)).getImage();
     }
 }
