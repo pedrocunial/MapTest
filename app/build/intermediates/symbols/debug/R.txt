@@ -814,12 +814,13 @@ int drawable mr_ic_settings_light 0x7f0200b2
 int drawable noaudio 0x7f0200b3
 int drawable nochannel 0x7f0200b4
 int drawable nosignal 0x7f0200b5
-int drawable notification_template_icon_bg 0x7f0200bb
+int drawable notification_template_icon_bg 0x7f0200bc
 int drawable password 0x7f0200b6
 int drawable places_ic_clear 0x7f0200b7
 int drawable places_ic_search 0x7f0200b8
 int drawable powered_by_google_dark 0x7f0200b9
 int drawable powered_by_google_light 0x7f0200ba
+int drawable sky 0x7f0200bb
 int id RelativeLayout1 0x7f0e00aa
 int id action0 0x7f0e00c3
 int id action_bar 0x7f0e0083

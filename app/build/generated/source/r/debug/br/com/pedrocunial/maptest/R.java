@@ -3062,12 +3062,13 @@ containing a value of this type.
         public static final int noaudio=0x7f0200b3;
         public static final int nochannel=0x7f0200b4;
         public static final int nosignal=0x7f0200b5;
-        public static final int notification_template_icon_bg=0x7f0200bb;
+        public static final int notification_template_icon_bg=0x7f0200bc;
         public static final int password=0x7f0200b6;
         public static final int places_ic_clear=0x7f0200b7;
         public static final int places_ic_search=0x7f0200b8;
         public static final int powered_by_google_dark=0x7f0200b9;
         public static final int powered_by_google_light=0x7f0200ba;
+        public static final int sky=0x7f0200bb;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f0e00aa;

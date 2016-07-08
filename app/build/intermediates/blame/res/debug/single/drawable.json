@@ -20,12 +20,12 @@
         "source": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/res/drawable/noaudio.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
         "source": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
@@ -494,6 +494,10 @@
     {
         "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
         "source": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/sky.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/sky.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",

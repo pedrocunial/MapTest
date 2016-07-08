@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.AdapterView;
 
 import br.com.pedrocunial.maptest.AboutActivity;
+import br.com.pedrocunial.maptest.LoginActivity;
 import br.com.pedrocunial.maptest.MapsInterface;
 
 /**
@@ -32,20 +33,24 @@ public class DrawerItemClickListener implements android.widget.AdapterView.OnIte
         switch(position) {
             case 0: // Profile
                 Log.i(TAG, "Profile");
+                activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
                 break;
             case 1: // Visitas do dia
                 Log.i(TAG, "Visitas do dia");
+                activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
                 break;
             case 2: // Ajuda
                 Log.i(TAG, "Ajuda");
+                activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
                 break;
             case 3: // Sobre
                 Log.i(TAG, "Sobre");
+                activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
                 break;
             case 4: // Sair
                 Log.i(TAG, "Sair");
+                activity.startActivity(new Intent(activity.getContext(), LoginActivity.class));
                 break;
         }
-        activity.startActivity(new Intent(activity.getContext(), AboutActivity.class));
     }
 }
