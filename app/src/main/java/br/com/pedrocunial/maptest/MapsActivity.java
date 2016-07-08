@@ -65,6 +65,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private LatLng             cesar;
     private String             dest;
+    private LatLng             myPosition;
     private String             problemCode;
     private String             genericProblemOverview;
     private String             clientName;
@@ -190,13 +191,19 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap            = googleMap;
-        dest            = "CESAR - Recife";
-        clientName      = "Alberto de Jesus";
-        problemCode     = "#12345";
-
+        mMap                   = googleMap;
+        dest                   = "CESAR - Recife";
+        clientName             = "Alberto de Jesus";
+        problemCode            = "#12345";
         genericProblemOverview = "Problema no controle";
 
+        defineLayoutsAndViews();
+        startViews();
+        startLayouts();
+        markDestination(dest, "Destino");
+    }
+
+    private void defineLayoutsAndViews() {
         footerLayout          = (LinearLayout) findViewById(R.id.footer);
         largeFooterLayout     = (LinearLayout) findViewById(R.id.extended_footer);
         destinationView       = (TextView)     findViewById(R.id.dest);
@@ -208,7 +215,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         genericProblemOverviewView = (TextView) findViewById(R.id.generic_problem_overview);
         largeProblemIdentifierView = (ImageView) findViewById(R.id.large_image_identifier);
+    }
 
+    private void startViews() {
         assert destinationView            != null;
         assert largeDestinationView       != null;
         assert problemCodeView            != null;
@@ -227,11 +236,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         int randomImage = ImageOptions.getRandomImage();
         problemIdentifierView.setImageResource(randomImage);
         largeProblemIdentifierView.setImageResource(randomImage);
+    }
 
+    private void startLayouts() {
         assert footerLayout      != null;
         assert largeFooterLayout != null;
-        isFooterLarge         = false;
-        footerOnClickListener = new FooterOnClickListener(isFooterLarge,
+        isFooterLarge             = false;
+        footerOnClickListener     = new FooterOnClickListener(isFooterLarge,
                 footerLayout, largeFooterLayout, problemIdentifierView,
                 largeProblemIdentifierView);
         footerLayout.setOnClickListener(footerOnClickListener);
@@ -239,13 +250,14 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         largeFooterLayout.setOnClickListener(footerOnClickListener);
         largeFooterLayout.setVisibility(View.INVISIBLE);
         largeProblemIdentifierView.setVisibility(View.INVISIBLE);
+    }
 
+    private void markDestination(String dest, String title) {
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
-        mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        mMap.addMarker(new MarkerOptions().position(cesar).title(title));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
-
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -271,7 +283,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void drawPath(String result, int color) {
-
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
 
         try {
@@ -304,7 +315,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private List<LatLng> decodePoly(String encoded) {
-
         List<LatLng> poly  = new ArrayList<LatLng>();
         int          index = 0, len = encoded.length();
         int          lat   = 0, lng = 0;
@@ -335,7 +345,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                     (((double) lng / 1E5)));
             poly.add(p);
         }
-
         return poly;
     }
 
@@ -346,19 +355,23 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         Log.i(TAG, "Starting...");
 
-        LatLng position = new LatLng(lat, lng);
+        updateMyPosition(lat, lng);
+
+        String url  = makeURL(myPosition, cesar);
+        new ConnectAsyncTaskWithoutAlert(url, this).execute();
+        Log.i(TAG, "Complete!");
+    }
+
+    private void updateMyPosition(double lat, double lng) {
+        myPosition = new LatLng(lat, lng);
 
         mMap.clear();
         Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
-        mMap.addMarker(new MarkerOptions().position(position).title("You!")
+        mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(position));
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
 
         locationMarker.showInfoWindow();
-
-        String url  = makeURL(position, cesar);
-        new ConnectAsyncTaskWithoutAlert(url, this).execute();
-        Log.i(TAG, "Complete!");
     }
 
     @Override
