@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Map Test</string>
     <string name="title_activity_maps">SKY</string>
+    <string name="title_activity_login">SKY</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
+    <string name="enter_btn">Entrar</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="login_text">Login</string>
+    <string name="password_text">Senha</string>
 </resources>
