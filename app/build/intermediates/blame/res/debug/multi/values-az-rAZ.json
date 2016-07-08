@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/values-az-rAZ/values-az-rAZ.xml",
+        "outputFile": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/res/merged/debug/values-az-rAZ/values-az-rAZ.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 198
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 306
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 429
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 528
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -83,17 +83,17 @@
                     "startLine": 6,
                     "startColumn": 4,
                     "startOffset": 533,
-                    "endColumn": 109,
-                    "endOffset": 638
+                    "endColumn": 111,
+                    "endOffset": 640
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
                         "startOffset": 483,
-                        "endColumn": 109,
-                        "endOffset": 588
+                        "endColumn": 111,
+                        "endOffset": 590
                     }
                 }
             },
@@ -101,18 +101,18 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 643,
+                    "startOffset": 645,
                     "endColumn": 87,
-                    "endOffset": 726
+                    "endOffset": 728
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 593,
+                        "startOffset": 595,
                         "endColumn": 87,
-                        "endOffset": 676
+                        "endOffset": 678
                     }
                 }
             },
@@ -120,18 +120,18 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 731,
+                    "startOffset": 733,
                     "endColumn": 106,
-                    "endOffset": 833
+                    "endOffset": 835
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 681,
+                        "startOffset": 683,
                         "endColumn": 106,
-                        "endOffset": 783
+                        "endOffset": 785
                     }
                 }
             },
@@ -139,18 +139,18 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 838,
+                    "startOffset": 840,
                     "endColumn": 113,
-                    "endOffset": 947
+                    "endOffset": 949
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
-                        "startOffset": 788,
+                        "startOffset": 790,
                         "endColumn": 113,
-                        "endOffset": 897
+                        "endOffset": 899
                     }
                 }
             },
@@ -158,18 +158,18 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 952,
+                    "startOffset": 954,
                     "endColumn": 80,
-                    "endOffset": 1028
+                    "endOffset": 1030
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 902,
+                        "startOffset": 904,
                         "endColumn": 80,
-                        "endOffset": 978
+                        "endOffset": 980
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 1033,
+                    "startOffset": 1035,
                     "endColumn": 78,
-                    "endOffset": 1107
+                    "endOffset": 1109
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 983,
+                        "startOffset": 985,
                         "endColumn": 78,
-                        "endOffset": 1057
+                        "endOffset": 1059
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 1112,
+                    "startOffset": 1114,
                     "endColumn": 84,
-                    "endOffset": 1192
+                    "endOffset": 1194
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
-                        "startOffset": 1062,
+                        "startOffset": 1064,
                         "endColumn": 84,
-                        "endOffset": 1142
+                        "endOffset": 1144
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 1197,
+                    "startOffset": 1199,
                     "endColumn": 106,
-                    "endOffset": 1299
+                    "endOffset": 1301
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
-                        "startOffset": 1147,
+                        "startOffset": 1149,
                         "endColumn": 106,
-                        "endOffset": 1249
+                        "endOffset": 1251
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 1304,
+                    "startOffset": 1306,
                     "endColumn": 106,
-                    "endOffset": 1406
+                    "endOffset": 1408
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
-                        "startOffset": 1254,
+                        "startOffset": 1256,
                         "endColumn": 106,
-                        "endOffset": 1356
+                        "endOffset": 1358
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 1411,
+                    "startOffset": 1413,
                     "endColumn": 99,
-                    "endOffset": 1506
+                    "endOffset": 1508
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 1361,
+                        "startOffset": 1363,
                         "endColumn": 99,
-                        "endOffset": 1456
+                        "endOffset": 1458
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1511,
+                    "startOffset": 1513,
                     "endColumn": 108,
-                    "endOffset": 1615
+                    "endOffset": 1617
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
-                        "startOffset": 1461,
+                        "startOffset": 1463,
                         "endColumn": 108,
-                        "endOffset": 1565
+                        "endOffset": 1567
                     }
                 }
             },
@@ -291,18 +291,18 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1620,
+                    "startOffset": 1622,
                     "endColumn": 103,
-                    "endOffset": 1719
+                    "endOffset": 1721
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
-                        "startOffset": 1570,
+                        "startOffset": 1572,
                         "endColumn": 103,
-                        "endOffset": 1669
+                        "endOffset": 1671
                     }
                 }
             },
@@ -310,18 +310,18 @@
                 "to": {
                     "startLine": 18,
                     "startColumn": 4,
-                    "startOffset": 1724,
+                    "startOffset": 1726,
                     "endColumn": 109,
-                    "endOffset": 1829
+                    "endOffset": 1831
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
-                        "startOffset": 1674,
+                        "startOffset": 1676,
                         "endColumn": 109,
-                        "endOffset": 1779
+                        "endOffset": 1781
                     }
                 }
             },
@@ -329,18 +329,18 @@
                 "to": {
                     "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1834,
+                    "startOffset": 1836,
                     "endColumn": 96,
-                    "endOffset": 1926
+                    "endOffset": 1928
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
-                        "startOffset": 1784,
+                        "startOffset": 1786,
                         "endColumn": 96,
-                        "endOffset": 1876
+                        "endOffset": 1878
                     }
                 }
             },
@@ -348,12 +348,12 @@
                 "to": {
                     "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1931,
+                    "startOffset": 1933,
                     "endColumn": 256,
-                    "endOffset": 2183
+                    "endOffset": 2185
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 24,
                         "startColumn": 4,
@@ -367,12 +367,12 @@
                 "to": {
                     "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 2188,
+                    "startOffset": 2190,
                     "endColumn": 135,
-                    "endOffset": 2319
+                    "endOffset": 2321
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -386,12 +386,12 @@
                 "to": {
                     "startLine": 22,
                     "startColumn": 4,
-                    "startOffset": 2324,
+                    "startOffset": 2326,
                     "endColumn": 186,
-                    "endOffset": 2506
+                    "endOffset": 2508
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -405,12 +405,12 @@
                 "to": {
                     "startLine": 23,
                     "startColumn": 4,
-                    "startOffset": 2511,
+                    "startOffset": 2513,
                     "endColumn": 134,
-                    "endOffset": 2641
+                    "endOffset": 2643
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -424,12 +424,12 @@
                 "to": {
                     "startLine": 24,
                     "startColumn": 4,
-                    "startOffset": 2646,
+                    "startOffset": 2648,
                     "endColumn": 135,
-                    "endOffset": 2777
+                    "endOffset": 2779
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -443,12 +443,12 @@
                 "to": {
                     "startLine": 25,
                     "startColumn": 4,
-                    "startOffset": 2782,
+                    "startOffset": 2784,
                     "endColumn": 210,
-                    "endOffset": 2988
+                    "endOffset": 2990
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -462,12 +462,12 @@
                 "to": {
                     "startLine": 26,
                     "startColumn": 4,
-                    "startOffset": 2993,
+                    "startOffset": 2995,
                     "endColumn": 211,
-                    "endOffset": 3200
+                    "endOffset": 3202
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -481,12 +481,12 @@
                 "to": {
                     "startLine": 27,
                     "startColumn": 4,
-                    "startOffset": 3205,
+                    "startOffset": 3207,
                     "endColumn": 134,
-                    "endOffset": 3335
+                    "endOffset": 3337
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -500,12 +500,12 @@
                 "to": {
                     "startLine": 28,
                     "startColumn": 4,
-                    "startOffset": 3340,
+                    "startOffset": 3342,
                     "endColumn": 177,
-                    "endOffset": 3513
+                    "endOffset": 3515
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -519,12 +519,12 @@
                 "to": {
                     "startLine": 29,
                     "startColumn": 4,
-                    "startOffset": 3518,
+                    "startOffset": 3520,
                     "endColumn": 120,
-                    "endOffset": 3634
+                    "endOffset": 3636
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 18,
                         "startColumn": 4,
@@ -538,12 +538,12 @@
                 "to": {
                     "startLine": 30,
                     "startColumn": 4,
-                    "startOffset": 3639,
+                    "startOffset": 3641,
                     "endColumn": 173,
-                    "endOffset": 3808
+                    "endOffset": 3810
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 17,
                         "startColumn": 4,
@@ -557,12 +557,12 @@
                 "to": {
                     "startLine": 31,
                     "startColumn": 4,
-                    "startOffset": 3813,
+                    "startOffset": 3815,
                     "endColumn": 119,
-                    "endOffset": 3928
+                    "endOffset": 3930
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 16,
                         "startColumn": 4,
@@ -576,12 +576,12 @@
                 "to": {
                     "startLine": 32,
                     "startColumn": 4,
-                    "startOffset": 3933,
+                    "startOffset": 3935,
                     "endColumn": 135,
-                    "endOffset": 4064
+                    "endOffset": 4066
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -595,12 +595,12 @@
                 "to": {
                     "startLine": 33,
                     "startColumn": 4,
-                    "startOffset": 4069,
+                    "startOffset": 4071,
                     "endColumn": 167,
-                    "endOffset": 4232
+                    "endOffset": 4234
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 28,
                         "startColumn": 4,
@@ -614,12 +614,12 @@
                 "to": {
                     "startLine": 34,
                     "startColumn": 4,
-                    "startOffset": 4237,
+                    "startOffset": 4239,
                     "endColumn": 135,
-                    "endOffset": 4368
+                    "endOffset": 4370
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 27,
                         "startColumn": 4,
@@ -633,12 +633,12 @@
                 "to": {
                     "startLine": 35,
                     "startColumn": 4,
-                    "startOffset": 4373,
+                    "startOffset": 4375,
                     "endColumn": 182,
-                    "endOffset": 4551
+                    "endOffset": 4553
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -652,12 +652,12 @@
                 "to": {
                     "startLine": 36,
                     "startColumn": 4,
-                    "startOffset": 4556,
+                    "startOffset": 4558,
                     "endColumn": 119,
-                    "endOffset": 4671
+                    "endOffset": 4673
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 25,
                         "startColumn": 4,
@@ -671,12 +671,12 @@
                 "to": {
                     "startLine": 37,
                     "startColumn": 4,
-                    "startOffset": 4676,
+                    "startOffset": 4678,
                     "endColumn": 255,
-                    "endOffset": 4927
+                    "endOffset": 4929
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-az-rAZ/common_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/res/values-az-rAZ/common_strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -690,12 +690,12 @@
                 "to": {
                     "startLine": 38,
                     "startColumn": 4,
-                    "startOffset": 4932,
+                    "startOffset": 4934,
                     "endColumn": 251,
-                    "endOffset": 5179
+                    "endOffset": 5181
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 21,
                         "startColumn": 4,
@@ -709,12 +709,12 @@
                 "to": {
                     "startLine": 39,
                     "startColumn": 4,
-                    "startOffset": 5184,
+                    "startOffset": 5186,
                     "endColumn": 125,
-                    "endOffset": 5305
+                    "endOffset": 5307
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -728,12 +728,12 @@
                 "to": {
                     "startLine": 40,
                     "startColumn": 4,
-                    "startOffset": 5310,
+                    "startOffset": 5312,
                     "endColumn": 111,
-                    "endOffset": 5417
+                    "endOffset": 5419
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 22,
                         "startColumn": 4,
@@ -747,12 +747,12 @@
                 "to": {
                     "startLine": 41,
                     "startColumn": 4,
-                    "startOffset": 5422,
+                    "startOffset": 5424,
                     "endColumn": 184,
-                    "endOffset": 5602
+                    "endOffset": 5604
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -766,12 +766,12 @@
                 "to": {
                     "startLine": 42,
                     "startColumn": 4,
-                    "startOffset": 5607,
+                    "startOffset": 5609,
                     "endColumn": 138,
-                    "endOffset": 5741
+                    "endOffset": 5743
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -785,12 +785,12 @@
                 "to": {
                     "startLine": 43,
                     "startColumn": 4,
-                    "startOffset": 5746,
+                    "startOffset": 5748,
                     "endColumn": 202,
-                    "endOffset": 5944
+                    "endOffset": 5946
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
@@ -804,12 +804,12 @@
                 "to": {
                     "startLine": 44,
                     "startColumn": 4,
-                    "startOffset": 5949,
+                    "startOffset": 5951,
                     "endColumn": 133,
-                    "endOffset": 6078
+                    "endOffset": 6080
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -823,12 +823,12 @@
                 "to": {
                     "startLine": 45,
                     "startColumn": 4,
-                    "startOffset": 6083,
+                    "startOffset": 6085,
                     "endColumn": 185,
-                    "endOffset": 6264
+                    "endOffset": 6266
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -842,12 +842,12 @@
                 "to": {
                     "startLine": 46,
                     "startColumn": 4,
-                    "startOffset": 6269,
+                    "startOffset": 6271,
                     "endColumn": 92,
-                    "endOffset": 6357
+                    "endOffset": 6359
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 23,
                         "startColumn": 4,
@@ -861,12 +861,12 @@
                 "to": {
                     "startLine": 47,
                     "startColumn": 4,
-                    "startOffset": 6362,
+                    "startOffset": 6364,
                     "endColumn": 94,
-                    "endOffset": 6452
+                    "endOffset": 6454
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 29,
                         "startColumn": 4,
@@ -880,12 +880,12 @@
                 "to": {
                     "startLine": 48,
                     "startColumn": 4,
-                    "startOffset": 6457,
+                    "startOffset": 6459,
                     "endColumn": 110,
-                    "endOffset": 6563
+                    "endOffset": 6565
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/values-az-rAZ/base_strings.xml",
                     "position": {
                         "startLine": 30,
                         "startColumn": 4,
@@ -899,12 +899,12 @@
                 "to": {
                     "startLine": 49,
                     "startColumn": 4,
-                    "startOffset": 6568,
+                    "startOffset": 6570,
                     "endColumn": 112,
-                    "endOffset": 6676
+                    "endOffset": 6678
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -918,12 +918,12 @@
                 "to": {
                     "startLine": 50,
                     "startColumn": 4,
-                    "startOffset": 6681,
+                    "startOffset": 6683,
                     "endColumn": 111,
-                    "endOffset": 6788
+                    "endOffset": 6790
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -937,12 +937,12 @@
                 "to": {
                     "startLine": 51,
                     "startColumn": 4,
-                    "startOffset": 6793,
+                    "startOffset": 6795,
                     "endColumn": 97,
-                    "endOffset": 6886
+                    "endOffset": 6888
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -956,12 +956,12 @@
                 "to": {
                     "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 6891,
+                    "startOffset": 6893,
                     "endColumn": 108,
-                    "endOffset": 6995
+                    "endOffset": 6997
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -975,12 +975,12 @@
                 "to": {
                     "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 7000,
+                    "startOffset": 7002,
                     "endColumn": 121,
-                    "endOffset": 7117
+                    "endOffset": 7119
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -994,12 +994,12 @@
                 "to": {
                     "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 7122,
+                    "startOffset": 7124,
                     "endColumn": 100,
-                    "endOffset": 7218
+                    "endOffset": 7220
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1013,12 +1013,12 @@
                 "to": {
                     "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 7223,
+                    "startOffset": 7225,
                     "endColumn": 95,
-                    "endOffset": 7314
+                    "endOffset": 7316
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 4,
@@ -1032,12 +1032,12 @@
                 "to": {
                     "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 7319,
+                    "startOffset": 7321,
                     "endColumn": 124,
-                    "endOffset": 7439
+                    "endOffset": 7441
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -1051,12 +1051,12 @@
                 "to": {
                     "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 7444,
+                    "startOffset": 7446,
                     "endColumn": 104,
-                    "endOffset": 7544
+                    "endOffset": 7546
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 4,
@@ -1070,12 +1070,12 @@
                 "to": {
                     "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 7549,
+                    "startOffset": 7551,
                     "endColumn": 85,
-                    "endOffset": 7630
+                    "endOffset": 7632
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 4,
@@ -1089,12 +1089,12 @@
                 "to": {
                     "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 7635,
+                    "startOffset": 7637,
                     "endColumn": 94,
-                    "endOffset": 7725
+                    "endOffset": 7727
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -1108,12 +1108,12 @@
                 "to": {
                     "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 7730,
+                    "startOffset": 7732,
                     "endColumn": 109,
-                    "endOffset": 7835
+                    "endOffset": 7837
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-az-rAZ/location_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-az-rAZ/location_strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1127,12 +1127,12 @@
                 "to": {
                     "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 7840,
+                    "startOffset": 7842,
                     "endColumn": 96,
-                    "endOffset": 7932
+                    "endOffset": 7934
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-az-rAZ/location_strings.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/8.4.0/res/values-az-rAZ/location_strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1146,18 +1146,18 @@
                 "to": {
                     "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 7937,
+                    "startOffset": 7939,
                     "endColumn": 100,
-                    "endOffset": 8033
+                    "endOffset": 8035
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/res/values-az-rAZ/values-az-rAZ.xml",
+                    "file": "/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-az-rAZ/values-az-rAZ.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
-                        "startOffset": 1881,
+                        "startOffset": 1883,
                         "endColumn": 100,
-                        "endOffset": 1977
+                        "endOffset": 1979
                     }
                 }
             }
