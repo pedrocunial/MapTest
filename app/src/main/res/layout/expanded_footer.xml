@@ -7,14 +7,14 @@
     android:orientation="vertical"
     android:gravity="bottom"
     android:id="@+id/extended_footer"
-    android:background="#FFF"
+    android:background="@drawable/shadow_10331"
     android:layout_alignParentBottom="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- "Old" footer -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         android:layout_gravity="bottom"
         android:layout_alignParentBottom="true">
@@ -33,18 +33,22 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="7dp"/>
+
                 <!-- Address -->
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/extended_dest"
-                    android:textSize="20sp"
-                    android:text="Address comes in here"
+                    android:textSize="23sp"
+                    android:text="Address comes here"
                     android:maxLines="1"/>
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_height="15sp"/>
+                    android:layout_height="5dp"/>
 
                 <!-- TBD -->
                 <TextView
@@ -67,14 +71,14 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="match_parent"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="10dp"/>
 
             <!-- Client name -->
             <TextView
@@ -82,18 +86,18 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/client_name"
                 android:text="Nome do cliente"
-                android:textSize="30dp"
+                android:textSize="23dp"
                 android:textStyle="bold"/>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="10dp"/>
+                android:layout_height="7dp"/>
 
             <!-- Generic problem name -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="30dp"
+                android:textSize="20dp"
                 android:id="@+id/generic_problem_overview"
                 android:text="Problema o controle remoto"/>
 

@@ -3062,13 +3062,14 @@ containing a value of this type.
         public static final int noaudio=0x7f0200b3;
         public static final int nochannel=0x7f0200b4;
         public static final int nosignal=0x7f0200b5;
-        public static final int notification_template_icon_bg=0x7f0200bc;
+        public static final int notification_template_icon_bg=0x7f0200bd;
         public static final int password=0x7f0200b6;
         public static final int places_ic_clear=0x7f0200b7;
         public static final int places_ic_search=0x7f0200b8;
         public static final int powered_by_google_dark=0x7f0200b9;
         public static final int powered_by_google_light=0x7f0200ba;
-        public static final int sky=0x7f0200bb;
+        public static final int shadow_10331=0x7f0200bb;
+        public static final int sky=0x7f0200bc;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f0e00aa;
@@ -3178,7 +3179,7 @@ containing a value of this type.
         public static final int image_identifier=0x7f0e0098;
         public static final int info=0x7f0e00ce;
         public static final int item_touch_helper_previous_elevation=0x7f0e0006;
-        public static final int large_image_identifier=0x7f0e0096;
+        public static final int large_image_identifier=0x7f0e0097;
         public static final int left=0x7f0e0028;
         public static final int left_drawer=0x7f0e0099;
         public static final int light=0x7f0e0045;
@@ -3254,7 +3255,7 @@ containing a value of this type.
         public static final int snackbar_text=0x7f0e009c;
         public static final int snap=0x7f0e001a;
         public static final int spacer=0x7f0e006d;
-        public static final int spacer_under_problem=0x7f0e0097;
+        public static final int spacer_under_problem=0x7f0e0096;
         public static final int split_action_bar=0x7f0e0009;
         public static final int src_atop=0x7f0e001e;
         public static final int src_in=0x7f0e001f;
