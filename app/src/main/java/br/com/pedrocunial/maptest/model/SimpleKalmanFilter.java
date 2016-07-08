@@ -10,7 +10,8 @@ public class SimpleKalmanFilter {
     private long TimeStamp_milliseconds;
     private double lat;
     private double lng;
-    private float variance; // P matrix.  Negative means object uninitialised.  NB: units irrelevant, as long as same units used throughout
+    private float variance; // P matrix.  Negative means object uninitialised.
+                            // NB: units irrelevant, as long as same units used throughout
 
     public SimpleKalmanFilter(float Q_metres_per_second) {
         this.Q_metres_per_second = Q_metres_per_second;
@@ -48,8 +49,13 @@ public class SimpleKalmanFilter {
     /// <param name="accuracy">measurement of 1 standard deviation error in metres</param>
     /// <param name="TimeStamp_milliseconds">time of measurement</param>
     /// <returns>new state</returns>
-    public void Process(double lat_measurement, double lng_measurement, float accuracy, long TimeStamp_milliseconds) {
-        if (accuracy < MinAccuracy) accuracy = MinAccuracy;
+    public void Process(double lat_measurement, double lng_measurement,
+                        float accuracy, long TimeStamp_milliseconds) {
+
+        if (accuracy < MinAccuracy) {
+            accuracy = MinAccuracy;
+        }
+
         if (variance < 0) {
             // if variance < 0, object is unitialised, so initialise with current values
             this.TimeStamp_milliseconds = TimeStamp_milliseconds;
@@ -58,15 +64,14 @@ public class SimpleKalmanFilter {
             variance = accuracy*accuracy;
         } else {
             // else apply Kalman filter methodology
-
             long TimeInc_milliseconds = TimeStamp_milliseconds - this.TimeStamp_milliseconds;
+
             if (TimeInc_milliseconds > 0) {
                 // time has moved on, so the uncertainty in the current position increases
                 variance += TimeInc_milliseconds * Q_metres_per_second * Q_metres_per_second / 1000;
                 this.TimeStamp_milliseconds = TimeStamp_milliseconds;
-                // TO DO: USE VELOCITY INFORMATION HERE TO GET A BETTER ESTIMATE OF CURRENT POSITION
+                // TODO: USE VELOCITY INFORMATION HERE TO GET A BETTER ESTIMATE OF CURRENT POSITION
             }
-
             // Kalman gain matrix K = Covarariance * Inverse(Covariance + MeasurementVariance)
             // NB: because K is dimensionless, it doesn't matter that variance has different units to lat and lng
             float K = variance / (variance + accuracy * accuracy);
