@@ -13,6 +13,15 @@
 
         <include layout="@layout/footer"/>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fade_background"
+            android:background="#000"
+            android:alpha="0"
+            android:visibility="gone"
+            android:layerType="hardware"/>
+
         <!-- Map -->
         <fragment
             xmlns:tools="http://schemas.android.com/tools"
@@ -25,10 +34,17 @@
 
         <include layout="@layout/expanded_footer"/>
 
+        <!-- Problem Symbol for the expanded header-->
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/large_image_identifier"
+            android:layout_above="@+id/spacer_under_problem"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/spacer_under_problem"
             android:layout_above="@+id/image_identifier"/>
 
         <!-- Problem symbol -->

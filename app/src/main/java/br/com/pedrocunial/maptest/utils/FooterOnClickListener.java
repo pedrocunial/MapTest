@@ -19,7 +19,7 @@ public class FooterOnClickListener implements View.OnClickListener {
 
     private final String TAG = this.toString();
 
-    public FooterOnClickListener(Context context, boolean isLarge,
+    public FooterOnClickListener(boolean isLarge,
                                  LinearLayout footer, LinearLayout largeFooter,
                                  ImageView icon, ImageView iconLarge) {
         this.isLarge     = isLarge;
@@ -32,14 +32,14 @@ public class FooterOnClickListener implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         if(isLarge) {
-            Log.i(TAG, "Ficou pequeno");
+            Log.i(TAG, "Ficou pequeno e visivel");
             largeFooter.setVisibility(View.INVISIBLE);
             footer.setVisibility(View.VISIBLE);
             icon.setVisibility(View.VISIBLE);
             iconLarge.setVisibility(View.INVISIBLE);
 
         } else {
-            Log.i(TAG, "Ficou grande, birl");
+            Log.i(TAG, "Ficou grande, birl, e borrado");
             largeFooter.setVisibility(View.VISIBLE);
             footer.setVisibility(View.INVISIBLE);
             icon.setVisibility(View.INVISIBLE);

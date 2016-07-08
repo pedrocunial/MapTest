@@ -82,7 +82,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private LocationRequest    mLocationRequest;
     private GoogleApiClient    mGoogleApiClient;
 
-
     // Drawer Navigation
     private String                mActivityTitle;
     private ListView              mDrawerList;
@@ -232,9 +231,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert footerLayout      != null;
         assert largeFooterLayout != null;
         isFooterLarge         = false;
-        footerOnClickListener = new FooterOnClickListener(MapsActivity.this,
-                isFooterLarge, footerLayout, largeFooterLayout,
-                problemIdentifierView, largeProblemIdentifierView);
+        footerOnClickListener = new FooterOnClickListener(isFooterLarge,
+                footerLayout, largeFooterLayout, problemIdentifierView,
+                largeProblemIdentifierView);
         footerLayout.setOnClickListener(footerOnClickListener);
         footerLayout.setVisibility(View.VISIBLE);
         largeFooterLayout.setOnClickListener(footerOnClickListener);
@@ -272,6 +271,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void drawPath(String result, int color) {
+
+        mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
 
         try {
             //Tranform the string into a json object

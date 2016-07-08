@@ -11,6 +11,7 @@
     android:layout_alignParentBottom="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- "Old" footer -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -38,6 +39,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/extended_dest"
                     android:textSize="20sp"
+                    android:text="Address comes in here"
                     android:maxLines="1"/>
 
                 <Space
@@ -50,6 +52,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/extended_problem_code"
                     android:textSize="20sp"
+                    android:text="#1234"
                     android:maxLines="1"/>
 
             </LinearLayout>
@@ -78,19 +81,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/client_name"
+                android:text="Nome do cliente"
                 android:textSize="30dp"
-                android:gravity="center"/>
+                android:textStyle="bold"/>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp"/>
+                android:layout_height="10dp"/>
 
             <!-- Generic problem name -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="30dp"
-                android:gravity="center"
                 android:id="@+id/generic_problem_overview"
                 android:text="Problema o controle remoto"/>
 
