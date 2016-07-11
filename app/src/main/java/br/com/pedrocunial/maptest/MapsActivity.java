@@ -193,7 +193,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap                   = googleMap;
-        dest                   = "Av. República do Líbano, 540 - Pina, Recife";
+        dest                   = "C.E.S.A.R - Recife";
         clientName             = "Alberto de Jesus";
         problemCode            = "#12345";
         genericProblemOverview = "Problema no controle";
@@ -374,13 +374,28 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void updateMyPosition(double lat, double lng) {
         myPosition = new LatLng(lat, lng);
 
+        if(hasArrived(lat, lng)) {
+            Log.i(TAG, "Chegou!");
+        } else {
+            Log.i(TAG, "Nao chegou");
+        }
+
         mMap.clear();
-        Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar).title("C.E.S.A.R"));
+        Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar)
+                .title("C.E.S.A.R"));
         mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
 
         locationMarker.showInfoWindow();
+    }
+
+    private boolean hasArrived(double lat, double lng) {
+        if(((cesar.latitude + 0.5 > lat) && (cesar.latitude - 50 < lat)) &&
+                ((cesar.longitude + 0.5 > lng) && (cesar.longitude - 0.5 < lng))) {
+            return true;
+        }
+        return false;
     }
 
     @Override
