@@ -15,4 +15,7 @@ public interface MapsInterface {
     Context getContext();
 
     void startActivity(Intent intent);
+
+    void setTimePreview(int timePreview);
+    int  getTimePreview();
 }

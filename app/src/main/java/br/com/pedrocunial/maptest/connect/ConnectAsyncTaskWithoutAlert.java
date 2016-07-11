@@ -3,10 +3,12 @@ package br.com.pedrocunial.maptest.connect;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.util.Random;
 
 import br.com.pedrocunial.maptest.MapsInterface;
+import br.com.pedrocunial.maptest.model.JSONParser;
 
 import static br.com.pedrocunial.maptest.model.JSONParser.getJSONFromUrl;
 
@@ -38,6 +40,8 @@ public class ConnectAsyncTaskWithoutAlert extends AsyncTask<Void, Void, String> 
 
         if(result != null) {
             activity.drawPath(result, Color.BLUE);
+            activity.setTimePreview(JSONParser.getTime(result));
+            Log.i(this.toString(), String.valueOf(activity.getTimePreview()));
         }
     }
 }

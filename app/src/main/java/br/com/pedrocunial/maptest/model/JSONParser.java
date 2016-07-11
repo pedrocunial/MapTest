@@ -2,6 +2,8 @@ package br.com.pedrocunial.maptest.model;
 
 import android.util.Log;
 
+import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedInputStream;
@@ -42,14 +44,40 @@ public class JSONParser {
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append("\n");
             }
-
             json = sb.toString();
             is.close();
         } catch (Exception e) {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
         Log.d("JSON_ROUTE", json);
-
         return json;
+    }
+
+    public static int getTime(String json) {
+        int time = 0;
+
+        if(!json.isEmpty()) {
+            try {
+                JSONObject jsonObject  = new JSONObject(json);
+                // Get the object that contains all routes
+                JSONArray  routesArray = jsonObject.getJSONArray("routes");
+                // Grab the first route (best)
+                JSONObject route       = routesArray.getJSONObject(0);
+                // Get all "legs" from the route
+                JSONArray  legsArray   = route.getJSONArray("legs");
+                // The first one is the one we want
+                JSONObject leg            = legsArray.getJSONObject(0);
+                JSONObject durationObject = leg.getJSONObject("duration");
+                time += Integer.valueOf(durationObject.getString("value"));
+                // Return the value (in seconds) divided by 60 (to get it in minutes)
+                return (time / 60);
+
+            } catch(JSONException e) {
+                e.printStackTrace();
+            }
+
+        }
+
+        return -1;
     }
 }

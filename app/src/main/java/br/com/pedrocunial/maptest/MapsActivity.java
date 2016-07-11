@@ -63,6 +63,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean isHamburgerMenuOn = false;
     private boolean isFooterLarge;
 
+    private int                timePreview;
     private LatLng             cesar;
     private String             dest;
     private LatLng             myPosition;
@@ -192,7 +193,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap                   = googleMap;
-        dest                   = "CESAR - Recife";
+        dest                   = "Av. República do Líbano, 540 - Pina, Recife";
         clientName             = "Alberto de Jesus";
         problemCode            = "#12345";
         genericProblemOverview = "Problema no controle";
@@ -274,11 +275,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 latLng[0] = location.getLatitude();
                 latLng[1] = location.getLongitude();
             }
-
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         return latLng;
     }
 
@@ -312,6 +311,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public Context getContext() {
         return MapsActivity.this;
+    }
+
+    @Override
+    public void setTimePreview(int timePreview) {
+        this.timePreview = timePreview;
+    }
+
+    @Override
+    public int getTimePreview() {
+        return this.timePreview;
     }
 
     private List<LatLng> decodePoly(String encoded) {
