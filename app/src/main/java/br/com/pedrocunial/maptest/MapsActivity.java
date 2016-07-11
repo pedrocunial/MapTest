@@ -375,7 +375,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         myPosition = new LatLng(lat, lng);
 
         if(hasArrived(lat, lng)) {
-            Log.i(TAG, "Chegou!!");
+            Log.i(TAG, "Chegou!");
         } else {
             Log.i(TAG, "Nao chegou");
         }
@@ -391,8 +391,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private boolean hasArrived(double lat, double lng) {
-        if(((cesar.latitude + 0.015 > lat) && (cesar.latitude - 0.015 < lat)) &&
-                ((cesar.longitude + 0.015 > lng) && (cesar.longitude - 0.015 < lng))) {
+        if(((cesar.latitude + 0.012 > lat) && (cesar.latitude - 0.012 < lat)) &&
+                ((cesar.longitude + 0.012 > lng) && (cesar.longitude - 0.012 < lng))) {
             return true;
         }
         return false;
