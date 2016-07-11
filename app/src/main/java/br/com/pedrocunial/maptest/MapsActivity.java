@@ -2,6 +2,8 @@ package br.com.pedrocunial.maptest;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.location.Geocoder;
@@ -13,6 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -79,6 +82,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private ImageView          problemIdentifierView;
     private ImageView          largeProblemIdentifierView;
     private GoogleMap          mMap;
+    private AlertDialog        mAlertDialog;
     private LinearLayout       footerLayout;  // Map footer
     private LinearLayout       largeFooterLayout;
     private LocationRequest    mLocationRequest;
@@ -88,15 +92,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private String                mActivityTitle;
     private ListView              mDrawerList;
     private DrawerLayout          mDrawerLayout;
-    private ActionBarDrawerToggle mDrawerToggle;
 
+    private ActionBarDrawerToggle mDrawerToggle;
     private final int    ZOOM           = 19;
     private final int    LONG_INTERVAL  = 5000;
     private final double LINE_THICKNESS = 1;
     private final String TAG            = "MapApp";
     private final String NAME           = "Jose Carlos Silva";
-    private final int    SDK            = android.os.Build.VERSION.SDK_INT;
 
+    private final int    SDK            = android.os.Build.VERSION.SDK_INT;
     private FooterOnClickListener footerOnClickListener;
 
     @Override
@@ -113,7 +117,32 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         setupDrawer();
 
+        setupDialog();
+
         buildGoogleApiClient();
+    }
+
+    private void setupDialog() {
+        // Sets up the alert dialog that will appear on arriving a destination
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // Builds the dialog with the configs we want
+        builder.setMessage("Voce chegou no seu destino, deseja realizar check-in?")
+                .setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        startActivity(
+                                new Intent(MapsActivity.this, AboutActivity.class));
+                    }
+                })
+
+                .setNegativeButton("NAO", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        Log.i(TAG, "Nao fez check-in");
+                    }
+                });
+        // Associates the builder with the dialog itself
+        mAlertDialog = builder.create();
+        // Guarantees the dialog won't appear at the beginning of the application
+        mAlertDialog.hide();
     }
 
     @Override
@@ -375,7 +404,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         myPosition = new LatLng(lat, lng);
 
         if(hasArrived(lat, lng)) {
-            Log.i(TAG, "Chegou!");
+            mAlertDialog.show();
         } else {
             Log.i(TAG, "Nao chegou");
         }
@@ -391,6 +420,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private boolean hasArrived(double lat, double lng) {
+        // Checks if the user has arrived at the desired destination
         if(((cesar.latitude + 0.012 > lat) && (cesar.latitude - 0.012 < lat)) &&
                 ((cesar.longitude + 0.012 > lng) && (cesar.longitude - 0.012 < lng))) {
             return true;
