@@ -62,4 +62,8 @@ public class TreeBuilder {
         }
         node.sons.add(new Node(leaf));
     }
+
+    public Node getRoot() {
+        return root;
+    }
 }
