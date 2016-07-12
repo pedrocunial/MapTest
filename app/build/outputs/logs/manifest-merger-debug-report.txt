@@ -181,30 +181,30 @@ ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:33:13-52
 	android:name
 		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:32:13-58
-activity#br.com.pedrocunial.maptest.LoginActivity
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:34:9-43:20
-	android:label
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:36:13-57
-	android:windowSoftInputMode
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:37:13-68
-	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:35:13-42
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:38:13-42:29
-action#android.intent.action.MAIN
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:39:17-69
-	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:39:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:41:17-77
-	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:41:27-74
 activity#br.com.pedrocunial.maptest.MapsActivity
-ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:44:9-52:20
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:34:9-42:20
 	android:label
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:46:13-56
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:36:13-56
 	android:name
-		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:45:13-41
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:35:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:37:13-41:29
+action#android.intent.action.MAIN
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:38:17-68
+	android:name
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:38:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:40:17-76
+	android:name
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:40:27-74
+activity#br.com.pedrocunial.maptest.LoginActivity
+ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:43:9-52:20
+	android:label
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:45:13-57
+	android:windowSoftInputMode
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:46:13-68
+	android:name
+		ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:44:13-42
 meta-data#com.google.android.gms.version
 ADDED from /home/summerjob/Documents/CESAR/MapTest/app/src/main/AndroidManifest.xml:54:9-56:68
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
