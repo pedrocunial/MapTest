@@ -46,27 +46,20 @@ public class TreeBuilder {
     }
 
     private void build(LatLng[] addresses) {
-        // TODO
-        int i = 0;
-
+        // DONE (?)
+        int  i    = 0;
         Node node = root;
 
         while(i < addresses.length) {
-
             if(!node.sons.contains(addresses[i])) {
-
                 Node newNode = new Node(addresses[i]);
                 node.sons.add(newNode);
                 node = newNode;
                 i++;
-
             } else {
-
                 node = node.sons.get(node.sons.indexOf(addresses[i]));
             }
-
         }
-
+        node.sons.add(new Node(leaf));
     }
-
 }
