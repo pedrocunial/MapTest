@@ -55,10 +55,10 @@ public class TreeBuilder {
                 Node newNode = new Node(addresses[i]);
                 node.sons.add(newNode);
                 node = newNode;
-                i++;
             } else {
                 node = node.sons.get(node.sons.indexOf(addresses[i]));
             }
+            i++;
         }
         node.sons.add(new Node(leaf));
     }
