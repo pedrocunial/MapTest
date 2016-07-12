@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:2:1-65:12
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:2:1-69:12
 	package
 		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml
@@ -41,7 +41,7 @@ ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/Androi
 	android:name
 		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:14:22-78
 application
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:16:5-63:19
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:16:5-67:19
 MERGED from [com.android.support:design:24.0.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:24.0.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
@@ -175,44 +175,52 @@ MERGED from [com.android.support:support-v4:24.0.0] /home/summerjob/AndroidStudi
 		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:18:9-43
 	android:theme
 		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:21:9-40
+uses-permission#android.permission.CAMERA
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:32:9-69
+	android:name
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:32:26-66
+uses-feature#android.hardware.camera
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:33:9-64
+	android:name
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:33:23-61
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:31:9-33:55
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:35:9-37:55
 	android:value
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:33:13-52
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:37:13-52
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:32:13-58
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:36:13-58
 activity#br.com.pedrocunial.maptest.LoginActivity
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:35:9-44:20
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:39:9-48:20
 	android:label
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:37:13-57
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:41:13-57
 	android:theme
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:38:13-55
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:42:13-55
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:36:13-42
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:40:13-42
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:39:13-43:29
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:43:13-47:29
 action#android.intent.action.MAIN
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:40:17-69
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:40:25-66
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:42:17-77
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:42:27-74
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:46:27-74
 activity#br.com.pedrocunial.maptest.MapsActivity
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:45:9-53:20
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:49:9-57:20
 	android:label
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:47:13-56
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:51:13-56
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:46:13-41
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:50:13-41
 activity#br.com.pedrocunial.maptest.StatusActivity
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:54:9-57:20
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:58:9-61:20
 	android:theme
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:56:13-55
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:60:13-55
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:55:13-43
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:59:13-43
 meta-data#com.google.android.gms.version
-ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:59:9-61:69
+ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:63:9-65:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
@@ -247,9 +255,9 @@ MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjo
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:8.4.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:61:13-66
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:65:13-66
 	android:name
-		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:60:13-58
+		ADDED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml:64:13-58
 uses-sdk
 INJECTED from /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:24.0.0] /home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/AndroidManifest.xml:20:5-43

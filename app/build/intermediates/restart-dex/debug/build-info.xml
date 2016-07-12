@@ -4,18 +4,18 @@
     api-level="19"
     density="xhdpi"
     format="7"
-    timestamp="19515423949494"
+    timestamp="16067629963384"
     token="-8243794033397997216" >
 
     <task
         name="javac"
-        duration="137" />
+        duration="309" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="21" />
+        duration="29" />
     <task
         name="verifier"
         duration="0" />
@@ -24,7 +24,7 @@
         location="/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="19515423949494" >
+    <build timestamp="16067629963384" >
         <artifact
             location="/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
