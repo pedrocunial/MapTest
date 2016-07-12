@@ -1,26 +1,29 @@
 package br.com.pedrocunial.maptest.model.visits;
 
+import com.google.android.gms.maps.model.LatLng;
+
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by summerjob on 12/07/16.
  */
+
 public class Node {
 
-    private double lat;
-    private double lng;
     private int    passes;
+    private LatLng position;
 
-    public Node(double lat, double lng) {
-        this.lat    = lat;
-        this.lng    = lng;
-        this.passes = 0;
+    public List<Node> sons;
+
+    public Node(LatLng position) {
+        this.position = position;
+        this.passes   = 0;
+        this.sons     = new ArrayList<>();
     }
 
-    public double getLat() {
-        return lat;
-    }
-
-    public double getLng() {
-        return lng;
+    public LatLng getPosition() {
+        return position;
     }
 
     public int getPasses() {

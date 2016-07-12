@@ -283,7 +283,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void markDestination(String dest, String title) {
-        double[] cesarLatLng = this.getLatLongFromPlace(dest);
+        double[] cesarLatLng = getLatLongFromPlace(dest);
         cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar).title(title));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
