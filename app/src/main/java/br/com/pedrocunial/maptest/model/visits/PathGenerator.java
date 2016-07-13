@@ -1,6 +1,11 @@
 package br.com.pedrocunial.maptest.model.visits;
 
+import android.os.AsyncTask;
+
 import com.google.android.gms.maps.model.LatLng;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.Future;
 
 import br.com.pedrocunial.maptest.model.JSONParser;
 import br.com.pedrocunial.maptest.model.PathGoogleMap;
@@ -8,7 +13,7 @@ import br.com.pedrocunial.maptest.model.PathGoogleMap;
 /**
  * Created by summerjob on 13/07/16.
  */
-public class PathGeneratorThread extends Thread {
+public class PathGenerator implements Callable<Integer> {
     /**
      * This thread should generate the shortest path between
      * two geographical points.
@@ -18,7 +23,7 @@ public class PathGeneratorThread extends Thread {
     private LatLng start;
     private LatLng dest;
 
-    public PathGeneratorThread(LatLng start, LatLng dest) {
+    public PathGenerator(LatLng start, LatLng dest) {
         this.time  = 0;
         this.start = start;
         this.dest  = dest;
@@ -30,14 +35,15 @@ public class PathGeneratorThread extends Thread {
         this.time   = JSONParser.getTime(json);
     }
 
-    public int getTime() throws TimeNotFoundException, NullTimeException {
+    @Override
+    public Integer call() throws Exception {
+        run();
         if(time > 0) {
-            return time;
+            return (time / 60);
         } else if(time == 0) {
             throw new NullTimeException();
         } else {
             throw new TimeNotFoundException();
         }
     }
-
 }

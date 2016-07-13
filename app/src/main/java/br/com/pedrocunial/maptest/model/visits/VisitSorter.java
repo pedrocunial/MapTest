@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 public class VisitSorter {
 
-    private HashMap<String, Integer> paths;
+    private HashMap<LatLng[], Integer> paths;
 
     private Node        tree;
     private TreeBuilder treeBuilder;
@@ -19,6 +19,7 @@ public class VisitSorter {
         paths       = new HashMap<>();
         treeBuilder = new TreeBuilder(addresses, rootLatLng, finalLatLng);
         tree        = treeBuilder.getRoot();
+        paths       = treeBuilder.getPaths();
     }
 
     private void parseTree() {
