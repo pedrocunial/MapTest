@@ -4,6 +4,7 @@ package br.com.pedrocunial.maptest.model.visits;
 import com.google.android.gms.maps.model.LatLng;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
@@ -17,12 +18,14 @@ public class TreeBuilder {
     private Node   root;
     private LatLng leaf;
 
-    public List<LatLng> tree;
+    public List<LatLng>             tree;
+    public HashMap<String, Integer> path;
 
     public TreeBuilder(LatLng[] addresses, LatLng rootLatLng, LatLng finalLatLng) {
         root = new Node(rootLatLng);
         leaf = finalLatLng;
         tree = new ArrayList<>();
+        path = new HashMap<>();
         permute(addresses, 0, addresses.length-1);
     }
 
@@ -55,6 +58,7 @@ public class TreeBuilder {
                 Node newNode = new Node(addresses[i]);
                 node.sons.add(newNode);
                 node = newNode;
+
             } else {
                 node = node.sons.get(node.sons.indexOf(addresses[i]));
             }
