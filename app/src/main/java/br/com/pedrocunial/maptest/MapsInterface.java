@@ -18,4 +18,5 @@ public interface MapsInterface {
 
     void setTimePreview(int timePreview);
     int  getTimePreview();
+
 }
