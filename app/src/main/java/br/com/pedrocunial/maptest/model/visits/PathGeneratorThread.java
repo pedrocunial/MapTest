@@ -30,9 +30,11 @@ public class PathGeneratorThread extends Thread {
         this.time   = JSONParser.getTime(json);
     }
 
-    public int getTime() throws TimeNotFoundException {
-        if(time >= 0) {
+    public int getTime() throws TimeNotFoundException, NullTimeException {
+        if(time > 0) {
             return time;
+        } else if(time == 0) {
+            throw new NullTimeException();
         } else {
             throw new TimeNotFoundException();
         }
