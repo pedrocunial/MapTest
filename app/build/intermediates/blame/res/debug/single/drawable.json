@@ -4,24 +4,16 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/dont_turn_on.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/dont_turn_on.png"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
@@ -36,6 +28,278 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/clearpwd.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/clearpwd.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/blue_screen.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/blue_screen.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/code6.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/code6.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/car.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/car.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/bob.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/bob.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cc.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/cc.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/bob.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/bob.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/imgfreezing.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/imgfreezing.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/imgfreezing.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/imgfreezing.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_text_cursor_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/manycodes.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/manycodes.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/res/drawable/cast_ic_notification_connecting.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/audio_delay.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/audio_delay.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/password.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/password.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/autoshutdown.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/autoshutdown.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/dont_turn_on.png",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/dont_turn_on.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_switch_thumb_material.xml"
     },
@@ -48,20 +312,16 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/shadow_10331.9.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_dark.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_search_api_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_search_api_material.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/noaudio.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/noaudio.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/channel_locked.png",
@@ -72,48 +332,56 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/noaudio.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/control.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/control.png"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/bw_screen.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/bw_screen.png"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_colored_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_colored_material.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/channel_locked.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/channel_locked.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/car.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/car.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/clearpwd.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/clearpwd.png"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_radio_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_dark.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_cab_background_internal_bg.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_light.xml"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
@@ -124,16 +392,12 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_holo_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_light.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/autoshutdown.png",
@@ -144,92 +408,112 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/blue_screen.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/blue_screen.png"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/dont_turn_on.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/dont_turn_on.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/code6.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/code6.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/nosignal.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/nosignal.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_go_search_api_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/bw_screen.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/bw_screen.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_light.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/design_snackbar_background.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_snackbar_background.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_check_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_check_material.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/shadow_10331.9.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/shadow_10331.9.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/code77.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/code77.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_default_mtrl_shape.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_small_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/code6.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/code6.png"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_light.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/nochannel.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/nochannel.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/nochannel.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/nochannel.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/sky.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/sky.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/clearpwd.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/clearpwd.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/blue_screen.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/blue_screen.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/code4.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/code4.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_switch_thumb_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_edit_text_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/bob.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/bob.png"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/sky.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/sky.png"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_track_material.xml",
@@ -240,10 +524,6 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/code4.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/imgfreezing.png",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/imgfreezing.png"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/nosignal.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/nosignal.png"
     },
@@ -252,52 +532,76 @@
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_menu_overflow_material.xml"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_settings_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_settings_light.xml"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/manycodes.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/manycodes.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/code77.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/code77.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_ab_back_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_connecting.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/8.4.0/res/drawable/cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_cast_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_cast_dark.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ratingbar_indicator_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ratingbar_indicator_material.xml"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_play_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_play_dark.xml"
+    },
+    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_thumb_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
-    },
-    {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_mono_dark.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_dark.xml"
-    },
-    {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/design_fab_background.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/drawable/design_fab_background.xml"
+        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_list_selector_background_transition_holo_light.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/cc.png",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/src/main/res/drawable/cc.png"
     },
     {
-        "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
-        "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/control.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/control.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_list_selector_background_transition_holo_dark.xml",
@@ -310,5 +614,13 @@
     {
         "merged": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",
         "source": "/home/summerjob/AndroidStudioProjects/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/res/drawable/common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_textfield_search_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_tab_indicator_material.xml"
     }
 ]

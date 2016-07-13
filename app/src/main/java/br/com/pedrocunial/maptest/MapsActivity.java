@@ -2,6 +2,8 @@ package br.com.pedrocunial.maptest;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.location.Geocoder;
@@ -13,6 +15,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
@@ -78,6 +81,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private ImageView          problemIdentifierView;
     private ImageView          largeProblemIdentifierView;
     private GoogleMap          mMap;
+    private AlertDialog        dialog;        // Dialog (pop-up)
     private LinearLayout       footerLayout;  // Map footer
     private LinearLayout       largeFooterLayout;
     private LocationRequest    mLocationRequest;
@@ -112,6 +116,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         setupDrawer();
 
+        setupDialog();
+
         buildGoogleApiClient();
     }
 
@@ -121,6 +127,26 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // Add the buttons
+        builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+                startActivity(new Intent(MapsActivity.this, AboutActivity.class));
+            }
+        });
+        builder.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+            }
+        });
+        builder.setMessage(R.string.arrived);
+
+        // Create the AlertDialog
+        dialog = builder.create();
     }
 
     private void setupDrawer() {
@@ -383,7 +409,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         myPosition = new LatLng(lat, lng);
 
         if(hasArrived(lat, lng)) {
-            //Log.i(TAG, "Chegou!");
+            dialog.show();
+            Log.i(TAG, "Chegou");
         } else {
             Log.i(TAG, "Nao chegou");
         }
@@ -394,7 +421,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
-
         locationMarker.showInfoWindow();
     }
 

@@ -8,4 +8,5 @@
     <string name="forgot_password">Esqueceu a senha?</string>
     <string name="login_text">Login</string>
     <string name="password_text">Senha</string>
+    <string name="arrived">Você chegou no seu destino, deseja fazer check-in?</string>
 </resources>
