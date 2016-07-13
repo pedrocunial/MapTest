@@ -2,10 +2,17 @@ package br.com.pedrocunial.maptest.model.visits;
 
 import com.google.android.gms.maps.model.LatLng;
 
+import br.com.pedrocunial.maptest.model.JSONParser;
+import br.com.pedrocunial.maptest.model.PathGoogleMap;
+
 /**
  * Created by summerjob on 13/07/16.
  */
 public class PathGeneratorThread extends Thread {
+    /**
+     * This thread should generate the shortest path between
+     * two geographical points.
+     * */
 
     private int    time;
     private LatLng start;
@@ -18,7 +25,17 @@ public class PathGeneratorThread extends Thread {
     }
 
     public void run() {
+        String url  = PathGoogleMap.makeURL(start, dest);
+        String json = JSONParser.getJSONFromUrl(url);
+        this.time   = JSONParser.getTime(json);
+    }
 
+    public int getTime() throws TimeNotFoundException {
+        if(time >= 0) {
+            return time;
+        } else {
+            throw new TimeNotFoundException();
+        }
     }
 
 }
