@@ -53,6 +53,11 @@ public class JSONParser {
         return json;
     }
 
+    public static int getTimeMinutes(String json) {
+        // Converts the time from seconds to minutes
+        return (getTime(json) / 60);
+    }
+
     public static int getTime(String json) {
         int time = 0;
 
@@ -69,15 +74,13 @@ public class JSONParser {
                 JSONObject leg            = legsArray.getJSONObject(0);
                 JSONObject durationObject = leg.getJSONObject("duration");
                 time += Integer.valueOf(durationObject.getString("value"));
-                // Return the value (in seconds) divided by 60 (to get it in minutes)
-                return (time / 60);
+                // Return the value in seconds
+                return time;
 
             } catch(JSONException e) {
                 e.printStackTrace();
             }
-
         }
-
         return -1;
     }
 }

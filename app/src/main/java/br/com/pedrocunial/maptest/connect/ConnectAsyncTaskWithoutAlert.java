@@ -40,7 +40,7 @@ public class ConnectAsyncTaskWithoutAlert extends AsyncTask<Void, Void, String> 
 
         if(result != null) {
             activity.drawPath(result, Color.BLUE);
-            activity.setTimePreview(JSONParser.getTime(result));
+            activity.setTimePreview(JSONParser.getTimeMinutes(result));
             Log.i(this.toString(), String.valueOf(activity.getTimePreview()));
         }
     }
