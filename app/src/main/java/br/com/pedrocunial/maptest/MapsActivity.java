@@ -39,6 +39,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -52,6 +53,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
+import br.com.pedrocunial.maptest.utils.Converter;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
 import br.com.pedrocunial.maptest.utils.FooterOnTouchListener;
 import br.com.pedrocunial.maptest.utils.ImageOptions;
@@ -90,13 +92,15 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private LocationRequest    mLocationRequest;
     private GoogleApiClient    mGoogleApiClient;
 
+    private LatLngBounds.Builder latLngBuilder; // For map resizing
+
     // Drawer Navigation
     private String                mActivityTitle;
     private ListView              mDrawerList;
     private DrawerLayout          mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
 
-    private final int    ZOOM           = 19;
+    private final int    ZOOM           = 16;
     private final int    LONG_INTERVAL  = 5000;
     private final double LINE_THICKNESS = 1;
     private final String TAG            = "MapApp";
@@ -135,6 +139,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         setupDrawer();
 
         setupDialog();
+
+        latLngBuilder = new LatLngBounds.Builder();
 
         buildGoogleApiClient();
     }
@@ -314,8 +320,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar[currentDestinationIndex] = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar[currentDestinationIndex]).title(title));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar[currentDestinationIndex]));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(cesar[currentDestinationIndex]));
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(ZOOM));
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -339,8 +345,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     public void drawPath(String result, int color) {
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
-
         try {
             //Tranform the string into a json object
             final JSONObject json              = new JSONObject(result);
@@ -440,13 +444,26 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         mMap.clear();
-        Marker locationMarker = mMap.addMarker(new MarkerOptions()
+
+        Marker destinationMarker = mMap.addMarker(new MarkerOptions()
                 .position(cesar[currentDestinationIndex])
                 .title("Destino"));
-        mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
+
+        Marker locationMarker    = mMap.addMarker(new MarkerOptions()
+                .position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
-        locationMarker.showInfoWindow();
+
+        latLngBuilder.include(destinationMarker.getPosition());
+        latLngBuilder.include(locationMarker.getPosition());
+        LatLngBounds bounds = latLngBuilder.build();
+        mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds,
+                (int) Converter.pxFromDp(this, 30)));
+
+        if(mMap.getCameraPosition().zoom > ZOOM) {
+            mMap.moveCamera(CameraUpdateFactory.zoomTo(ZOOM));
+        }
+
+        destinationMarker.showInfoWindow();
     }
 
     private boolean hasArrived(double lat, double lng) {
@@ -454,14 +471,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if(((cesar[currentDestinationIndex].latitude  + 0.01 > lat) &&
             (cesar[currentDestinationIndex].latitude  - 0.01 < lat)) &&
            ((cesar[currentDestinationIndex].longitude + 0.01 > lng) &&
-            (cesar[currentDestinationIndex].longitude - 0.01 < lng))) {
-
+            (cesar[currentDestinationIndex].longitude - 0.01 < lng)))
+        {
             return true;
-
         }
-
         return false;
-
     }
 
     @Override
