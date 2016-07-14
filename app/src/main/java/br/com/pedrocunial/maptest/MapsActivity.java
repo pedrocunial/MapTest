@@ -66,12 +66,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean isFooterLarge;
 
     private int                timePreview;
-    private LatLng             cesar;
-    private String             dest;
-    private LatLng             myPosition;
+    private int                currentDestinationIndex;
+    private String             clientName;
     private String             problemCode;
     private String             genericProblemOverview;
-    private String             clientName;
+    private LatLng             myPosition;
+    private String[]           dest;
+    private LatLng[]           cesar;
     private TextView           largeDestinationView;
     private TextView           largeProblemCodeView;
     private TextView           clientNameView;
@@ -135,6 +136,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked OK button
+                currentDestinationIndex++;
+                markDestination(dest[currentDestinationIndex], "Destino");
                 startActivity(new Intent(MapsActivity.this, StatusActivity.class));
             }
         });
@@ -217,16 +220,19 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        mMap                   = googleMap;
-        dest                   = "C.E.S.A.R - Recife";
-        clientName             = "Alberto de Jesus";
-        problemCode            = "#12345";
-        genericProblemOverview = "Problema no controle";
+        mMap                    = googleMap;
+        dest                    = new String[] {"C.E.S.A.R - Recife",
+                                                "R. Cônego Romeu, 238"};
+        cesar                   = new LatLng[dest.length];
+        clientName              = "Alberto de Jesus";
+        problemCode             = "#12345";
+        genericProblemOverview  = "Problema no controle";
+        currentDestinationIndex = 0;
 
         defineLayoutsAndViews();
         startViews();
         startLayouts();
-        markDestination(dest, "Destino");
+        markDestination(dest[currentDestinationIndex], "Destino");
     }
 
     private void defineLayoutsAndViews() {
@@ -252,8 +258,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert problemIdentifierView      != null;
         assert genericProblemOverviewView != null;
         assert largeProblemIdentifierView != null;
-        destinationView.setText(dest);
-        largeDestinationView.setText(dest);
+        destinationView.setText(dest[currentDestinationIndex]);
+        largeDestinationView.setText(dest[currentDestinationIndex]);
         problemCodeView.setText(problemCode);
         largeProblemCodeView.setText(problemCode);
         clientNameView.setText(clientName);
@@ -288,9 +294,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void markDestination(String dest, String title) {
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
-        cesar = new LatLng(cesarLatLng[0], cesarLatLng[1]);
-        mMap.addMarker(new MarkerOptions().position(cesar).title(title));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar));
+        cesar[currentDestinationIndex] = new LatLng(cesarLatLng[0], cesarLatLng[1]);
+        mMap.addMarker(new MarkerOptions().position(cesar[currentDestinationIndex]).title(title));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar[currentDestinationIndex]));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
     }
 
@@ -400,7 +406,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         updateMyPosition(lat, lng);
 
-        String url  = makeURL(myPosition, cesar);
+        String url  = makeURL(myPosition, cesar[currentDestinationIndex]);
         new ConnectAsyncTaskWithoutAlert(url, this).execute();
         //Log.i(TAG, "Complete!");
     }
@@ -416,8 +422,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         mMap.clear();
-        Marker locationMarker = mMap.addMarker(new MarkerOptions().position(cesar)
-                .title("C.E.S.A.R"));
+        Marker locationMarker = mMap.addMarker(new MarkerOptions()
+                .position(cesar[currentDestinationIndex])
+                .title("Destino"));
         mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
         mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
@@ -425,11 +432,18 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private boolean hasArrived(double lat, double lng) {
-        if(((cesar.latitude + 0.5 > lat) && (cesar.latitude - 50 < lat)) &&
-                ((cesar.longitude + 0.5 > lng) && (cesar.longitude - 0.5 < lng))) {
+
+        if(((cesar[currentDestinationIndex].latitude  + 0.012 > lat) &&
+            (cesar[currentDestinationIndex].latitude  - 0.012 < lat)) &&
+           ((cesar[currentDestinationIndex].longitude + 0.012 > lng) &&
+            (cesar[currentDestinationIndex].longitude - 0.012 < lng))) {
+
             return true;
+
         }
+
         return false;
+
     }
 
     @Override
