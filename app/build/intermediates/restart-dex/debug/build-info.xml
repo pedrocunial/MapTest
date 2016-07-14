@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
     abi="armeabi-v7a,armeabi"
-    api-level="19"
-    density="xhdpi"
+    api-level="21"
+    density="xxxhdpi"
     format="7"
-    timestamp="16067629963384"
-    token="-8243794033397997216" >
+    timestamp="11054936773300"
+    token="2492074114906515578" >
 
     <task
         name="javac"
-        duration="309" />
+        duration="58" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="29" />
+        duration="0" />
     <task
         name="verifier"
         duration="0" />
 
     <artifact
-        location="/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/outputs/apk/app-debug.apk"
+        location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="16067629963384" >
+    <build timestamp="11054936773300" >
         <artifact
-            location="/home/summerjob/AndroidStudioProjects/Sky/MapTest/app/build/outputs/apk/app-debug.apk"
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

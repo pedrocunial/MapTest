@@ -52,9 +52,8 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="br.com.pedrocunial.maptest.LoginActivity"
-            android:label="@string/title_activity_login"
-            android:theme="@style/AppThemeNoActionBar" >
+            android:name="br.com.pedrocunial.maptest.MapsActivity"
+            android:label="@string/title_activity_maps" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,8 +61,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.pedrocunial.maptest.MapsActivity"
-            android:label="@string/title_activity_maps" >
+            android:name="br.com.pedrocunial.maptest.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

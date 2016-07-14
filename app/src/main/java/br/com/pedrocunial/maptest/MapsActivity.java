@@ -135,7 +135,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         builder.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked OK button
-                startActivity(new Intent(MapsActivity.this, AboutActivity.class));
+                startActivity(new Intent(MapsActivity.this, StatusActivity.class));
             }
         });
         builder.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
