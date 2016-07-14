@@ -31,13 +31,17 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     //Email Parameters
     Bitmap thumbnail;
     File pic;
+
+    int index;
     boolean foto=false;
     protected static final int CAMERA_PIC_REQUEST = 0;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
+
+        index = getIntent().getExtras().getInt("index");
 
         //Get View Components
         btn_send = (Button) findViewById(R.id.send_btn);
@@ -69,6 +73,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 //Back to Maps Activity
                 Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
                 Intent it = new Intent(StatusActivity.this, MapsActivity.class);
+                it.putExtra("index", index);
                 startActivity(it);
             }
         });

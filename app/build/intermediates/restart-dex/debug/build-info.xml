@@ -4,26 +4,35 @@
     api-level="21"
     density="xxxhdpi"
     format="7"
-    timestamp="4916751541841"
+    timestamp="9614262760477"
     token="2492074114906515578" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="305" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="25" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
-    <build timestamp="11054936773300" >
+    <artifact
+        location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+        type="DEX" />
+
+    <build timestamp="9203381704281" >
         <artifact
             location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="9614262760477" >
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

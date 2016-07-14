@@ -27,12 +27,14 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
@@ -108,10 +110,25 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        if(getIntent().getExtras() == null) {
+            currentDestinationIndex = 0;
+        } else {
+            currentDestinationIndex = getIntent().getExtras().getInt("index");
+        }
+
+        Log.i(TAG, String.valueOf(currentDestinationIndex));
+
+        if (mMap == null) {
+            // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+        }else{
+            GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+
+        }
+
+        Log.i(TAG, "Começando o mapa");
 
         mActivityTitle = getTitle().toString();
 
@@ -138,7 +155,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // User clicked OK button
                 currentDestinationIndex++;
                 markDestination(dest[currentDestinationIndex], "Destino");
-                startActivity(new Intent(MapsActivity.this, StatusActivity.class));
+                startActivity(new Intent(MapsActivity.this, StatusActivity.class)
+                        .putExtra("index", currentDestinationIndex));
             }
         });
         builder.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
@@ -221,13 +239,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap                    = googleMap;
-        dest                    = new String[] {"C.E.S.A.R - Recife",
+        dest                    = new String[] {"Rua do Brum, 77 - Recife",
                                                 "R. Cônego Romeu, 238"};
         cesar                   = new LatLng[dest.length];
         clientName              = "Alberto de Jesus";
         problemCode             = "#12345";
         genericProblemOverview  = "Problema no controle";
-        currentDestinationIndex = 0;
+
 
         defineLayoutsAndViews();
         startViews();
@@ -433,10 +451,10 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private boolean hasArrived(double lat, double lng) {
 
-        if(((cesar[currentDestinationIndex].latitude  + 0.012 > lat) &&
-            (cesar[currentDestinationIndex].latitude  - 0.012 < lat)) &&
-           ((cesar[currentDestinationIndex].longitude + 0.012 > lng) &&
-            (cesar[currentDestinationIndex].longitude - 0.012 < lng))) {
+        if(((cesar[currentDestinationIndex].latitude  + 0.01 > lat) &&
+            (cesar[currentDestinationIndex].latitude  - 0.01 < lat)) &&
+           ((cesar[currentDestinationIndex].longitude + 0.01 > lng) &&
+            (cesar[currentDestinationIndex].longitude - 0.01 < lng))) {
 
             return true;
 
