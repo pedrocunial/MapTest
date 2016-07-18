@@ -5,6 +5,7 @@ import android.support.v4.view.MotionEventCompat;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -26,7 +27,7 @@ public class FooterOnTouchListener implements View.OnTouchListener {
 
     public FooterOnTouchListener(boolean isLarge,
                                  LinearLayout footer, LinearLayout largeFooter,
-                                 ImageView icon, ImageView iconLarge) {
+                                 ImageView icon, ImageButton iconLarge) {
         this.isLarge     = isLarge;
         this.footer      = footer;
         this.largeFooter = largeFooter;

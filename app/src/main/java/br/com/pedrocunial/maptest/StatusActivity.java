@@ -34,10 +34,14 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     boolean foto=false;
     protected static final int CAMERA_PIC_REQUEST = 0;
 
+    private int index;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
+
+        index = getIntent().getExtras().getInt("index");
 
         //Get View Components
         btn_send = (Button) findViewById(R.id.send_btn);
@@ -68,7 +72,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             public void onClick(View view) {
                 //Back to Maps Activity
                 Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
-                Intent it = new Intent(StatusActivity.this, MapsActivity.class);
+                Intent it = new Intent(StatusActivity.this, MapsActivity.class)
+                        .putExtra("index", index);
                 startActivity(it);
             }
         });

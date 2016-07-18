@@ -21,12 +21,14 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationRequest;
@@ -37,6 +39,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.Polyline;
@@ -50,6 +53,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.pedrocunial.maptest.connect.ConnectAsyncTaskWithoutAlert;
+import br.com.pedrocunial.maptest.utils.Converter;
 import br.com.pedrocunial.maptest.utils.DrawerItemClickListener;
 import br.com.pedrocunial.maptest.utils.FooterOnTouchListener;
 import br.com.pedrocunial.maptest.utils.ImageOptions;
@@ -65,28 +69,31 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private boolean isHamburgerMenuOn = false;
     private boolean isFooterLarge;
 
-    private int                timePreview;
-    private int                currentDestinationIndex;
-    private String             clientName;
-    private String             problemCode;
-    private String             genericProblemOverview;
-    private LatLng             myPosition;
-    private String[]           dest;
-    private LatLng[]           cesar;
-    private TextView           largeDestinationView;
-    private TextView           largeProblemCodeView;
-    private TextView           clientNameView;
-    private TextView           genericProblemOverviewView;
-    private TextView           destinationView;
-    private TextView           problemCodeView;
-    private ImageView          problemIdentifierView;
-    private ImageView          largeProblemIdentifierView;
-    private GoogleMap          mMap;
-    private AlertDialog        dialog;        // Dialog (pop-up)
-    private LinearLayout       footerLayout;  // Map footer
-    private LinearLayout       largeFooterLayout;
-    private LocationRequest    mLocationRequest;
-    private GoogleApiClient    mGoogleApiClient;
+    private int             timePreview;
+    private int             currentDestinationIndex;
+    private String          clientName;
+    private String          problemCode;
+    private String          genericProblemOverview;
+    private LatLng          myPosition;
+    private String[]        dest;
+    private LatLng[]        cesar;
+    private TextView        largeDestinationView;
+    private TextView        largeProblemCodeView;
+    private TextView        clientNameView;
+    private TextView        genericProblemOverviewView;
+    private TextView        destinationView;
+    private TextView        problemCodeView;
+    private ImageView       problemIdentifierView;
+    private ImageView       largeProblemIdentifierView;
+    private GoogleMap       mMap;
+    private ImageButton     mapButton;
+    private AlertDialog     dialog;        // Dialog (pop-up)
+    private LinearLayout    footerLayout;  // Map footer
+    private LinearLayout    largeFooterLayout;
+    private LocationRequest mLocationRequest;
+    private GoogleApiClient mGoogleApiClient;
+
+    private LatLngBounds.Builder latLngBuilder;
 
     // Drawer Navigation
     private String                mActivityTitle;
@@ -108,16 +115,29 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
+        if(getIntent().getExtras() == null) {
+            currentDestinationIndex = 0;
+        } else {
+            currentDestinationIndex = getIntent().getExtras().getInt("index");
+        }
+
+        if(mMap == null) {
+            // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+
+        } else {
+            GooglePlayServicesUtil.isGooglePlayServicesAvailable(this);
+        }
 
         mActivityTitle = getTitle().toString();
 
         setupDrawer();
 
         setupDialog();
+
+        latLngBuilder = new LatLngBounds.Builder();
 
         buildGoogleApiClient();
     }
@@ -138,7 +158,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 // User clicked OK button
                 currentDestinationIndex++;
                 markDestination(dest[currentDestinationIndex], "Destino");
-                startActivity(new Intent(MapsActivity.this, StatusActivity.class));
+                startActivity(new Intent(MapsActivity.this, StatusActivity.class)
+                        .putExtra("index", currentDestinationIndex));
             }
         });
         builder.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
@@ -236,6 +257,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     }
 
     private void defineLayoutsAndViews() {
+        mapButton             = (ImageButton)  findViewById(R.id.map_button);
         footerLayout          = (LinearLayout) findViewById(R.id.footer);
         largeFooterLayout     = (LinearLayout) findViewById(R.id.extended_footer);
         destinationView       = (TextView)     findViewById(R.id.dest);
@@ -246,7 +268,9 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         problemIdentifierView = (ImageView)    findViewById(R.id.image_identifier);
 
         genericProblemOverviewView = (TextView) findViewById(R.id.generic_problem_overview);
-        largeProblemIdentifierView = (ImageView) findViewById(R.id.large_image_identifier);
+
+        // Large image view, I'm changing this for a while
+//        largeProblemIdentifierView = (ImageView) findViewById(R.id.large_image_identifier);
     }
 
     private void startViews() {
@@ -257,7 +281,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert clientNameView             != null;
         assert problemIdentifierView      != null;
         assert genericProblemOverviewView != null;
-        assert largeProblemIdentifierView != null;
+//        assert largeProblemIdentifierView != null;
         destinationView.setText(dest[currentDestinationIndex]);
         largeDestinationView.setText(dest[currentDestinationIndex]);
         problemCodeView.setText(problemCode);
@@ -267,7 +291,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         int randomImage = ImageOptions.getRandomImage();
         problemIdentifierView.setImageResource(randomImage);
-        largeProblemIdentifierView.setImageResource(randomImage);
+//        largeProblemIdentifierView.setImageResource(randomImage);
     }
 
     private void startLayouts() {
@@ -277,7 +301,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         assert largeFooterLayout != null;
         isFooterLarge             = false;
         footerOnTouchListener     = new FooterOnTouchListener(isFooterLarge, footerLayout, largeFooterLayout,
-                problemIdentifierView, largeProblemIdentifierView);
+                problemIdentifierView, mapButton);
 
         // Footer layout initialization
         footerLayout.setVisibility(View.VISIBLE);
@@ -288,16 +312,16 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         largeFooterLayout.setOnTouchListener(footerOnTouchListener);
 
         // Problem identifier (problem icon) initialization
-        largeProblemIdentifierView.setVisibility(View.INVISIBLE);
-
+//        largeProblemIdentifierView.setVisibility(View.INVISIBLE);
+        mapButton.setVisibility(View.INVISIBLE);
     }
 
     private void markDestination(String dest, String title) {
         double[] cesarLatLng = this.getLatLongFromPlace(dest);
         cesar[currentDestinationIndex] = new LatLng(cesarLatLng[0], cesarLatLng[1]);
         mMap.addMarker(new MarkerOptions().position(cesar[currentDestinationIndex]).title(title));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(cesar[currentDestinationIndex]));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(ZOOM));
+        mMap.animateCamera(CameraUpdateFactory.newLatLng(cesar[currentDestinationIndex]));
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(ZOOM));
     }
 
     public double[] getLatLongFromPlace(String place) {
@@ -422,13 +446,24 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         }
 
         mMap.clear();
-        Marker locationMarker = mMap.addMarker(new MarkerOptions()
+
+        Marker destinationMarker = mMap.addMarker(new MarkerOptions()
                 .position(cesar[currentDestinationIndex])
                 .title("Destino"));
-        mMap.addMarker(new MarkerOptions().position(myPosition).title("You!")
+
+        Marker locationMarker    = mMap.addMarker(new MarkerOptions()
+                .position(myPosition).title("You!")
                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.car)));
-        mMap.animateCamera(CameraUpdateFactory.newLatLng(myPosition));
-        locationMarker.showInfoWindow();
+
+        latLngBuilder.include(destinationMarker.getPosition());
+        latLngBuilder.include(locationMarker.getPosition());
+        LatLngBounds bounds = latLngBuilder.build();
+        mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(bounds,
+                (int) Converter.pxFromDp(this, 30)));
+
+        if(mMap.getCameraPosition().zoom > ZOOM) {
+            mMap.moveCamera(CameraUpdateFactory.zoomTo(ZOOM));
+        }
     }
 
     private boolean hasArrived(double lat, double lng) {

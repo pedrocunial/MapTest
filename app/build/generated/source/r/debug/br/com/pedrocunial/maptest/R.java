@@ -3457,7 +3457,7 @@ containing a value of this type.
         public static final int noaudio=0x7f0200ca;
         public static final int nochannel=0x7f0200cb;
         public static final int nosignal=0x7f0200cc;
-        public static final int notification_template_icon_bg=0x7f0200e5;
+        public static final int notification_template_icon_bg=0x7f0200e6;
         public static final int password=0x7f0200cd;
         public static final int places_ic_clear=0x7f0200ce;
         public static final int places_ic_search=0x7f0200cf;
@@ -3480,8 +3480,9 @@ containing a value of this type.
         public static final int quantum_ic_skip_previous_white_24=0x7f0200e0;
         public static final int quantum_ic_stop_grey600_48=0x7f0200e1;
         public static final int quantum_ic_stop_white_24=0x7f0200e2;
-        public static final int shadow_10331=0x7f0200e3;
-        public static final int sky=0x7f0200e4;
+        public static final int route=0x7f0200e3;
+        public static final int shadow_10331=0x7f0200e4;
+        public static final int sky=0x7f0200e5;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f0e00dc;
@@ -3618,7 +3619,6 @@ containing a value of this type.
         public static final int intent_extra_data=0x7f0e0040;
         public static final int item_touch_helper_previous_elevation=0x7f0e000a;
         public static final int large_icon_uri=0x7f0e0041;
-        public static final int large_image_identifier=0x7f0e00b2;
         public static final int left=0x7f0e002c;
         public static final int left_drawer=0x7f0e00b4;
         public static final int light=0x7f0e0038;
@@ -3630,6 +3630,7 @@ containing a value of this type.
         public static final int loginText=0x7f0e00e2;
         public static final int logo_only=0x7f0e0072;
         public static final int map=0x7f0e00af;
+        public static final int map_button=0x7f0e00b2;
         public static final int match_global_nicknames=0x7f0e005b;
         public static final int match_parent=0x7f0e006b;
         public static final int media_actions=0x7f0e00f6;
