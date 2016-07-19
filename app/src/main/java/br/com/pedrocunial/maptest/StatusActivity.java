@@ -50,10 +50,10 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         index = getIntent().getExtras().getInt("index");
 
         //Get View Components
-        buttonSend = (Button) findViewById(R.id.send_btn);
-        buttonNext = (Button) findViewById(R.id.next_btn);
+        buttonSend  = (Button) findViewById(R.id.send_btn);
+        buttonNext  = (Button) findViewById(R.id.next_btn);
         imageButton = (ImageButton) findViewById(R.id.camera_btn);
-        commentText=(EditText) findViewById(R.id.comment_window);
+        commentText =(EditText) findViewById(R.id.comment_window);
         //sets spinner list
         setSpinnerList();
 
@@ -68,22 +68,45 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             @Override
             public void onClick(View view) {
                 //Opens camera app
+                foto          = true;
                 Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
-                foto = true;
+                startActivityForResult(intent, 1);
             }
         });
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Back to Maps Activity
-                Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
-                Intent it = new Intent(StatusActivity.this, MapsActivity.class)
-                        .putExtra("index", index);
-                startActivity(it);
+                endActivity();
             }
         });
 
+    }
+
+    private void endActivity() {
+        //Back to Maps Activity
+        boolean success = false;
+        try {
+            success = problemPicture.delete();
+        } catch(NullPointerException e) {
+            Log.d(TAG, "No picture found");
+        }
+        if(success) {
+            Log.i(TAG, "Picture deleted");
+        } else {
+            Log.i(TAG, "Picture could not be deleted");
+        }
+
+        success = deleteFile("problemPicture.png");
+        if(success) {
+            Log.d(TAG, "File deleted");
+        } else {
+            Log.d(TAG, "File could not be deleted");
+        }
+
+        Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
+        Intent it = new Intent(StatusActivity.this, MapsActivity.class)
+                .putExtra("index", index);
+        startActivity(it);
     }
 
     @Override
@@ -115,7 +138,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
-        if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)    ) {
+        if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)) {
             thumbnail       = (Bitmap)    data.getExtras().get("data");
             ImageView image = (ImageView) findViewById(R.id.image_comment);
             image.setImageBitmap(thumbnail);
@@ -132,13 +155,6 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 }
             } catch (IOException e) {
                 Log.e("BROKEN", "Could not write file " + e.getMessage());
-            }
-            try {
-                // Deleting the picture taken from local storage
-                getContentResolver().delete(data.getData(), null, null);
-                getContentResolver().delete(Uri.fromFile(problemPicture), null, null);
-            } catch(NullPointerException e) {
-                Log.i(TAG, "Data (and picture) not found, NullPointerException was thrown :(");
             }
         }
     }
@@ -167,12 +183,13 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     }
     public void sendEmail(){
         Intent i = new Intent(Intent.ACTION_SEND);
-        if(foto) { //if user attachs a pic
+        if(foto) { //if user attached a pic
             i.setType("image/png");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
             i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
+            problemPicture.delete();
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
@@ -198,6 +215,12 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             } catch (NullPointerException e) {
                 // In case we don't find it
                 Log.i(TAG, "File not found");
+            }
+
+            try {
+                deleteFile("problemPicture.png");
+            } catch(NullPointerException e) {
+                Log.i(TAG, "Context file not found");
             }
         }
         else {
