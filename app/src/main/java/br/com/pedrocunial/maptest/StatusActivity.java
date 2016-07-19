@@ -40,7 +40,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
     private int index;
 
-    private final String TAG = this.toString();
+    private final String TAG = "StatusActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,21 +111,20 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
+        // ???
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
-        if (requestCode == CAMERA_PIC_REQUEST) {
+        if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)    ) {
             thumbnail = (Bitmap) data.getExtras().get("data");
             ImageView image = (ImageView) findViewById(R.id.image_comment);
             image.setImageBitmap(thumbnail);
-
 
             try {
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
                     // We + "/MapTest" to make it storage on a deeper directory for our application
-                    problemPicture       = new File(root + "/MapTest", "problemPicture.png");
+                    problemPicture       = new File(root, "problemPicture.png");
                     FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
@@ -134,7 +133,12 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             } catch (IOException e) {
                 Log.e("BROKEN", "Could not write file " + e.getMessage());
             }
-
+            try {
+                // Deleting the picture taken from local storage
+                this.getContentResolver().delete(data.getData(), null, null);
+            } catch(NullPointerException e) {
+                Log.i(TAG, "Data (and picture) not found, NullPointerException was thrown :(");
+            }
         }
     }
     public void setSpinnerList(){
@@ -179,6 +183,14 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 if(success) {
                     Log.i(TAG, "File deleted successfully");
                 } else {
+                    if(problemPicture.isDirectory()) {
+                        success = deleteDirectory(problemPicture);
+                        if(success) {
+                            Log.i(TAG, "Directory deleted successfully!");
+                        } else {
+                            Log.i(TAG, "Could not delete directory");
+                        }
+                    }
                     Log.i(TAG, "File could not be deleted");
                 }
             } catch (NullPointerException e) {
@@ -197,6 +209,18 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private boolean deleteDirectory(File file) {
+        File[] files = file.listFiles(); // get files inside dir
+        for(File f : files) {
+            if(f.isDirectory()) {
+                deleteDirectory(f);
+            } else {
+                f.delete();
+            }
+        }
+        return file.delete();
     }
 
 }
