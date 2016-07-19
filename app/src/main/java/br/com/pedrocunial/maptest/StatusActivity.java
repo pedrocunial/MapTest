@@ -3,6 +3,7 @@ package br.com.pedrocunial.maptest;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
+import android.nfc.Tag;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,6 +40,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
     private int index;
 
+    private final String TAG = this.toString();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,7 +70,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 //Opens camera app
                 Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(intent, 0);
-                foto=true;
+                foto = true;
             }
         });
         buttonNext.setOnClickListener(new View.OnClickListener() {
@@ -122,7 +124,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             try {
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
-                    problemPicture = new File(root, "problemPicture.png");
+                    // We + "/MapTest" to make it storage on a deeper directory for our application
+                    problemPicture       = new File(root + "/MapTest", "problemPicture.png");
                     FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
@@ -169,6 +172,18 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
+            }
+            try {
+                // We try to delete the picture
+                boolean success = problemPicture.delete();
+                if(success) {
+                    Log.i(TAG, "File deleted successfully");
+                } else {
+                    Log.i(TAG, "File could not be deleted");
+                }
+            } catch (NullPointerException e) {
+                // In case we don't find it
+                Log.i(TAG, "File not found");
             }
         }
         else {
