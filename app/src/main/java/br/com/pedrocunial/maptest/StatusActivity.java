@@ -3,7 +3,6 @@ package br.com.pedrocunial.maptest;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.nfc.Tag;
 import android.os.Environment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

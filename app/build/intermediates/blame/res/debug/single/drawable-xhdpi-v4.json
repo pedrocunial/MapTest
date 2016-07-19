@@ -44,6 +44,10 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-xhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_directions_black_48dp.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable-xhdpi/ic_directions_black_48dp.png"
+    },
+    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-xhdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
     },
