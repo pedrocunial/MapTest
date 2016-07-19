@@ -25,16 +25,20 @@ import java.util.List;
 
 public class StatusActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     //View Parameters
-    Button btn_send, btn_next;
-    EditText comment_text;
-    ImageButton image_btn;
+    private Button      buttonSend;
+    private Button      buttonNext;
+    private EditText    commentText;
+    private ImageButton imageButton;
+    
     //Email Parameters
-    Bitmap thumbnail;
-    File pic;
-    boolean foto=false;
+    private Bitmap  thumbnail;
+    private File    problemPicture;
+    private boolean foto = false;
+
     protected static final int CAMERA_PIC_REQUEST = 0;
 
     private int index;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,21 +48,21 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         index = getIntent().getExtras().getInt("index");
 
         //Get View Components
-        btn_send = (Button) findViewById(R.id.send_btn);
-        btn_next = (Button) findViewById(R.id.next_btn);
-        image_btn = (ImageButton) findViewById(R.id.camera_btn);
-        comment_text=(EditText) findViewById(R.id.comment_window);
+        buttonSend = (Button) findViewById(R.id.send_btn);
+        buttonNext = (Button) findViewById(R.id.next_btn);
+        imageButton = (ImageButton) findViewById(R.id.camera_btn);
+        commentText=(EditText) findViewById(R.id.comment_window);
         //sets spinner list
         setSpinnerList();
 
-        btn_send.setOnClickListener(new View.OnClickListener() {
+        buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendEmail();
             }
         });
 
-        image_btn.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Opens camera app
@@ -67,7 +71,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 foto=true;
             }
         });
-        btn_next.setOnClickListener(new View.OnClickListener() {
+        buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Back to Maps Activity
@@ -118,8 +122,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             try {
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
-                    pic = new File(root, "pic.png");
-                    FileOutputStream out = new FileOutputStream(pic);
+                    problemPicture = new File(root, "problemPicture.png");
+                    FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
                     out.close();
@@ -149,9 +153,9 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     }
     public void enableViewComponents(boolean b){
         //Enables Send button and Comment Edit Text to user
-        btn_send.setEnabled(b);
-        comment_text.setEnabled(b);
-        btn_next.setEnabled(b);
+        buttonSend.setEnabled(b);
+        commentText.setEnabled(b);
+        buttonNext.setEnabled(b);
     }
     public void sendEmail(){
         Intent i = new Intent(Intent.ACTION_SEND);
@@ -159,8 +163,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             i.setType("image/png");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
-            i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(pic));
-            i.putExtra(Intent.EXTRA_TEXT, comment_text.getText());
+            i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
+            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
@@ -171,7 +175,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             i.setType("plane/text");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
-            i.putExtra(Intent.EXTRA_TEXT, comment_text.getText());
+            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
