@@ -272,12 +272,12 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/res/drawable-hdpi-v4/ic_plusone_small_off_client.png"
     },
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_media_route_disabled_mono_dark.png",

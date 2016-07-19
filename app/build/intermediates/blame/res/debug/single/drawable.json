@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_spinner_textfield_background_material.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_media_route_connecting_mono_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_media_route_connecting_mono_light.xml"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_btn_radio_material.xml",
@@ -100,12 +100,12 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_edit_text_material.xml"
     },
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind30.xml",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable/cast_ic_notification_rewind30.xml"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/mr_ic_pause_light.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable/mr_ic_pause_light.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_ic_notification_rewind30.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable/cast_ic_notification_rewind30.xml"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/bob.png",
@@ -188,12 +188,12 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/autoshutdown.png"
     },
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_gradient_light.xml",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable/cast_mini_controller_gradient_light.xml"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_text_dark.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable/common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/cast_mini_controller_gradient_light.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable/cast_mini_controller_gradient_light.xml"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/noaudio.png",
@@ -276,12 +276,12 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/drawable/nosignal.png"
     },
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/abc_dialog_material_background.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/drawable/shadow_10331.9.png",

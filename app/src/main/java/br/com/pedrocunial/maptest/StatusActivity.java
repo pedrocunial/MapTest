@@ -116,7 +116,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
         if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)    ) {
-            thumbnail = (Bitmap) data.getExtras().get("data");
+            thumbnail       = (Bitmap)    data.getExtras().get("data");
             ImageView image = (ImageView) findViewById(R.id.image_comment);
             image.setImageBitmap(thumbnail);
 
@@ -124,7 +124,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
                     // We + "/MapTest" to make it storage on a deeper directory for our application
-                    problemPicture       = new File(root, "problemPicture.png");
+                    problemPicture       = new File(getCacheDir(), "problemPicture.png");
                     FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
@@ -135,7 +135,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             }
             try {
                 // Deleting the picture taken from local storage
-                this.getContentResolver().delete(data.getData(), null, null);
+                getContentResolver().delete(data.getData(), null, null);
+                getContentResolver().delete(Uri.fromFile(problemPicture), null, null);
             } catch(NullPointerException e) {
                 Log.i(TAG, "Data (and picture) not found, NullPointerException was thrown :(");
             }
@@ -175,7 +176,8 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
-                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou",
+                        Toast.LENGTH_SHORT).show();
             }
             try {
                 // We try to delete the picture
