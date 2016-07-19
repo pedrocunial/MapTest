@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.jaredrummler.materialspinner.MaterialSpinner;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -24,16 +27,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StatusActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
     //View Parameters
-    private Button      buttonSend;
-    private Button      buttonNext;
     private EditText    commentText;
+    private Button      buttonSend;
+    private ImageButton buttonNext;
     private ImageButton imageButton;
     
     //Email Parameters
     private Bitmap  thumbnail;
     private File    problemPicture;
     private boolean foto = false;
+
+    private Uri fileUri;
 
     protected static final int CAMERA_PIC_REQUEST = 0;
 
@@ -50,7 +56,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
         //Get View Components
         buttonSend  = (Button) findViewById(R.id.send_btn);
-        buttonNext  = (Button) findViewById(R.id.next_btn);
+        buttonNext  = (ImageButton) findViewById(R.id.next_btn);
         imageButton = (ImageButton) findViewById(R.id.camera_btn);
         commentText =(EditText) findViewById(R.id.comment_window);
         //sets spinner list
@@ -67,8 +73,11 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             @Override
             public void onClick(View view) {
                 //Opens camera app
-                foto          = true;
-                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                foto           = true;
+                Intent intent  = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                problemPicture = new File(getCacheDir(), "problemPicture.png");
+                fileUri = Uri.fromFile(problemPicture); // create a file to save the image
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
                 startActivityForResult(intent, 1);
             }
         });
@@ -146,7 +155,6 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
                     // We + "/MapTest" to make it storage on a deeper directory for our application
-                    problemPicture       = new File(getCacheDir(), "problemPicture.png");
                     FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
