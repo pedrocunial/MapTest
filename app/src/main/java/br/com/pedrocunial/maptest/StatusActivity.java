@@ -94,8 +94,12 @@ public class StatusActivity extends AppCompatActivity {
                 if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
                     // Create the File where the photo should go
                     problemPicture = null;
-                    problemPicture = new File(view.getContext().getCacheDir(),
-                            "problemPicture.png");
+                    File outputDir = view.getContext().getCacheDir();
+                    try {
+                        problemPicture = File.createTempFile("visit", ".png", outputDir);
+                    } catch(IOException e) {
+                        e.printStackTrace();
+                    }
                     // Continue only if the File was successfully created
                     if (problemPicture != null) {
                         // create a file to save the image
@@ -150,26 +154,26 @@ public class StatusActivity extends AppCompatActivity {
         //Converts picture to PNG
         Log.d(TAG, "inside activityResult");
         if ((requestCode == REQUEST_IMAGE_CAPTURE) && (resultCode == RESULT_OK)) {
-            Uri fileUri = Uri.fromFile(problemPicture);
             try {
                 thumbnail = MediaStore.Images.Media.getBitmap(this.getContentResolver(), fileUri);
             } catch(IOException e) {
                 e.printStackTrace();
+                Log.i(TAG, "Could not set thumbnail");
             }
             image.setImageBitmap(thumbnail);
 
-            try {
-                File root = Environment.getExternalStorageDirectory();
-                if (root.canWrite()){
-                    // We + "/MapTest" to make it storage on a deeper directory for our application
-                    out = new FileOutputStream(problemPicture);
-                    thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
-                    out.flush();
-                    out.close();
-                }
-            } catch (IOException e) {
-                Log.e("BROKEN", "Could not write file " + e.getMessage());
-            }
+//            try {
+//                File root = Environment.getExternalStorageDirectory();
+//                if (root.canWrite()){
+//                    // We + "/MapTest" to make it storage on a deeper directory for our application
+//                    out = new FileOutputStream(problemPicture);
+//                    thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
+//                    out.flush();
+//                    out.close();
+//                }
+//            } catch (IOException e) {
+//                Log.e("BROKEN", "Could not write file " + e.getMessage());
+//            }
         }
     }
     public void setSpinnerList(){
@@ -226,7 +230,39 @@ public class StatusActivity extends AppCompatActivity {
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
             i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
-        } else {
+            try {
+                startActivity(Intent.createChooser(i, "Enviando Email..."));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Log.i(TAG, "Communication failed");
+            }
+            try {
+                // We try to delete the picture
+                boolean success = problemPicture.delete();
+                if(success) {
+                    Log.i(TAG, "File deleted successfully");
+                } else {
+                    if(problemPicture.isDirectory()) {
+                        success = deleteDirectory(problemPicture);
+                        if(success) {
+                            Log.i(TAG, "Directory deleted successfully!");
+                        } else {
+                            Log.i(TAG, "Could not delete directory");
+                        }
+                    }
+                    Log.i(TAG, "File could not be deleted");
+                }
+            } catch (NullPointerException e) {
+                // In case we don't find it
+                Log.i(TAG, "File not found");
+            }
+
+            try {
+                deleteFile("problemPicture.png");
+            } catch(NullPointerException e) {
+                Log.i(TAG, "Context file not found");
+            }
+        }
+        else {
             i.setType("plane/text");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
