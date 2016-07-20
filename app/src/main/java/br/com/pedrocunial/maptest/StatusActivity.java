@@ -226,40 +226,7 @@ public class StatusActivity extends AppCompatActivity {
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
             i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
-            problemPicture.delete();
-            try {
-                startActivity(Intent.createChooser(i, "Enviando Email..."));
-            } catch (android.content.ActivityNotFoundException ex) {
-                Log.i(TAG, "Communication failed");
-            }
-            try {
-                // We try to delete the picture
-                boolean success = problemPicture.delete();
-                if(success) {
-                    Log.i(TAG, "File deleted successfully");
-                } else {
-                    if(problemPicture.isDirectory()) {
-                        success = deleteDirectory(problemPicture);
-                        if(success) {
-                            Log.i(TAG, "Directory deleted successfully!");
-                        } else {
-                            Log.i(TAG, "Could not delete directory");
-                        }
-                    }
-                    Log.i(TAG, "File could not be deleted");
-                }
-            } catch (NullPointerException e) {
-                // In case we don't find it
-                Log.i(TAG, "File not found");
-            }
-
-            try {
-                deleteFile("problemPicture.png");
-            } catch(NullPointerException e) {
-                Log.i(TAG, "Context file not found");
-            }
-        }
-        else {
+        } else {
             i.setType("plane/text");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
