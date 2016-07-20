@@ -30,13 +30,13 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="15sp"/>
+            android:layout_height="7sp"/>
 
         <!-- TBD -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="15sp"
             android:id="@+id/problem_code"
             android:maxLines="1"/>
 

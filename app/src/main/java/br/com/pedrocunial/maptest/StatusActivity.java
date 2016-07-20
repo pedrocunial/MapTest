@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,8 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.jaredrummler.materialspinner.MaterialSpinner;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -24,17 +27,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StatusActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
     //View Parameters
-    Button btn_send, btn_next;
-    EditText comment_text;
-    ImageButton image_btn;
+    private EditText    commentText;
+    private Button      buttonSend;
+    private ImageButton buttonNext;
+    private ImageButton imageButton;
+    
     //Email Parameters
-    Bitmap thumbnail;
-    File pic;
-    boolean foto=false;
+    private Bitmap  thumbnail;
+    private File    problemPicture;
+    private boolean foto = false;
+
+    private Uri fileUri;
+
     protected static final int CAMERA_PIC_REQUEST = 0;
 
     private int index;
+
+    private final String TAG = "StatusActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,40 +55,66 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         index = getIntent().getExtras().getInt("index");
 
         //Get View Components
-        btn_send = (Button) findViewById(R.id.send_btn);
-        btn_next = (Button) findViewById(R.id.next_btn);
-        image_btn = (ImageButton) findViewById(R.id.camera_btn);
-        comment_text=(EditText) findViewById(R.id.comment_window);
+        buttonSend  = (Button) findViewById(R.id.send_btn);
+        buttonNext  = (ImageButton) findViewById(R.id.next_btn);
+        imageButton = (ImageButton) findViewById(R.id.camera_btn);
+        commentText =(EditText) findViewById(R.id.comment_window);
         //sets spinner list
         setSpinnerList();
 
-        btn_send.setOnClickListener(new View.OnClickListener() {
+        buttonSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sendEmail();
             }
         });
 
-        image_btn.setOnClickListener(new View.OnClickListener() {
+        imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Opens camera app
-                Intent intent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 0);
-                foto=true;
+                foto           = true;
+                Intent intent  = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+                problemPicture = new File(getCacheDir(), "problemPicture.png");
+                fileUri = Uri.fromFile(problemPicture); // create a file to save the image
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
+                startActivityForResult(intent, 1);
             }
         });
-        btn_next.setOnClickListener(new View.OnClickListener() {
+        buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Back to Maps Activity
-                Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
-                Intent it = new Intent(StatusActivity.this, MapsActivity.class)
-                        .putExtra("index", index);
-                startActivity(it);
+                endActivity();
             }
         });
 
+    }
+
+    private void endActivity() {
+        //Back to Maps Activity
+        boolean success = false;
+        try {
+            success = problemPicture.delete();
+        } catch(NullPointerException e) {
+            Log.d(TAG, "No picture found");
+        }
+        if(success) {
+            Log.i(TAG, "Picture deleted");
+        } else {
+            Log.i(TAG, "Picture could not be deleted");
+        }
+
+        success = deleteFile("problemPicture.png");
+        if(success) {
+            Log.d(TAG, "File deleted");
+        } else {
+            Log.d(TAG, "File could not be deleted");
+        }
+
+        Toast.makeText(getApplicationContext(), "OS Finalizada",Toast.LENGTH_SHORT).show();
+        Intent it = new Intent(StatusActivity.this, MapsActivity.class)
+                .putExtra("index", index);
+        startActivity(it);
     }
 
     @Override
@@ -105,21 +142,20 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
+        // ???
     }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
-        if (requestCode == CAMERA_PIC_REQUEST) {
-            thumbnail = (Bitmap) data.getExtras().get("data");
+        if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)) {
+            thumbnail       = (Bitmap)    data.getExtras().get("data");
             ImageView image = (ImageView) findViewById(R.id.image_comment);
             image.setImageBitmap(thumbnail);
-
 
             try {
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
-                    pic = new File(root, "pic.png");
-                    FileOutputStream out = new FileOutputStream(pic);
+                    // We + "/MapTest" to make it storage on a deeper directory for our application
+                    FileOutputStream out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
                     out.close();
@@ -127,7 +163,6 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             } catch (IOException e) {
                 Log.e("BROKEN", "Could not write file " + e.getMessage());
             }
-
         }
     }
     public void setSpinnerList(){
@@ -149,35 +184,75 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     }
     public void enableViewComponents(boolean b){
         //Enables Send button and Comment Edit Text to user
-        btn_send.setEnabled(b);
-        comment_text.setEnabled(b);
-        btn_next.setEnabled(b);
+        buttonSend.setEnabled(b);
+        commentText.setEnabled(b);
+        buttonNext.setEnabled(b);
     }
     public void sendEmail(){
         Intent i = new Intent(Intent.ACTION_SEND);
-        if(foto) { //if user attachs a pic
+        if(foto) { //if user attached a pic
             i.setType("image/png");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
-            i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(pic));
-            i.putExtra(Intent.EXTRA_TEXT, comment_text.getText());
+            i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
+            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
+            problemPicture.delete();
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
-                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
+                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou",
+                        Toast.LENGTH_SHORT).show();
+            }
+            try {
+                // We try to delete the picture
+                boolean success = problemPicture.delete();
+                if(success) {
+                    Log.i(TAG, "File deleted successfully");
+                } else {
+                    if(problemPicture.isDirectory()) {
+                        success = deleteDirectory(problemPicture);
+                        if(success) {
+                            Log.i(TAG, "Directory deleted successfully!");
+                        } else {
+                            Log.i(TAG, "Could not delete directory");
+                        }
+                    }
+                    Log.i(TAG, "File could not be deleted");
+                }
+            } catch (NullPointerException e) {
+                // In case we don't find it
+                Log.i(TAG, "File not found");
+            }
+
+            try {
+                deleteFile("problemPicture.png");
+            } catch(NullPointerException e) {
+                Log.i(TAG, "Context file not found");
             }
         }
         else {
             i.setType("plane/text");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
-            i.putExtra(Intent.EXTRA_TEXT, comment_text.getText());
+            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
                 Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    private boolean deleteDirectory(File file) {
+        File[] files = file.listFiles(); // get files inside dir
+        for(File f : files) {
+            if(f.isDirectory()) {
+                deleteDirectory(f);
+            } else {
+                f.delete();
+            }
+        }
+        return file.delete();
     }
 
 }
