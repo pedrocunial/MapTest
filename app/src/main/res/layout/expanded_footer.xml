@@ -30,7 +30,8 @@
                 android:background="#0000"
                 android:id="@+id/map_button"
                 android:scaleType="fitXY"
-                android:tint="@color/colorPrimary"/>
+                android:tint="#F44336"/>
+            <!-- Set the red tone to be in the material palette -->
 
             <Space
                 android:layout_width="7dp"

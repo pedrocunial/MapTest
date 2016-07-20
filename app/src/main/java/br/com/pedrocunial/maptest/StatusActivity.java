@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,6 +20,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.jaredrummler.materialspinner.MaterialSpinner;
+import com.rengwuxian.materialedittext.MaterialEditText;
+import com.rengwuxian.materialedittext.MaterialMultiAutoCompleteTextView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -26,14 +29,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StatusActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+public class StatusActivity extends AppCompatActivity {
 
     //View Parameters
-    private EditText    commentText;
-    private Button      buttonSend;
-    private ImageButton buttonNext;
-    private ImageButton imageButton;
-    
+    private Button               buttonSend;
+    private FloatingActionButton buttonNext;
+    private FloatingActionButton imageButton;
+    private MaterialEditText     commentText;
+
     //Email Parameters
     private Bitmap  thumbnail;
     private File    problemPicture;
@@ -61,9 +64,9 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
 
         //Get View Components
         buttonSend  = (Button) findViewById(R.id.send_btn);
-        buttonNext  = (ImageButton) findViewById(R.id.next_btn);
-        imageButton = (ImageButton) findViewById(R.id.camera_btn);
-        commentText =(EditText) findViewById(R.id.comment_window);
+        buttonNext  = (FloatingActionButton) findViewById(R.id.next_btn);
+        imageButton = (FloatingActionButton) findViewById(R.id.camera_btn);
+        commentText = (MaterialEditText) findViewById(R.id.comment_window);
         //sets spinner list
         setSpinnerList();
 
@@ -110,6 +113,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         }
 
         success = deleteFile("problemPicture.png");
+
         if(success) {
             Log.d(TAG, "File deleted");
         } else {
@@ -122,33 +126,6 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         startActivity(it);
     }
 
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long l) {
-        // Selects dropdown item
-        String item = parent.getItemAtPosition(position).toString();
-        switch (position){
-            case 0:Toast.makeText(parent.getContext(), "Selecionado: " + item, Toast.LENGTH_LONG).show();
-                   enableViewComponents(false);
-                   break;
-            case 1:Toast.makeText(parent.getContext(), "Selecionado: " + item, Toast.LENGTH_LONG).show();
-                   enableViewComponents(true);
-                   break;
-            case 2:Toast.makeText(parent.getContext(), "Selecionado: " + item, Toast.LENGTH_LONG).show();
-                   enableViewComponents(true);
-                   break;
-            case 3:Toast.makeText(parent.getContext(), "Selecionado: " + item, Toast.LENGTH_LONG).show();
-                   enableViewComponents(true);
-                   break;
-            case 4:Toast.makeText(parent.getContext(), "Selecionado: " + item, Toast.LENGTH_LONG).show();
-                    enableViewComponents(true);
-                   break;
-        }
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-        // ???
-    }
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
         if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)) {
@@ -172,9 +149,9 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
     }
     public void setSpinnerList(){
         //Set Spinner Dropdown List
-        Spinner spinner = (Spinner) findViewById(R.id.status_op);
-        spinner.setOnItemSelectedListener(this);
+        MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.status_op);
 
+        // Items
         List<String> categories = new ArrayList<String>();
         categories.add("Status");
         categories.add("Resolvido");
@@ -182,10 +159,33 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         categories.add("OS Errada");
         categories.add("Não Resolvido");
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, categories);
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(dataAdapter);
-        enableViewComponents(false);
+        // Setting them in the spinner
+        spinner.setItems(categories);
+
+        // Adding the listener to the spinner
+        spinner.setOnItemSelectedListener(new MaterialSpinner.OnItemSelectedListener<String>() {
+            @Override
+            public void onItemSelected(MaterialSpinner view, int position, long l, String item) {
+                // Selects dropdown item
+                switch (position){
+                    case 0:
+                        enableViewComponents(false);
+                        break;
+                    case 1:
+                        enableViewComponents(true);
+                        break;
+                    case 2:
+                        enableViewComponents(true);
+                        break;
+                    case 3:
+                        enableViewComponents(true);
+                        break;
+                    case 4:
+                        enableViewComponents(true);
+                        break;
+                }
+            }
+        });
     }
     public void enableViewComponents(boolean b){
         //Enables Send button and Comment Edit Text to user
@@ -205,8 +205,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
-                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou",
-                        Toast.LENGTH_SHORT).show();
+                Log.i(TAG, "Communication failed");
             }
             try {
                 // We try to delete the picture
@@ -243,7 +242,7 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
             try {
                 startActivity(Intent.createChooser(i, "Enviando Email..."));
             } catch (android.content.ActivityNotFoundException ex) {
-                Toast.makeText(StatusActivity.this, "Comunicaçaõ Falhou", Toast.LENGTH_SHORT).show();
+                Log.i(TAG, "Communication Failed");
             }
         }
     }

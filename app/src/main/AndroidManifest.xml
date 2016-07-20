@@ -58,7 +58,7 @@
         </activity>
         <activity
             android:name=".StatusActivity"
-            android:theme="@style/AppThemeNoActionBar">
+            android:theme="@style/AppTheme">
         </activity>
 
         <meta-data

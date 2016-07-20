@@ -79,7 +79,7 @@
         </activity>
         <activity
             android:name="br.com.pedrocunial.maptest.StatusActivity"
-            android:theme="@style/AppThemeNoActionBar" >
+            android:theme="@style/AppTheme" >
         </activity>
 
         <meta-data

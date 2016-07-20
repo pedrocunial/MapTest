@@ -48,8 +48,9 @@
     <color name="cast_libraries_material_featurehighlight_text_header_color">#FFFFFFFF</color>
     <color name="cast_mini_controller_main_background">#FFFFFF</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorPrimary">#FF3333</color>
-    <color name="colorPrimaryDark">#cc0000</color>
+    <color name="colorPrimary">#C62828</color>
+    <color name="colorPrimaryDark">#B71C1C</color>
+    <color name="colorVivid">#D50000</color>
     <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
     <color name="common_google_signin_btn_text_dark_disabled">#1F000000</color>
     <color name="common_google_signin_btn_text_dark_focused">@android:color/black</color>
@@ -178,6 +179,7 @@
     <declare-styleable name="ListPopupWindow"><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/></declare-styleable>
     <declare-styleable name="LoadingImageView"><attr format="enum" name="imageAspectRatioAdjust"><enum name="none" value="0"/><enum name="adjust_width" value="1"/><enum name="adjust_height" value="2"/></attr><attr format="float" name="imageAspectRatio"/><attr format="boolean" name="circleCrop"/></declare-styleable>
     <declare-styleable name="MapAttrs"><attr format="enum" name="mapType"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="satellite" value="2"/><enum name="terrain" value="3"/><enum name="hybrid" value="4"/></attr><attr format="float" name="cameraBearing"/><attr format="float" name="cameraTargetLat"/><attr format="float" name="cameraTargetLng"/><attr format="float" name="cameraTilt"/><attr format="float" name="cameraZoom"/><attr format="boolean" name="liteMode"/><attr format="boolean" name="uiCompass"/><attr format="boolean" name="uiRotateGestures"/><attr format="boolean" name="uiScrollGestures"/><attr format="boolean" name="uiTiltGestures"/><attr format="boolean" name="uiZoomControls"/><attr format="boolean" name="uiZoomGestures"/><attr format="boolean" name="useViewLifecycle"/><attr format="boolean" name="zOrderOnTop"/><attr format="boolean" name="uiMapToolbar"/><attr format="boolean" name="ambientEnabled"/></declare-styleable>
+    <declare-styleable name="MaterialEditText"><attr format="color" name="met_baseColor"/><attr format="color" name="met_primaryColor"/><attr name="met_floatingLabel"><enum name="none" value="0"/><enum name="normal" value="1"/><enum name="highlight" value="2"/></attr><attr format="color" name="met_errorColor"/><attr format="integer" name="met_minCharacters"/><attr format="integer" name="met_maxCharacters"/><attr format="boolean" name="met_singleLineEllipsis"/><attr format="integer" name="met_minBottomTextLines"/><attr format="string" name="met_helperText"/><attr format="color" name="met_helperTextColor"/><attr format="string" name="met_accentTypeface"/><attr format="string" name="met_typeface"/><attr format="string" name="met_floatingLabelText"/><attr format="dimension" name="met_floatingLabelPadding"/><attr format="boolean" name="met_hideUnderline"/><attr format="color" name="met_underlineColor"/><attr format="boolean" name="met_autoValidate"/><attr format="reference" name="met_iconLeft"/><attr format="reference" name="met_iconRight"/><attr format="dimension" name="met_iconPadding"/><attr format="boolean" name="met_clearButton"/><attr format="dimension" name="met_floatingLabelTextSize"/><attr format="color" name="met_floatingLabelTextColor"/><attr format="dimension" name="met_bottomTextSize"/><attr format="boolean" name="met_floatingLabelAlwaysShown"/><attr format="boolean" name="met_helperTextAlwaysShown"/><attr format="boolean" name="met_floatingLabelAnimating"/><attr format="color" name="met_textColor"/><attr format="color" name="met_textColorHint"/><attr format="boolean" name="met_validateOnFocusLost"/><attr format="boolean" name="met_checkCharactersCountAtBeginning"/></declare-styleable>
     <declare-styleable name="MaterialSpinner"><attr format="color" name="ms_arrow_tint"/><attr format="boolean" name="ms_hide_arrow"/><attr format="color" name="ms_background_color"/><attr format="color" name="ms_text_color"/><attr format="dimension" name="ms_dropdown_max_height"/><attr format="dimension" name="ms_dropdown_height"><enum name="fill_parent" value="-1"/><enum name="match_parent" value="-1"/><enum name="wrap_content" value="-2"/></attr></declare-styleable>
     <declare-styleable name="MediaRouteButton"><attr format="reference" name="externalRouteEnabledDrawable"/><attr name="android:minWidth"/><attr name="android:minHeight"/></declare-styleable>
     <declare-styleable name="MenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
@@ -279,6 +281,8 @@
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
     <dimen name="cast_intro_overlay_button_margin_bottom">50dp</dimen>
     <dimen name="cast_intro_overlay_focus_radius">35dp</dimen>
     <dimen name="cast_intro_overlay_title_margin_top">100dp</dimen>
@@ -300,6 +304,8 @@
     <dimen name="cast_notification_image_size">75dp</dimen>
     <dimen name="cast_tracks_chooser_dialog_no_message_text_size">18sp</dimen>
     <dimen name="cast_tracks_chooser_dialog_row_text_size">18sp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="default_padding_top">8dp</dimen>
     <dimen name="design_appbar_elevation">4dp</dimen>
     <dimen name="design_bottom_sheet_modal_elevation">16dp</dimen>
     <dimen name="design_bottom_sheet_modal_peek_height">256dp</dimen>
@@ -331,9 +337,13 @@
     <dimen name="design_tab_text_size_2line">12sp</dimen>
     <item format="float" name="disabled_alpha_material_dark" type="dimen">0.30</item>
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="floating_label_text_size">12sp</dimen>
     <item format="float" name="highlight_alpha_material_colored" type="dimen">0.26</item>
     <item format="float" name="highlight_alpha_material_dark" type="dimen">0.20</item>
     <item format="float" name="highlight_alpha_material_light" type="dimen">0.12</item>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
@@ -1554,6 +1564,11 @@
         <item name="castShowImageThumbnail">true</item>
         <item name="castTitleTextAppearance">@style/TextAppearance.CastMiniController.Title</item>
         <item name="castSubtitleTextAppearance">@style/TextAppearance.CastMiniController.Subtitle</item>
+    </style>
+    <style name="MaterialRaisedButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#76FF03</item>
+        <item name="colorButtonNormal">#8BC34A</item>
+        <item name="android:textColor">#FFF</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>

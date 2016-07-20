@@ -27,4 +27,10 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
+    <style name="MaterialRaisedButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">#76FF03</item>
+        <item name="colorButtonNormal">#8BC34A</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
 </resources>

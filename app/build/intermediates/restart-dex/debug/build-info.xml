@@ -4,30 +4,52 @@
     api-level="21"
     density="xxxhdpi"
     format="7"
-    timestamp="14508140429047"
+    timestamp="8192235011464"
     token="2492074114906515578" >
 
     <task
         name="javac"
-        duration="548" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="42" />
+        duration="0" />
     <task
         name="verifier"
-        duration="16" />
+        duration="0" />
 
     <artifact
-        location="/home/gil/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
-        type="MAIN" />
+        location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/resources-debug.ap_"
+        type="RESOURCES" />
 
-    <build timestamp="14508140429047" >
+    <build timestamp="6053276405482" >
         <artifact
-            location="/home/gil/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
+    </build>
+    <build timestamp="7589778363823" >
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
+            type="DEX" />
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
+            type="DEX" />
+    </build>
+    <build timestamp="8192235011464" >
+        <artifact
+            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/resources-debug.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>
