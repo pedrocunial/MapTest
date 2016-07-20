@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.content.FileProvider;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,6 +34,7 @@ public class StatusActivity extends AppCompatActivity {
 
     //View Parameters
     private Button               buttonSend;
+    private ImageView            image;
     private FloatingActionButton buttonNext;
     private FloatingActionButton imageButton;
     private MaterialEditText     commentText;
@@ -44,7 +46,8 @@ public class StatusActivity extends AppCompatActivity {
 
     private Uri fileUri;
 
-    protected static final int CAMERA_PIC_REQUEST = 0;
+    protected static final int CAMERA_PIC_REQUEST    = 0;
+    private   static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private int index;
 
@@ -67,6 +70,8 @@ public class StatusActivity extends AppCompatActivity {
         buttonNext  = (FloatingActionButton) findViewById(R.id.next_btn);
         imageButton = (FloatingActionButton) findViewById(R.id.camera_btn);
         commentText = (MaterialEditText) findViewById(R.id.comment_window);
+        image       = (ImageView) findViewById(R.id.image_comment);
+
         //sets spinner list
         setSpinnerList();
 
@@ -82,11 +87,25 @@ public class StatusActivity extends AppCompatActivity {
             public void onClick(View view) {
                 //Opens camera app
                 foto           = true;
-                Intent intent  = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-                problemPicture = new File(getCacheDir(), "problemPicture.png");
-                fileUri = Uri.fromFile(problemPicture); // create a file to save the image
-                intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri); // set the image file name
-                startActivityForResult(intent, 1);
+                Intent takePictureIntent = new Intent(android.provider.
+                        MediaStore.ACTION_IMAGE_CAPTURE);
+                // Ensure that there's a camera activity to handle the intent
+                if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+                    // Create the File where the photo should go
+                    problemPicture = null;
+                    problemPicture = new File(view.getContext().getCacheDir(),
+                            "problemPicture.png");
+                    // Continue only if the File was successfully created
+                    if (problemPicture != null) {
+                        // create a file to save the image
+                        fileUri = Uri.fromFile(problemPicture);
+                        // set the image file name
+                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
+                        // Process it!
+                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+                    }
+                }
+
             }
         });
         buttonNext.setOnClickListener(new View.OnClickListener() {
@@ -128,9 +147,10 @@ public class StatusActivity extends AppCompatActivity {
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
-        if ((requestCode == CAMERA_PIC_REQUEST) && (resultCode == RESULT_OK)) {
-            thumbnail       = (Bitmap)    data.getExtras().get("data");
-            ImageView image = (ImageView) findViewById(R.id.image_comment);
+        Log.d(TAG, "inside activityResult");
+
+        if ((requestCode == REQUEST_IMAGE_CAPTURE) && (resultCode == RESULT_OK)) {
+            thumbnail = (Bitmap) data.getExtras().get("data");
             image.setImageBitmap(thumbnail);
 
             try {
