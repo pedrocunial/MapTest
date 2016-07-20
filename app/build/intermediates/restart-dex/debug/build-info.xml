@@ -4,259 +4,30 @@
     api-level="21"
     density="xxxhdpi"
     format="7"
-    timestamp="12995971358856"
+    timestamp="14508140429047"
     token="2492074114906515578" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="548" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="42" />
     <task
         name="verifier"
-        duration="0" />
+        duration="16" />
 
     <artifact
-        location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/resources-debug.ap_"
-        type="RESOURCES" />
+        location="/home/gil/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="10106394780208" >
+    <build timestamp="14508140429047" >
         <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
+            location="/home/gil/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="11659713811326"
-        verifier="DEPENDENCY_CHANGED" >
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.ganfra-material-spinner-1.1.1_2adb4a5768cd82462c0297de9a08cd81b54eb411/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="12312110782569" >
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.2.0_d7f61f503942f370e6245885cbd50557151990bd/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.2.0_464e2c808b3278f484a66a3c33dae114dc6a753d/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.2.0_cc4f32758988202fadd309f861b45d6716753a58/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.2.0_514c94f849f09f9cb6d4007970e1d4f5f83a2d5b/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.jaredrummler-material-spinner-1.0.9_60df6d8f169fc61c73bef954cf19c9762b13cc44/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.2.0_363c3793d3358082b6e85f0264a6bbc16bf906d0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.2.0_d773d57e8ec85708bd2a460477b02518a7533870/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2788bb4ef86b8cc4fae387eaeff0d6d752d5efd6/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.2.0_047951b5e921dbf50898d79f1828a7f25d27ed77/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.0_9802399ac5178fadc7494b9d28c26e1a990e004f/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.2.0_3c749e618e5544720cf682fe76289b2489688bfc/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.2.0_329f54aaa900146bd4f484e02b8c5f20cdd7d984/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.2.0_c35bf22e84ee846cfa8335707b430be8c8edd8c8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.2.0_5778230d6c7391e35734e9dffd235e656c2fa165/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.2.0_c0af63e8b9790a1254c7a440e7eddcd95633f1f4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.2.0_fb60c756c53b669d25c72150683d557da986271b/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_9f8633c9967eddd66a03c8ab82a3616228c1932c/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.2.0_e656e182cd9ddf35a873beafed2d0a09d985bb54/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.0_6774dc02c274ce197c79443ea82c6cbf21f98222/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.2.0_ba31ae0c13878850a1d3e856dbdd5f2abe9fdf18/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.2.0_2acf690bce897b068966d71cdd114c26e70a3afd/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.2.0_939415d5dcd46cd3ed9586bccc5271bd74b7bb54/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_c81190bcd44c1db2edfb0ef1a958d5b57d3ab46c/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.0_96bfac82386be0214b7105667ef0fda29cdb350f/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_2/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.2.0_a9e402d85124d42469000a3f5a60622c2258a51c/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.2.0_6c84e6d1ec98d21d518094b4f38c167ca0c08d13/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.0_ce4d4471f40e85ea63199fe6f88efb3f03cec5a2/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.2.0_1af86657c7c4e49bd808d65bf09d6266cb3ba3f8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.2.0_6791818fa3d453e322e25ab45493280144cffcbc/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.2.0_495de49c37152ff3f51a850e82af2ca84d8f6401/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.2.0_0641ef471491f6a16c945c3798ba70484907e063/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.2.0_3b942d50fd7bb4773e218fced1d04bbf3fddc934/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.2.0_f724a026b6d23033530d7a74b55adc9a17681601/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.2.0_6c7cadd3537654da05bbfb73fd1a4ec08ccbdca0/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.0_ba835b607c5b0a02ad99646d5c7565fb63864dd3/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.2.0_87d62667e9fdaa326e009bb441592834c6a2126c/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.2.0_a7864605b54d18d2b5b66566de2418f6182bc71a/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_3/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_b8b6357d9a1a4f9a0d25fdc6d65ff4c5b3271944/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_51d85a6eca0be63a7674250e4a6e6d6e9f7b0632/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_6/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_8/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.2.0_fde805519bf8fd81bf914f6b4bf42d978a2aec9d/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_6e53cbd02cc30c1c1352b1f6d347aa10f6e5dca6/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.2.0_2ec66b254605213728c37aea0c470670814b6c18/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-contextmanager-9.2.0_1e4c58440fd74392fb520f6265eae0d1daafae88/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.2.0_60ab2c6075ace8aa49e602ebeb85c19ed899b157/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_6934a0cfabedd0627334ce934159bd321ea5ef2c/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.0_94a926e12fffefbe8e59cf68d6ccea22e87f35f7/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.2.0_b59ea1bb9e0faabd15b3a96488cbe6bfb41cfbcf/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.2.0_a38dd7b831c50d642572dbeada4c7e123539dd22/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.2.0_ecfee7f5f97e13236fa4e25bae05dce229e86b74/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_90340a22a1d60c0b820e3db1c09f6a23395c7738/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_108251aff66ba7e5e6f96d9a2d9c4c31951a686b/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.2.0_3492948483c7ebf2e451122ccc5746252c6aebc9/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.2.0_c22a72e77c3cb1cbeaa5d6e3297fd6a8f44d307b/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.2.0_183bfb28c73951b9064feebad5c17fbbe5c177be/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.2.0_aa83d7c6639b2d6fd877332960200ee33dee4d86/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_af6cf710f672c24fb41379caa2a8956f2178cf95/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_93454e4437dd01c64e04c7de1f0424b0b46d0f5d/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_15878c0f98b457934de8acd0221d80514b1c6527/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.2.0_87eeb5aee71136e9cf9778c3f621446bb29f950a/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.2.0_4b6fd6280fa1703e004081676757526a0808c6a2/classes.dex"
-            type="DEX" />
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.0_df8320b29b5821741203bb299c219429b7308b1c/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="12983561570370" >
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="12995971358856" >
-        <artifact
-            location="/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/resources-debug.ap_"
-            type="RESOURCES" />
     </build>
 
 </instant-run>

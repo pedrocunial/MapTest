@@ -52,7 +52,12 @@ public class StatusActivity extends AppCompatActivity implements AdapterView.OnI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_status);
 
-        index = getIntent().getExtras().getInt("index");
+
+        if(getIntent().getExtras() == null) {
+            index = 0;
+        } else {
+            index = getIntent().getExtras().getInt("index");
+        }
 
         //Get View Components
         buttonSend  = (Button) findViewById(R.id.send_btn);

@@ -2,5 +2,9 @@
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/home/gil/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout-sw600dp-v13/design_layout_snackbar.xml",
+        "source": "/home/gil/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     }
 ]
