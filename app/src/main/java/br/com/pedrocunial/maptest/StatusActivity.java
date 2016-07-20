@@ -40,6 +40,7 @@ public class StatusActivity extends AppCompatActivity {
     private MaterialEditText     commentText;
 
     //Email Parameters
+    private FileOutputStream out;
     private Bitmap  thumbnail;
     private File    problemPicture;
     private boolean foto = false;
@@ -148,16 +149,20 @@ public class StatusActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         //Converts picture to PNG
         Log.d(TAG, "inside activityResult");
-
         if ((requestCode == REQUEST_IMAGE_CAPTURE) && (resultCode == RESULT_OK)) {
-            thumbnail = (Bitmap) data.getExtras().get("data");
+            Uri fileUri = Uri.fromFile(problemPicture);
+            try {
+                thumbnail = MediaStore.Images.Media.getBitmap(this.getContentResolver(), fileUri);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
             image.setImageBitmap(thumbnail);
 
             try {
                 File root = Environment.getExternalStorageDirectory();
                 if (root.canWrite()){
                     // We + "/MapTest" to make it storage on a deeper directory for our application
-                    FileOutputStream out = new FileOutputStream(problemPicture);
+                    out = new FileOutputStream(problemPicture);
                     thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
                     out.flush();
                     out.close();
