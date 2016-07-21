@@ -76,6 +76,7 @@
         <activity
             android:name="br.com.pedrocunial.maptest.LoginActivity"
             android:label="@string/title_activity_login"
+            android:theme="@style/AppThemeNoActionBar"
             android:windowSoftInputMode="stateVisible|adjustResize" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

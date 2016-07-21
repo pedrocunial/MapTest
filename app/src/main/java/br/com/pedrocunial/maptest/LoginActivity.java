@@ -3,6 +3,7 @@ package br.com.pedrocunial.maptest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.view.ViewCompat;
 import android.support.v7.app.ActionBar;
@@ -19,31 +20,56 @@ import com.rengwuxian.materialedittext.MaterialEditText;
  * Created by summerjob on 07/07/16.
  */
 public class LoginActivity extends AppCompatActivity {
-    EditText username;
-    EditText password;
-    Button entrar_btn;
+    // Atributes
+    private EditText username;
+    private EditText password;
+
+    private CollapsingToolbarLayout collapsingToolbarLayout;
+
     private static final String EXTRA_IMAGE = "br.com.pedrocunial.maptest.extraImage";
     private static final String EXTRA_TITLE = "br.com.pedrocunial.maptest.extraTitle";
-    private CollapsingToolbarLayout collapsingToolbarLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    //
 
         this.requestWindowFeature(getWindow().FEATURE_NO_TITLE);
         setContentView(R.layout.login);
         ViewCompat.setTransitionName(findViewById(R.id.app_bar_layout), EXTRA_IMAGE);
         String itemTitle = getIntent().getStringExtra(EXTRA_TITLE);
+
+        // Defining Collapsing ToolBar values
         collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitle(itemTitle);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
+        collapsingToolbarLayout.setCollapsedTitleTextColor(0xffffffff);
+        collapsingToolbarLayout.setExpandedTitleColor(0xffffffff);
 
-        username   = (MaterialEditText)findViewById(R.id.loginText);
-        password   = (MaterialEditText)findViewById(R.id.senhaText);
-        entrar_btn = (Button)findViewById(R.id.enter_btn);
+        AppBarLayout appBarLayout = (AppBarLayout) findViewById(R.id.app_bar_layout);
+        appBarLayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
+            boolean isShown     = false;
+            int     scrollRange = -1;
+            // Set title only when the bar is collapsed
+            @Override
+            public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
+                if(scrollRange == -1) {
+                    scrollRange = appBarLayout.getTotalScrollRange();
+                }
+                if(scrollRange + verticalOffset == 0) {
+                    collapsingToolbarLayout.setTitle("ZeusTV");
+                    isShown = true;
+                } else if(isShown) {
+                    collapsingToolbarLayout.setTitle("");
+                    isShown = false;
+                }
+            }
+        });
 
-        entrar_btn.setOnClickListener(new View.OnClickListener() {
+        username = (MaterialEditText) findViewById(R.id.loginText);
+        password = (MaterialEditText) findViewById(R.id.senhaText);
+
+        Button enterButton = (Button) findViewById(R.id.enter_btn);
+        enterButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Checks Authentication
@@ -51,8 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Login...",Toast.LENGTH_SHORT).show();
                     Intent it = new Intent(LoginActivity.this, MapsActivity.class);
                     startActivity(it);
-                }
-                else{
+                } else {
                     Toast.makeText(getApplicationContext(), "Usuário ou senha incorreto, tente novamente",Toast.LENGTH_SHORT).show();
                     Intent itStatus = new Intent(LoginActivity.this,StatusActivity.class);
                     startActivity(itStatus);
@@ -60,8 +85,10 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
     //Disable Android Back Button
     @Override
     public void onBackPressed() {
+    // Do nothing
     }
 }
