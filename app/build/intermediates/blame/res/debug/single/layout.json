@@ -48,12 +48,12 @@
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/layout/activity_about.xml"
     },
     {
-        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
-        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_menu_item.xml"
-    },
-    {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
         "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",

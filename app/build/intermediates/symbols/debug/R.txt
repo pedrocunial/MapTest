@@ -1032,7 +1032,7 @@ int id buyButton 0x7f0e006c
 int id buy_now 0x7f0e006f
 int id buy_with 0x7f0e0070
 int id buy_with_google 0x7f0e0071
-int id camera_btn 0x7f0e00b7
+int id camera_btn 0x7f0e00b6
 int id cancel_action 0x7f0e00f8
 int id cast_featurehighlight_help_text_body_view 0x7f0e0004
 int id cast_featurehighlight_help_text_header_view 0x7f0e0005
@@ -1049,7 +1049,7 @@ int id clip_horizontal 0x7f0e0032
 int id clip_vertical 0x7f0e0033
 int id collapseActionView 0x7f0e0053
 int id collapsing_toolbar 0x7f0e00e3
-int id comment_window 0x7f0e00ba
+int id comment_window 0x7f0e00b9
 int id contact 0x7f0e0045
 int id container_all 0x7f0e00bf
 int id container_current 0x7f0e00c0
@@ -1077,7 +1077,7 @@ int id drawer_layout 0x7f0e00af
 int id edit_query 0x7f0e00a2
 int id email 0x7f0e0046
 int id end 0x7f0e002a
-int id endOS_text 0x7f0e00b9
+int id endOS_text 0x7f0e00b8
 int id end_padder 0x7f0e0101
 int id enterAlways 0x7f0e001a
 int id enterAlwaysCollapsed 0x7f0e001b
@@ -1115,7 +1115,7 @@ int id icon_uri 0x7f0e003b
 int id icon_view 0x7f0e00c1
 int id ifRoom 0x7f0e0054
 int id image 0x7f0e0084
-int id image_comment 0x7f0e00bb
+int id image_comment 0x7f0e00ba
 int id image_identifier 0x7f0e00b3
 int id index_entity_types 0x7f0e005d
 int id info 0x7f0e0100
@@ -1200,7 +1200,7 @@ int id search_src_text 0x7f0e00a9
 int id search_voice_btn 0x7f0e00ad
 int id select_dialog_listview 0x7f0e00ae
 int id selectionDetails 0x7f0e006d
-int id send_btn 0x7f0e00b6
+int id send_btn 0x7f0e00bb
 int id senhaText 0x7f0e00e6
 int id settings 0x7f0e00ec
 int id shortcut 0x7f0e0098
@@ -1221,7 +1221,7 @@ int id standard 0x7f0e0062
 int id start 0x7f0e002e
 int id status_activity 0x7f0e00b5
 int id status_bar_latest_event_content 0x7f0e00f9
-int id status_op 0x7f0e00b8
+int id status_op 0x7f0e00b7
 int id stop 0x7f0e00f5
 int id strict_sandbox 0x7f0e006a
 int id submenuarrow 0x7f0e009a

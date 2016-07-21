@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Map Test</string>
-    <string name="title_activity_maps">Map Test</string>
-    <string name="title_activity_login">Map Test</string>
+    <string name="app_name">ZeusTV</string>
+    <string name="title_activity_maps">ZeusTV</string>
+    <string name="title_activity_login">ZeusTV</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="enter_btn">Entrar</string>

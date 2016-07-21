@@ -12,18 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.pedrocunial.maptest.StatusActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/send_btn"
-        android:theme="@style/MaterialRaisedButton"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:enabled="true"
-        android:padding="12dp"
-        android:textStyle="bold"/>
-
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

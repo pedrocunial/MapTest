@@ -3873,7 +3873,7 @@ containing a value of this type.
         public static final int buy_now=0x7f0e006f;
         public static final int buy_with=0x7f0e0070;
         public static final int buy_with_google=0x7f0e0071;
-        public static final int camera_btn=0x7f0e00b7;
+        public static final int camera_btn=0x7f0e00b6;
         public static final int cancel_action=0x7f0e00f8;
         public static final int cast_featurehighlight_help_text_body_view=0x7f0e0004;
         public static final int cast_featurehighlight_help_text_header_view=0x7f0e0005;
@@ -3890,7 +3890,7 @@ containing a value of this type.
         public static final int clip_vertical=0x7f0e0033;
         public static final int collapseActionView=0x7f0e0053;
         public static final int collapsing_toolbar=0x7f0e00e3;
-        public static final int comment_window=0x7f0e00ba;
+        public static final int comment_window=0x7f0e00b9;
         public static final int contact=0x7f0e0045;
         public static final int container_all=0x7f0e00bf;
         public static final int container_current=0x7f0e00c0;
@@ -3918,7 +3918,7 @@ containing a value of this type.
         public static final int edit_query=0x7f0e00a2;
         public static final int email=0x7f0e0046;
         public static final int end=0x7f0e002a;
-        public static final int endOS_text=0x7f0e00b9;
+        public static final int endOS_text=0x7f0e00b8;
         public static final int end_padder=0x7f0e0101;
         public static final int enterAlways=0x7f0e001a;
         public static final int enterAlwaysCollapsed=0x7f0e001b;
@@ -3956,7 +3956,7 @@ containing a value of this type.
         public static final int icon_view=0x7f0e00c1;
         public static final int ifRoom=0x7f0e0054;
         public static final int image=0x7f0e0084;
-        public static final int image_comment=0x7f0e00bb;
+        public static final int image_comment=0x7f0e00ba;
         public static final int image_identifier=0x7f0e00b3;
         public static final int index_entity_types=0x7f0e005d;
         public static final int info=0x7f0e0100;
@@ -4041,7 +4041,7 @@ containing a value of this type.
         public static final int search_voice_btn=0x7f0e00ad;
         public static final int select_dialog_listview=0x7f0e00ae;
         public static final int selectionDetails=0x7f0e006d;
-        public static final int send_btn=0x7f0e00b6;
+        public static final int send_btn=0x7f0e00bb;
         public static final int senhaText=0x7f0e00e6;
         public static final int settings=0x7f0e00ec;
         public static final int shortcut=0x7f0e0098;
@@ -4062,7 +4062,7 @@ containing a value of this type.
         public static final int start=0x7f0e002e;
         public static final int status_activity=0x7f0e00b5;
         public static final int status_bar_latest_event_content=0x7f0e00f9;
-        public static final int status_op=0x7f0e00b8;
+        public static final int status_op=0x7f0e00b7;
         public static final int stop=0x7f0e00f5;
         public static final int strict_sandbox=0x7f0e006a;
         public static final int submenuarrow=0x7f0e009a;

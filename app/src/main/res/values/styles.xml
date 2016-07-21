@@ -28,8 +28,8 @@
     </style>
 
     <style name="MaterialRaisedButton" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">#76FF03</item>
-        <item name="colorButtonNormal">#8BC34A</item>
+        <item name="colorControlHighlight">@color/colorVivid</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
         <item name="android:textColor">#FFF</item>
     </style>
 

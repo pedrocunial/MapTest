@@ -25,7 +25,6 @@ import java.util.List;
 public class StatusActivity extends AppCompatActivity {
 
     //View Parameters
-    private Button               buttonSend;
     private ImageView            image;
     private FloatingActionButton buttonNext;
     private FloatingActionButton imageButton;
@@ -38,13 +37,14 @@ public class StatusActivity extends AppCompatActivity {
     private boolean foto = false;
 
     private Uri fileUri;
-
-    protected static final int CAMERA_PIC_REQUEST    = 0;
-    private   static final int REQUEST_IMAGE_CAPTURE = 1;
-
     private int index;
 
-    private final String TAG = "StatusActivity";
+    private final int    REQUEST_IMAGE_CAPTURE = 1;
+    private final int    EMAIL_SEND_SUCCESS    = 2;
+    private final int    EMAIL_SEND_FAIL       = 3;
+    private final String TAG    = "StatusActivity";
+
+    protected static final int CAMERA_PIC_REQUEST    = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +59,6 @@ public class StatusActivity extends AppCompatActivity {
         }
 
         //Get View Components
-        buttonSend  = (Button) findViewById(R.id.send_btn);
         buttonNext  = (FloatingActionButton) findViewById(R.id.next_btn);
         imageButton = (FloatingActionButton) findViewById(R.id.camera_btn);
         commentText = (MaterialEditText) findViewById(R.id.comment_window);
@@ -68,18 +67,11 @@ public class StatusActivity extends AppCompatActivity {
         //sets spinner list
         setSpinnerList();
 
-        buttonSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                sendEmail();
-            }
-        });
-
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //Opens camera app
-                foto           = true;
+                foto = true;
                 Intent takePictureIntent = new Intent(android.provider.
                         MediaStore.ACTION_IMAGE_CAPTURE);
                 // Ensure that there's a camera activity to handle the intent
@@ -108,8 +100,8 @@ public class StatusActivity extends AppCompatActivity {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                endActivity();
-            }
+                sendEmail();
+             }
         });
 
     }
@@ -166,6 +158,10 @@ public class StatusActivity extends AppCompatActivity {
 //            } catch (IOException e) {
 //                Log.e("BROKEN", "Could not write file " + e.getMessage());
 //            }
+        } else if(requestCode == EMAIL_SEND_SUCCESS) {
+            endActivity();
+        } else if(requestCode == EMAIL_SEND_FAIL) {
+            endActivity();
         }
     }
     public void setSpinnerList(){
@@ -210,7 +206,6 @@ public class StatusActivity extends AppCompatActivity {
     }
     public void enableViewComponents(boolean b){
         //Enables Send button and Comment Edit Text to user
-        buttonSend.setEnabled(b);
         commentText.setEnabled(b);
         buttonNext.setEnabled(b);
     }
@@ -223,7 +218,8 @@ public class StatusActivity extends AppCompatActivity {
             i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
-                startActivity(Intent.createChooser(i, "Enviando Email..."));
+                startActivityForResult(Intent.createChooser(i, "Enviando Email..."),
+                                       EMAIL_SEND_SUCCESS);
             } catch (android.content.ActivityNotFoundException ex) {
                 Log.i(TAG, "Communication failed");
             }
@@ -260,7 +256,8 @@ public class StatusActivity extends AppCompatActivity {
             i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
-                startActivity(Intent.createChooser(i, "Enviando Email..."));
+                startActivityForResult(Intent.createChooser(i, "Enviando Email..."),
+                                       EMAIL_SEND_FAIL);
             } catch (android.content.ActivityNotFoundException ex) {
                 Log.i(TAG, "Communication Failed");
             }
