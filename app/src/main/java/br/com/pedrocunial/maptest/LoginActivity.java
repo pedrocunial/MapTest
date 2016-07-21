@@ -13,6 +13,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.rengwuxian.materialedittext.MaterialEditText;
+
 /**
  * Created by summerjob on 07/07/16.
  */
@@ -37,8 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         collapsingToolbarLayout.setTitle(itemTitle);
         collapsingToolbarLayout.setExpandedTitleColor(getResources().getColor(android.R.color.transparent));
 
-        username = (EditText)findViewById(R.id.loginText);
-        password = (EditText)findViewById(R.id.senhaText);
+        username   = (MaterialEditText)findViewById(R.id.loginText);
+        password   = (MaterialEditText)findViewById(R.id.senhaText);
         entrar_btn = (Button)findViewById(R.id.enter_btn);
 
         entrar_btn.setOnClickListener(new View.OnClickListener() {

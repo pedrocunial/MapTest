@@ -1,5 +1,6 @@
 package br.com.pedrocunial.maptest;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -42,9 +43,25 @@ public class StatusActivity extends AppCompatActivity {
     private final int    REQUEST_IMAGE_CAPTURE = 1;
     private final int    EMAIL_SEND_SUCCESS    = 2;
     private final int    EMAIL_SEND_FAIL       = 3;
-    private final String TAG    = "StatusActivity";
+    private final String TAG                   = "StatusActivity";
+    private final String EMAIL_SUBJECT         = "Assistência técnica ZeusTV";
 
     protected static final int CAMERA_PIC_REQUEST    = 0;
+
+    private boolean mailClientOpened = false;
+
+    // Knowing if the user left the activity to enter an email client
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mailClientOpened = false;
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mailClientOpened = true;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -100,7 +117,7 @@ public class StatusActivity extends AppCompatActivity {
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendEmail();
+                sendEmail2();
              }
         });
 
@@ -158,9 +175,9 @@ public class StatusActivity extends AppCompatActivity {
 //            } catch (IOException e) {
 //                Log.e("BROKEN", "Could not write file " + e.getMessage());
 //            }
-        } else if(requestCode == EMAIL_SEND_SUCCESS) {
+        } else if(requestCode == EMAIL_SEND_SUCCESS && mailClientOpened) {
             endActivity();
-        } else if(requestCode == EMAIL_SEND_FAIL) {
+        } else if(requestCode == EMAIL_SEND_FAIL && mailClientOpened) {
             endActivity();
         }
     }
@@ -209,12 +226,13 @@ public class StatusActivity extends AppCompatActivity {
         commentText.setEnabled(b);
         buttonNext.setEnabled(b);
     }
+
     public void sendEmail(){
         Intent i = new Intent(Intent.ACTION_SEND);
         if(foto) { //if user attached a pic
-            i.setType("image/png");
+            i.setType("message/rfc822");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
-            i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
+            i.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
             i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
@@ -251,15 +269,39 @@ public class StatusActivity extends AppCompatActivity {
             }
         }
         else {
-            i.setType("plane/text");
+            i.setType("message/rfc822");
             i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
-            i.putExtra(Intent.EXTRA_SUBJECT, "Assistencia Tecnica Sky");
+            i.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
             i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
             try {
                 startActivityForResult(Intent.createChooser(i, "Enviando Email..."),
                                        EMAIL_SEND_FAIL);
             } catch (android.content.ActivityNotFoundException ex) {
                 Log.i(TAG, "Communication Failed");
+            }
+        }
+    }
+
+    private void sendEmail2() {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("message/rcf822");
+        intent.putExtra(Intent.EXTRA_EMAIL,
+                        new String[] {"pcc@cesar.org.br"});
+        intent.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
+        intent.putExtra(Intent.EXTRA_TEXT, commentText.getText());
+        if(foto) {
+            intent.putExtra(Intent.EXTRA_STREAM,
+                            Uri.fromFile(problemPicture));
+            try {
+                startActivityForResult(intent, EMAIL_SEND_SUCCESS);
+            } catch(ActivityNotFoundException e) {
+                Log.i(TAG, "Communication failed");
+            }
+        } else {
+            try {
+                startActivityForResult(intent, EMAIL_SEND_FAIL);
+            } catch(ActivityNotFoundException e) {
+                Log.i(TAG, "Communication failed");
             }
         }
     }

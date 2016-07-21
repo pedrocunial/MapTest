@@ -27,7 +27,7 @@
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
-    <style name="MaterialRaisedButton" parent="Theme.AppCompat.Light">
+    <style name="MaterialRaisedButton" parent="RobotoButtonStyle">
         <item name="colorControlHighlight">@color/colorVivid</item>
         <item name="colorButtonNormal">@color/colorPrimary</item>
         <item name="android:textColor">#FFF</item>

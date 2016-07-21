@@ -516,7 +516,14 @@
                     "endOffset": 3246
                 },
                 "from": {
-                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/values/colors.xml"
+                    "file": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 153,
+                        "endColumn": 45,
+                        "endOffset": 194
+                    }
                 }
             },
             {
@@ -7166,7 +7173,7 @@
                     "startOffset": 135735,
                     "endLine": 1571,
                     "endColumn": 12,
-                    "endOffset": 135999
+                    "endOffset": 135995
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/values/styles.xml",
@@ -7176,7 +7183,7 @@
                         "startOffset": 1304,
                         "endLine": 33,
                         "endColumn": 12,
-                        "endOffset": 1568
+                        "endOffset": 1564
                     }
                 }
             },
@@ -7184,10 +7191,10 @@
                 "to": {
                     "startLine": 1572,
                     "startColumn": 4,
-                    "startOffset": 136004,
+                    "startOffset": 136000,
                     "endLine": 1609,
                     "endColumn": 12,
-                    "endOffset": 138861
+                    "endOffset": 138857
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7197,10 +7204,10 @@
                 "to": {
                     "startLine": 1610,
                     "startColumn": 4,
-                    "startOffset": 138866,
+                    "startOffset": 138862,
                     "endLine": 1648,
                     "endColumn": 12,
-                    "endOffset": 141863
+                    "endOffset": 141859
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7210,9 +7217,9 @@
                 "to": {
                     "startLine": 1649,
                     "startColumn": 4,
-                    "startOffset": 141868,
+                    "startOffset": 141864,
                     "endColumn": 61,
-                    "endOffset": 141925
+                    "endOffset": 141921
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7222,10 +7229,10 @@
                 "to": {
                     "startLine": 1650,
                     "startColumn": 4,
-                    "startOffset": 141930,
+                    "startOffset": 141926,
                     "endLine": 1659,
                     "endColumn": 12,
-                    "endOffset": 142555
+                    "endOffset": 142551
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7235,10 +7242,10 @@
                 "to": {
                     "startLine": 1660,
                     "startColumn": 4,
-                    "startOffset": 142560,
+                    "startOffset": 142556,
                     "endLine": 1668,
                     "endColumn": 12,
-                    "endOffset": 143169
+                    "endOffset": 143165
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7248,9 +7255,9 @@
                 "to": {
                     "startLine": 1669,
                     "startColumn": 4,
-                    "startOffset": 143174,
+                    "startOffset": 143170,
                     "endColumn": 85,
-                    "endOffset": 143255
+                    "endOffset": 143251
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7260,10 +7267,10 @@
                 "to": {
                     "startLine": 1670,
                     "startColumn": 4,
-                    "startOffset": 143260,
+                    "startOffset": 143256,
                     "endLine": 1672,
                     "endColumn": 12,
-                    "endOffset": 143405
+                    "endOffset": 143401
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/values/styles.xml"
@@ -7273,10 +7280,10 @@
                 "to": {
                     "startLine": 1673,
                     "startColumn": 4,
-                    "startOffset": 143410,
+                    "startOffset": 143406,
                     "endLine": 1675,
                     "endColumn": 12,
-                    "endOffset": 143554
+                    "endOffset": 143550
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/src/main/res/values/styles.xml"
@@ -7286,10 +7293,10 @@
                 "to": {
                     "startLine": 1676,
                     "startColumn": 4,
-                    "startOffset": 143559,
+                    "startOffset": 143555,
                     "endLine": 1677,
                     "endColumn": 12,
-                    "endOffset": 143667
+                    "endOffset": 143663
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7299,10 +7306,10 @@
                 "to": {
                     "startLine": 1678,
                     "startColumn": 4,
-                    "startOffset": 143672,
+                    "startOffset": 143668,
                     "endLine": 1681,
                     "endColumn": 12,
-                    "endOffset": 143896
+                    "endOffset": 143892
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7312,10 +7319,10 @@
                 "to": {
                     "startLine": 1682,
                     "startColumn": 4,
-                    "startOffset": 143901,
+                    "startOffset": 143897,
                     "endLine": 1684,
                     "endColumn": 12,
-                    "endOffset": 144056
+                    "endOffset": 144052
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7325,10 +7332,10 @@
                 "to": {
                     "startLine": 1685,
                     "startColumn": 4,
-                    "startOffset": 144061,
+                    "startOffset": 144057,
                     "endLine": 1687,
                     "endColumn": 12,
-                    "endOffset": 144208
+                    "endOffset": 144204
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7338,10 +7345,10 @@
                 "to": {
                     "startLine": 1688,
                     "startColumn": 4,
-                    "startOffset": 144213,
+                    "startOffset": 144209,
                     "endLine": 1690,
                     "endColumn": 12,
-                    "endOffset": 144379
+                    "endOffset": 144375
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7351,10 +7358,10 @@
                 "to": {
                     "startLine": 1691,
                     "startColumn": 4,
-                    "startOffset": 144384,
+                    "startOffset": 144380,
                     "endLine": 1693,
                     "endColumn": 12,
-                    "endOffset": 144546
+                    "endOffset": 144542
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7364,10 +7371,10 @@
                 "to": {
                     "startLine": 1694,
                     "startColumn": 4,
-                    "startOffset": 144551,
+                    "startOffset": 144547,
                     "endLine": 1697,
                     "endColumn": 12,
-                    "endOffset": 144789
+                    "endOffset": 144785
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7377,10 +7384,10 @@
                 "to": {
                     "startLine": 1698,
                     "startColumn": 4,
-                    "startOffset": 144794,
+                    "startOffset": 144790,
                     "endLine": 1700,
                     "endColumn": 12,
-                    "endOffset": 144959
+                    "endOffset": 144955
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7390,10 +7397,10 @@
                 "to": {
                     "startLine": 1701,
                     "startColumn": 4,
-                    "startOffset": 144964,
+                    "startOffset": 144960,
                     "endLine": 1703,
                     "endColumn": 12,
-                    "endOffset": 145132
+                    "endOffset": 145128
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7403,10 +7410,10 @@
                 "to": {
                     "startLine": 1704,
                     "startColumn": 4,
-                    "startOffset": 145137,
+                    "startOffset": 145133,
                     "endLine": 1706,
                     "endColumn": 12,
-                    "endOffset": 145303
+                    "endOffset": 145299
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7416,10 +7423,10 @@
                 "to": {
                     "startLine": 1707,
                     "startColumn": 4,
-                    "startOffset": 145308,
+                    "startOffset": 145304,
                     "endLine": 1710,
                     "endColumn": 12,
-                    "endOffset": 145577
+                    "endOffset": 145573
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7429,10 +7436,10 @@
                 "to": {
                     "startLine": 1711,
                     "startColumn": 4,
-                    "startOffset": 145582,
+                    "startOffset": 145578,
                     "endLine": 1713,
                     "endColumn": 12,
-                    "endOffset": 145776
+                    "endOffset": 145772
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7442,10 +7449,10 @@
                 "to": {
                     "startLine": 1714,
                     "startColumn": 4,
-                    "startOffset": 145781,
+                    "startOffset": 145777,
                     "endLine": 1717,
                     "endColumn": 12,
-                    "endOffset": 145981
+                    "endOffset": 145977
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7455,10 +7462,10 @@
                 "to": {
                     "startLine": 1718,
                     "startColumn": 4,
-                    "startOffset": 145986,
+                    "startOffset": 145982,
                     "endLine": 1721,
                     "endColumn": 12,
-                    "endOffset": 146311
+                    "endOffset": 146307
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7468,9 +7475,9 @@
                 "to": {
                     "startLine": 1722,
                     "startColumn": 4,
-                    "startOffset": 146316,
+                    "startOffset": 146312,
                     "endColumn": 83,
-                    "endOffset": 146395
+                    "endOffset": 146391
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7480,9 +7487,9 @@
                 "to": {
                     "startLine": 1723,
                     "startColumn": 4,
-                    "startOffset": 146400,
+                    "startOffset": 146396,
                     "endColumn": 95,
-                    "endOffset": 146491
+                    "endOffset": 146487
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7492,9 +7499,9 @@
                 "to": {
                     "startLine": 1724,
                     "startColumn": 4,
-                    "startOffset": 146496,
+                    "startOffset": 146492,
                     "endColumn": 95,
-                    "endOffset": 146587
+                    "endOffset": 146583
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7504,9 +7511,9 @@
                 "to": {
                     "startLine": 1725,
                     "startColumn": 4,
-                    "startOffset": 146592,
+                    "startOffset": 146588,
                     "endColumn": 97,
-                    "endOffset": 146685
+                    "endOffset": 146681
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7516,9 +7523,9 @@
                 "to": {
                     "startLine": 1726,
                     "startColumn": 4,
-                    "startOffset": 146690,
+                    "startOffset": 146686,
                     "endColumn": 99,
-                    "endOffset": 146785
+                    "endOffset": 146781
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7528,9 +7535,9 @@
                 "to": {
                     "startLine": 1727,
                     "startColumn": 4,
-                    "startOffset": 146790,
+                    "startOffset": 146786,
                     "endColumn": 101,
-                    "endOffset": 146887
+                    "endOffset": 146883
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7540,9 +7547,9 @@
                 "to": {
                     "startLine": 1728,
                     "startColumn": 4,
-                    "startOffset": 146892,
+                    "startOffset": 146888,
                     "endColumn": 101,
-                    "endOffset": 146989
+                    "endOffset": 146985
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7552,9 +7559,9 @@
                 "to": {
                     "startLine": 1729,
                     "startColumn": 4,
-                    "startOffset": 146994,
+                    "startOffset": 146990,
                     "endColumn": 101,
-                    "endOffset": 147091
+                    "endOffset": 147087
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7564,9 +7571,9 @@
                 "to": {
                     "startLine": 1730,
                     "startColumn": 4,
-                    "startOffset": 147096,
+                    "startOffset": 147092,
                     "endColumn": 101,
-                    "endOffset": 147193
+                    "endOffset": 147189
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7576,9 +7583,9 @@
                 "to": {
                     "startLine": 1731,
                     "startColumn": 4,
-                    "startOffset": 147198,
+                    "startOffset": 147194,
                     "endColumn": 101,
-                    "endOffset": 147295
+                    "endOffset": 147291
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7588,9 +7595,9 @@
                 "to": {
                     "startLine": 1732,
                     "startColumn": 4,
-                    "startOffset": 147300,
+                    "startOffset": 147296,
                     "endColumn": 99,
-                    "endOffset": 147395
+                    "endOffset": 147391
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7600,9 +7607,9 @@
                 "to": {
                     "startLine": 1733,
                     "startColumn": 4,
-                    "startOffset": 147400,
+                    "startOffset": 147396,
                     "endColumn": 95,
-                    "endOffset": 147491
+                    "endOffset": 147487
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7612,9 +7619,9 @@
                 "to": {
                     "startLine": 1734,
                     "startColumn": 4,
-                    "startOffset": 147496,
+                    "startOffset": 147492,
                     "endColumn": 111,
-                    "endOffset": 147603
+                    "endOffset": 147599
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7624,9 +7631,9 @@
                 "to": {
                     "startLine": 1735,
                     "startColumn": 4,
-                    "startOffset": 147608,
+                    "startOffset": 147604,
                     "endColumn": 128,
-                    "endOffset": 147732
+                    "endOffset": 147728
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7636,9 +7643,9 @@
                 "to": {
                     "startLine": 1736,
                     "startColumn": 4,
-                    "startOffset": 147737,
+                    "startOffset": 147733,
                     "endColumn": 122,
-                    "endOffset": 147855
+                    "endOffset": 147851
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7648,9 +7655,9 @@
                 "to": {
                     "startLine": 1737,
                     "startColumn": 4,
-                    "startOffset": 147860,
+                    "startOffset": 147856,
                     "endColumn": 130,
-                    "endOffset": 147986
+                    "endOffset": 147982
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7660,9 +7667,9 @@
                 "to": {
                     "startLine": 1738,
                     "startColumn": 4,
-                    "startOffset": 147991,
+                    "startOffset": 147987,
                     "endColumn": 130,
-                    "endOffset": 148117
+                    "endOffset": 148113
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7672,9 +7679,9 @@
                 "to": {
                     "startLine": 1739,
                     "startColumn": 4,
-                    "startOffset": 148122,
+                    "startOffset": 148118,
                     "endColumn": 97,
-                    "endOffset": 148215
+                    "endOffset": 148211
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7684,9 +7691,9 @@
                 "to": {
                     "startLine": 1740,
                     "startColumn": 4,
-                    "startOffset": 148220,
+                    "startOffset": 148216,
                     "endColumn": 113,
-                    "endOffset": 148329
+                    "endOffset": 148325
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7696,9 +7703,9 @@
                 "to": {
                     "startLine": 1741,
                     "startColumn": 4,
-                    "startOffset": 148334,
+                    "startOffset": 148330,
                     "endColumn": 93,
-                    "endOffset": 148423
+                    "endOffset": 148419
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7708,10 +7715,10 @@
                 "to": {
                     "startLine": 1742,
                     "startColumn": 4,
-                    "startOffset": 148428,
+                    "startOffset": 148424,
                     "endLine": 1743,
                     "endColumn": 12,
-                    "endOffset": 148563
+                    "endOffset": 148559
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7721,10 +7728,10 @@
                 "to": {
                     "startLine": 1744,
                     "startColumn": 4,
-                    "startOffset": 148568,
+                    "startOffset": 148564,
                     "endLine": 1745,
                     "endColumn": 12,
-                    "endOffset": 148697
+                    "endOffset": 148693
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7734,9 +7741,9 @@
                 "to": {
                     "startLine": 1746,
                     "startColumn": 4,
-                    "startOffset": 148702,
+                    "startOffset": 148698,
                     "endColumn": 95,
-                    "endOffset": 148793
+                    "endOffset": 148789
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7746,9 +7753,9 @@
                 "to": {
                     "startLine": 1747,
                     "startColumn": 4,
-                    "startOffset": 148798,
+                    "startOffset": 148794,
                     "endColumn": 111,
-                    "endOffset": 148905
+                    "endOffset": 148901
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7758,9 +7765,9 @@
                 "to": {
                     "startLine": 1748,
                     "startColumn": 4,
-                    "startOffset": 148910,
+                    "startOffset": 148906,
                     "endColumn": 99,
-                    "endOffset": 149005
+                    "endOffset": 149001
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7770,9 +7777,9 @@
                 "to": {
                     "startLine": 1749,
                     "startColumn": 4,
-                    "startOffset": 149010,
+                    "startOffset": 149006,
                     "endColumn": 115,
-                    "endOffset": 149121
+                    "endOffset": 149117
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7782,9 +7789,9 @@
                 "to": {
                     "startLine": 1750,
                     "startColumn": 4,
-                    "startOffset": 149126,
+                    "startOffset": 149122,
                     "endColumn": 95,
-                    "endOffset": 149217
+                    "endOffset": 149213
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7794,9 +7801,9 @@
                 "to": {
                     "startLine": 1751,
                     "startColumn": 4,
-                    "startOffset": 149222,
+                    "startOffset": 149218,
                     "endColumn": 111,
-                    "endOffset": 149329
+                    "endOffset": 149325
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7806,10 +7813,10 @@
                 "to": {
                     "startLine": 1752,
                     "startColumn": 4,
-                    "startOffset": 149334,
+                    "startOffset": 149330,
                     "endLine": 1753,
                     "endColumn": 12,
-                    "endOffset": 149469
+                    "endOffset": 149465
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7819,9 +7826,9 @@
                 "to": {
                     "startLine": 1754,
                     "startColumn": 4,
-                    "startOffset": 149474,
+                    "startOffset": 149470,
                     "endColumn": 135,
-                    "endOffset": 149605
+                    "endOffset": 149601
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7831,10 +7838,10 @@
                 "to": {
                     "startLine": 1755,
                     "startColumn": 4,
-                    "startOffset": 149610,
+                    "startOffset": 149606,
                     "endLine": 1756,
                     "endColumn": 12,
-                    "endOffset": 149769
+                    "endOffset": 149765
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7844,9 +7851,9 @@
                 "to": {
                     "startLine": 1757,
                     "startColumn": 4,
-                    "startOffset": 149774,
+                    "startOffset": 149770,
                     "endColumn": 129,
-                    "endOffset": 149899
+                    "endOffset": 149895
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7856,10 +7863,10 @@
                 "to": {
                     "startLine": 1758,
                     "startColumn": 4,
-                    "startOffset": 149904,
+                    "startOffset": 149900,
                     "endLine": 1759,
                     "endColumn": 12,
-                    "endOffset": 150057
+                    "endOffset": 150053
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7869,10 +7876,10 @@
                 "to": {
                     "startLine": 1760,
                     "startColumn": 4,
-                    "startOffset": 150062,
+                    "startOffset": 150058,
                     "endLine": 1761,
                     "endColumn": 12,
-                    "endOffset": 150207
+                    "endOffset": 150203
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7882,9 +7889,9 @@
                 "to": {
                     "startLine": 1762,
                     "startColumn": 4,
-                    "startOffset": 150212,
+                    "startOffset": 150208,
                     "endColumn": 140,
-                    "endOffset": 150348
+                    "endOffset": 150344
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7894,10 +7901,10 @@
                 "to": {
                     "startLine": 1763,
                     "startColumn": 4,
-                    "startOffset": 150353,
+                    "startOffset": 150349,
                     "endLine": 1764,
                     "endColumn": 12,
-                    "endOffset": 150492
+                    "endOffset": 150488
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7907,9 +7914,9 @@
                 "to": {
                     "startLine": 1765,
                     "startColumn": 4,
-                    "startOffset": 150497,
+                    "startOffset": 150493,
                     "endColumn": 134,
-                    "endOffset": 150627
+                    "endOffset": 150623
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7919,9 +7926,9 @@
                 "to": {
                     "startLine": 1766,
                     "startColumn": 4,
-                    "startOffset": 150632,
+                    "startOffset": 150628,
                     "endColumn": 111,
-                    "endOffset": 150739
+                    "endOffset": 150735
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7931,9 +7938,9 @@
                 "to": {
                     "startLine": 1767,
                     "startColumn": 4,
-                    "startOffset": 150744,
+                    "startOffset": 150740,
                     "endColumn": 127,
-                    "endOffset": 150867
+                    "endOffset": 150863
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7943,10 +7950,10 @@
                 "to": {
                     "startLine": 1768,
                     "startColumn": 4,
-                    "startOffset": 150872,
+                    "startOffset": 150868,
                     "endLine": 1769,
                     "endColumn": 12,
-                    "endOffset": 151003
+                    "endOffset": 150999
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7956,9 +7963,9 @@
                 "to": {
                     "startLine": 1770,
                     "startColumn": 4,
-                    "startOffset": 151008,
+                    "startOffset": 151004,
                     "endColumn": 131,
-                    "endOffset": 151135
+                    "endOffset": 151131
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7968,9 +7975,9 @@
                 "to": {
                     "startLine": 1771,
                     "startColumn": 4,
-                    "startOffset": 151140,
+                    "startOffset": 151136,
                     "endColumn": 129,
-                    "endOffset": 151265
+                    "endOffset": 151261
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7980,9 +7987,9 @@
                 "to": {
                     "startLine": 1772,
                     "startColumn": 4,
-                    "startOffset": 151270,
+                    "startOffset": 151266,
                     "endColumn": 129,
-                    "endOffset": 151395
+                    "endOffset": 151391
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -7992,9 +7999,9 @@
                 "to": {
                     "startLine": 1773,
                     "startColumn": 4,
-                    "startOffset": 151400,
+                    "startOffset": 151396,
                     "endColumn": 111,
-                    "endOffset": 151507
+                    "endOffset": 151503
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8004,9 +8011,9 @@
                 "to": {
                     "startLine": 1774,
                     "startColumn": 4,
-                    "startOffset": 151512,
+                    "startOffset": 151508,
                     "endColumn": 139,
-                    "endOffset": 151647
+                    "endOffset": 151643
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8016,10 +8023,10 @@
                 "to": {
                     "startLine": 1775,
                     "startColumn": 4,
-                    "startOffset": 151652,
+                    "startOffset": 151648,
                     "endLine": 1777,
                     "endColumn": 12,
-                    "endOffset": 151810
+                    "endOffset": 151806
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/values/values.xml"
@@ -8029,10 +8036,10 @@
                 "to": {
                     "startLine": 1778,
                     "startColumn": 4,
-                    "startOffset": 151815,
+                    "startOffset": 151811,
                     "endLine": 1780,
                     "endColumn": 12,
-                    "endOffset": 151978
+                    "endOffset": 151974
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/values/values.xml"
@@ -8042,9 +8049,9 @@
                 "to": {
                     "startLine": 1781,
                     "startColumn": 4,
-                    "startOffset": 151983,
+                    "startOffset": 151979,
                     "endColumn": 106,
-                    "endOffset": 152085
+                    "endOffset": 152081
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/values/values.xml"
@@ -8054,9 +8061,9 @@
                 "to": {
                     "startLine": 1782,
                     "startColumn": 4,
-                    "startOffset": 152090,
+                    "startOffset": 152086,
                     "endColumn": 104,
-                    "endOffset": 152190
+                    "endOffset": 152186
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/values/values.xml"
@@ -8066,10 +8073,10 @@
                 "to": {
                     "startLine": 1783,
                     "startColumn": 4,
-                    "startOffset": 152195,
+                    "startOffset": 152191,
                     "endLine": 1785,
                     "endColumn": 12,
-                    "endOffset": 152391
+                    "endOffset": 152387
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8079,9 +8086,9 @@
                 "to": {
                     "startLine": 1786,
                     "startColumn": 4,
-                    "startOffset": 152396,
+                    "startOffset": 152392,
                     "endColumn": 91,
-                    "endOffset": 152483
+                    "endOffset": 152479
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8091,10 +8098,10 @@
                 "to": {
                     "startLine": 1787,
                     "startColumn": 4,
-                    "startOffset": 152488,
+                    "startOffset": 152484,
                     "endLine": 1789,
                     "endColumn": 12,
-                    "endOffset": 152663
+                    "endOffset": 152659
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8104,10 +8111,10 @@
                 "to": {
                     "startLine": 1790,
                     "startColumn": 4,
-                    "startOffset": 152668,
+                    "startOffset": 152664,
                     "endLine": 1792,
                     "endColumn": 12,
-                    "endOffset": 152832
+                    "endOffset": 152828
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8117,10 +8124,10 @@
                 "to": {
                     "startLine": 1793,
                     "startColumn": 4,
-                    "startOffset": 152837,
+                    "startOffset": 152833,
                     "endLine": 1795,
                     "endColumn": 12,
-                    "endOffset": 153007
+                    "endOffset": 153003
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8130,10 +8137,10 @@
                 "to": {
                     "startLine": 1796,
                     "startColumn": 4,
-                    "startOffset": 153012,
+                    "startOffset": 153008,
                     "endLine": 1799,
                     "endColumn": 12,
-                    "endOffset": 153260
+                    "endOffset": 153256
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8143,10 +8150,10 @@
                 "to": {
                     "startLine": 1800,
                     "startColumn": 4,
-                    "startOffset": 153265,
+                    "startOffset": 153261,
                     "endLine": 1804,
                     "endColumn": 12,
-                    "endOffset": 153551
+                    "endOffset": 153547
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8156,9 +8163,9 @@
                 "to": {
                     "startLine": 1805,
                     "startColumn": 4,
-                    "startOffset": 153556,
+                    "startOffset": 153552,
                     "endColumn": 67,
-                    "endOffset": 153619
+                    "endOffset": 153615
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8168,9 +8175,9 @@
                 "to": {
                     "startLine": 1806,
                     "startColumn": 4,
-                    "startOffset": 153624,
+                    "startOffset": 153620,
                     "endColumn": 72,
-                    "endOffset": 153692
+                    "endOffset": 153688
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8180,9 +8187,9 @@
                 "to": {
                     "startLine": 1807,
                     "startColumn": 4,
-                    "startOffset": 153697,
+                    "startOffset": 153693,
                     "endColumn": 73,
-                    "endOffset": 153766
+                    "endOffset": 153762
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8192,9 +8199,9 @@
                 "to": {
                     "startLine": 1808,
                     "startColumn": 4,
-                    "startOffset": 153771,
+                    "startOffset": 153767,
                     "endColumn": 72,
-                    "endOffset": 153839
+                    "endOffset": 153835
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8204,9 +8211,9 @@
                 "to": {
                     "startLine": 1809,
                     "startColumn": 4,
-                    "startOffset": 153844,
+                    "startOffset": 153840,
                     "endColumn": 73,
-                    "endOffset": 153913
+                    "endOffset": 153909
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8216,10 +8223,10 @@
                 "to": {
                     "startLine": 1810,
                     "startColumn": 4,
-                    "startOffset": 153918,
+                    "startOffset": 153914,
                     "endLine": 1811,
                     "endColumn": 12,
-                    "endOffset": 154059
+                    "endOffset": 154055
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8229,10 +8236,10 @@
                 "to": {
                     "startLine": 1812,
                     "startColumn": 4,
-                    "startOffset": 154064,
+                    "startOffset": 154060,
                     "endLine": 1813,
                     "endColumn": 12,
-                    "endOffset": 154203
+                    "endOffset": 154199
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8242,10 +8249,10 @@
                 "to": {
                     "startLine": 1814,
                     "startColumn": 4,
-                    "startOffset": 154208,
+                    "startOffset": 154204,
                     "endLine": 1815,
                     "endColumn": 12,
-                    "endOffset": 154341
+                    "endOffset": 154337
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8255,9 +8262,9 @@
                 "to": {
                     "startLine": 1816,
                     "startColumn": 4,
-                    "startOffset": 154346,
+                    "startOffset": 154342,
                     "endColumn": 65,
-                    "endOffset": 154407
+                    "endOffset": 154403
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8267,9 +8274,9 @@
                 "to": {
                     "startLine": 1817,
                     "startColumn": 4,
-                    "startOffset": 154412,
+                    "startOffset": 154408,
                     "endColumn": 89,
-                    "endOffset": 154497
+                    "endOffset": 154493
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8279,9 +8286,9 @@
                 "to": {
                     "startLine": 1818,
                     "startColumn": 4,
-                    "startOffset": 154502,
+                    "startOffset": 154498,
                     "endColumn": 75,
-                    "endOffset": 154573
+                    "endOffset": 154569
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8291,9 +8298,9 @@
                 "to": {
                     "startLine": 1819,
                     "startColumn": 4,
-                    "startOffset": 154578,
+                    "startOffset": 154574,
                     "endColumn": 103,
-                    "endOffset": 154677
+                    "endOffset": 154673
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8303,9 +8310,9 @@
                 "to": {
                     "startLine": 1820,
                     "startColumn": 4,
-                    "startOffset": 154682,
+                    "startOffset": 154678,
                     "endColumn": 89,
-                    "endOffset": 154767
+                    "endOffset": 154763
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8315,9 +8322,9 @@
                 "to": {
                     "startLine": 1821,
                     "startColumn": 4,
-                    "startOffset": 154772,
+                    "startOffset": 154768,
                     "endColumn": 101,
-                    "endOffset": 154869
+                    "endOffset": 154865
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8327,9 +8334,9 @@
                 "to": {
                     "startLine": 1822,
                     "startColumn": 4,
-                    "startOffset": 154874,
+                    "startOffset": 154870,
                     "endColumn": 107,
-                    "endOffset": 154977
+                    "endOffset": 154973
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8339,9 +8346,9 @@
                 "to": {
                     "startLine": 1823,
                     "startColumn": 4,
-                    "startOffset": 154982,
+                    "startOffset": 154978,
                     "endColumn": 107,
-                    "endOffset": 155085
+                    "endOffset": 155081
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8351,9 +8358,9 @@
                 "to": {
                     "startLine": 1824,
                     "startColumn": 4,
-                    "startOffset": 155090,
+                    "startOffset": 155086,
                     "endColumn": 99,
-                    "endOffset": 155185
+                    "endOffset": 155181
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8363,9 +8370,9 @@
                 "to": {
                     "startLine": 1825,
                     "startColumn": 4,
-                    "startOffset": 155190,
+                    "startOffset": 155186,
                     "endColumn": 79,
-                    "endOffset": 155265
+                    "endOffset": 155261
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8375,9 +8382,9 @@
                 "to": {
                     "startLine": 1826,
                     "startColumn": 4,
-                    "startOffset": 155270,
+                    "startOffset": 155266,
                     "endColumn": 91,
-                    "endOffset": 155357
+                    "endOffset": 155353
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8387,9 +8394,9 @@
                 "to": {
                     "startLine": 1827,
                     "startColumn": 4,
-                    "startOffset": 155362,
+                    "startOffset": 155358,
                     "endColumn": 97,
-                    "endOffset": 155455
+                    "endOffset": 155451
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8399,10 +8406,10 @@
                 "to": {
                     "startLine": 1828,
                     "startColumn": 4,
-                    "startOffset": 155460,
+                    "startOffset": 155456,
                     "endLine": 1829,
                     "endColumn": 12,
-                    "endOffset": 155565
+                    "endOffset": 155561
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8412,9 +8419,9 @@
                 "to": {
                     "startLine": 1830,
                     "startColumn": 4,
-                    "startOffset": 155570,
+                    "startOffset": 155566,
                     "endColumn": 77,
-                    "endOffset": 155643
+                    "endOffset": 155639
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8424,9 +8431,9 @@
                 "to": {
                     "startLine": 1831,
                     "startColumn": 4,
-                    "startOffset": 155648,
+                    "startOffset": 155644,
                     "endColumn": 105,
-                    "endOffset": 155749
+                    "endOffset": 155745
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8436,9 +8443,9 @@
                 "to": {
                     "startLine": 1832,
                     "startColumn": 4,
-                    "startOffset": 155754,
+                    "startOffset": 155750,
                     "endColumn": 91,
-                    "endOffset": 155841
+                    "endOffset": 155837
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8448,9 +8455,9 @@
                 "to": {
                     "startLine": 1833,
                     "startColumn": 4,
-                    "startOffset": 155846,
+                    "startOffset": 155842,
                     "endColumn": 103,
-                    "endOffset": 155945
+                    "endOffset": 155941
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8460,9 +8467,9 @@
                 "to": {
                     "startLine": 1834,
                     "startColumn": 4,
-                    "startOffset": 155950,
+                    "startOffset": 155946,
                     "endColumn": 109,
-                    "endOffset": 156055
+                    "endOffset": 156051
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8472,10 +8479,10 @@
                 "to": {
                     "startLine": 1835,
                     "startColumn": 4,
-                    "startOffset": 156060,
+                    "startOffset": 156056,
                     "endLine": 1836,
                     "endColumn": 12,
-                    "endOffset": 156177
+                    "endOffset": 156173
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8485,10 +8492,10 @@
                 "to": {
                     "startLine": 1837,
                     "startColumn": 4,
-                    "startOffset": 156182,
+                    "startOffset": 156178,
                     "endLine": 1840,
                     "endColumn": 12,
-                    "endOffset": 156340
+                    "endOffset": 156336
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8498,10 +8505,10 @@
                 "to": {
                     "startLine": 1841,
                     "startColumn": 4,
-                    "startOffset": 156345,
+                    "startOffset": 156341,
                     "endLine": 1844,
                     "endColumn": 12,
-                    "endOffset": 156497
+                    "endOffset": 156493
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8511,10 +8518,10 @@
                 "to": {
                     "startLine": 1845,
                     "startColumn": 4,
-                    "startOffset": 156502,
+                    "startOffset": 156498,
                     "endLine": 1849,
                     "endColumn": 12,
-                    "endOffset": 156799
+                    "endOffset": 156795
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/res/values/values.xml"
@@ -8524,9 +8531,9 @@
                 "to": {
                     "startLine": 1850,
                     "startColumn": 4,
-                    "startOffset": 156804,
+                    "startOffset": 156800,
                     "endColumn": 95,
-                    "endOffset": 156895
+                    "endOffset": 156891
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/res/values/values.xml"
@@ -8536,10 +8543,10 @@
                 "to": {
                     "startLine": 1851,
                     "startColumn": 4,
-                    "startOffset": 156900,
+                    "startOffset": 156896,
                     "endLine": 1853,
                     "endColumn": 12,
-                    "endOffset": 157049
+                    "endOffset": 157045
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8549,10 +8556,10 @@
                 "to": {
                     "startLine": 1854,
                     "startColumn": 4,
-                    "startOffset": 157054,
+                    "startOffset": 157050,
                     "endLine": 1858,
                     "endColumn": 12,
-                    "endOffset": 157407
+                    "endOffset": 157403
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8562,10 +8569,10 @@
                 "to": {
                     "startLine": 1859,
                     "startColumn": 4,
-                    "startOffset": 157412,
+                    "startOffset": 157408,
                     "endLine": 1861,
                     "endColumn": 12,
-                    "endOffset": 157574
+                    "endOffset": 157570
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8575,10 +8582,10 @@
                 "to": {
                     "startLine": 1862,
                     "startColumn": 4,
-                    "startOffset": 157579,
+                    "startOffset": 157575,
                     "endLine": 1866,
                     "endColumn": 12,
-                    "endOffset": 157944
+                    "endOffset": 157940
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8588,10 +8595,10 @@
                 "to": {
                     "startLine": 1867,
                     "startColumn": 4,
-                    "startOffset": 157949,
+                    "startOffset": 157945,
                     "endLine": 1870,
                     "endColumn": 12,
-                    "endOffset": 158104
+                    "endOffset": 158100
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8601,10 +8608,10 @@
                 "to": {
                     "startLine": 1871,
                     "startColumn": 4,
-                    "startOffset": 158109,
+                    "startOffset": 158105,
                     "endLine": 1874,
                     "endColumn": 12,
-                    "endOffset": 158258
+                    "endOffset": 158254
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -8614,10 +8621,10 @@
                 "to": {
                     "startLine": 1875,
                     "startColumn": 4,
-                    "startOffset": 158263,
+                    "startOffset": 158259,
                     "endLine": 1882,
                     "endColumn": 10,
-                    "endOffset": 158682
+                    "endOffset": 158678
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/res/values/values.xml"
@@ -8627,10 +8634,10 @@
                 "to": {
                     "startLine": 1883,
                     "startColumn": 4,
-                    "startOffset": 158687,
+                    "startOffset": 158683,
                     "endLine": 1893,
                     "endColumn": 12,
-                    "endOffset": 159436
+                    "endOffset": 159432
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values/values.xml"
@@ -8640,10 +8647,10 @@
                 "to": {
                     "startLine": 1894,
                     "startColumn": 4,
-                    "startOffset": 159441,
+                    "startOffset": 159437,
                     "endLine": 1904,
                     "endColumn": 12,
-                    "endOffset": 160185
+                    "endOffset": 160181
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values/values.xml"
@@ -8653,9 +8660,9 @@
                 "to": {
                     "startLine": 1905,
                     "startColumn": 4,
-                    "startOffset": 160190,
+                    "startOffset": 160186,
                     "endColumn": 79,
-                    "endOffset": 160265
+                    "endOffset": 160261
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8665,9 +8672,9 @@
                 "to": {
                     "startLine": 1906,
                     "startColumn": 4,
-                    "startOffset": 160270,
+                    "startOffset": 160266,
                     "endColumn": 99,
-                    "endOffset": 160365
+                    "endOffset": 160361
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8677,9 +8684,9 @@
                 "to": {
                     "startLine": 1907,
                     "startColumn": 4,
-                    "startOffset": 160370,
+                    "startOffset": 160366,
                     "endColumn": 89,
-                    "endOffset": 160455
+                    "endOffset": 160451
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8689,9 +8696,9 @@
                 "to": {
                     "startLine": 1908,
                     "startColumn": 4,
-                    "startOffset": 160460,
+                    "startOffset": 160456,
                     "endColumn": 109,
-                    "endOffset": 160565
+                    "endOffset": 160561
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8701,9 +8708,9 @@
                 "to": {
                     "startLine": 1909,
                     "startColumn": 4,
-                    "startOffset": 160570,
+                    "startOffset": 160566,
                     "endColumn": 93,
-                    "endOffset": 160659
+                    "endOffset": 160655
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8713,9 +8720,9 @@
                 "to": {
                     "startLine": 1910,
                     "startColumn": 4,
-                    "startOffset": 160664,
+                    "startOffset": 160660,
                     "endColumn": 105,
-                    "endOffset": 160765
+                    "endOffset": 160761
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8725,9 +8732,9 @@
                 "to": {
                     "startLine": 1911,
                     "startColumn": 4,
-                    "startOffset": 160770,
+                    "startOffset": 160766,
                     "endColumn": 91,
-                    "endOffset": 160857
+                    "endOffset": 160853
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8737,10 +8744,10 @@
                 "to": {
                     "startLine": 1912,
                     "startColumn": 4,
-                    "startOffset": 160862,
+                    "startOffset": 160858,
                     "endLine": 1919,
                     "endColumn": 12,
-                    "endOffset": 161386
+                    "endOffset": 161382
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/res/values/values.xml"
@@ -8750,10 +8757,10 @@
                 "to": {
                     "startLine": 1920,
                     "startColumn": 4,
-                    "startOffset": 161391,
+                    "startOffset": 161387,
                     "endLine": 1922,
                     "endColumn": 12,
-                    "endOffset": 161570
+                    "endOffset": 161566
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/res/values/values.xml"
@@ -8763,10 +8770,10 @@
                 "to": {
                     "startLine": 1923,
                     "startColumn": 4,
-                    "startOffset": 161575,
+                    "startOffset": 161571,
                     "endLine": 1930,
                     "endColumn": 12,
-                    "endOffset": 162099
+                    "endOffset": 162095
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/res/values/values.xml"
@@ -8776,10 +8783,10 @@
                 "to": {
                     "startLine": 1931,
                     "startColumn": 4,
-                    "startOffset": 162104,
+                    "startOffset": 162100,
                     "endLine": 1943,
                     "endColumn": 12,
-                    "endOffset": 163103
+                    "endOffset": 163099
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/res/values/values.xml"
@@ -8789,10 +8796,10 @@
                 "to": {
                     "startLine": 1944,
                     "startColumn": 4,
-                    "startOffset": 163108,
+                    "startOffset": 163104,
                     "endLine": 1945,
                     "endColumn": 12,
-                    "endOffset": 163203
+                    "endOffset": 163199
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8802,10 +8809,10 @@
                 "to": {
                     "startLine": 1946,
                     "startColumn": 4,
-                    "startOffset": 163208,
+                    "startOffset": 163204,
                     "endLine": 1947,
                     "endColumn": 12,
-                    "endOffset": 163315
+                    "endOffset": 163311
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8815,10 +8822,10 @@
                 "to": {
                     "startLine": 1948,
                     "startColumn": 4,
-                    "startOffset": 163320,
+                    "startOffset": 163316,
                     "endLine": 1949,
                     "endColumn": 12,
-                    "endOffset": 163429
+                    "endOffset": 163425
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8828,10 +8835,10 @@
                 "to": {
                     "startLine": 1950,
                     "startColumn": 4,
-                    "startOffset": 163434,
+                    "startOffset": 163430,
                     "endLine": 1951,
                     "endColumn": 12,
-                    "endOffset": 163545
+                    "endOffset": 163541
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8841,10 +8848,10 @@
                 "to": {
                     "startLine": 1952,
                     "startColumn": 4,
-                    "startOffset": 163550,
+                    "startOffset": 163546,
                     "endLine": 1953,
                     "endColumn": 12,
-                    "endOffset": 163661
+                    "endOffset": 163657
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8854,9 +8861,9 @@
                 "to": {
                     "startLine": 1954,
                     "startColumn": 4,
-                    "startOffset": 163666,
+                    "startOffset": 163662,
                     "endColumn": 93,
-                    "endOffset": 163755
+                    "endOffset": 163751
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8866,9 +8873,9 @@
                 "to": {
                     "startLine": 1955,
                     "startColumn": 4,
-                    "startOffset": 163760,
+                    "startOffset": 163756,
                     "endColumn": 113,
-                    "endOffset": 163869
+                    "endOffset": 163865
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8878,9 +8885,9 @@
                 "to": {
                     "startLine": 1956,
                     "startColumn": 4,
-                    "startOffset": 163874,
+                    "startOffset": 163870,
                     "endColumn": 111,
-                    "endOffset": 163981
+                    "endOffset": 163977
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8890,10 +8897,10 @@
                 "to": {
                     "startLine": 1957,
                     "startColumn": 4,
-                    "startOffset": 163986,
+                    "startOffset": 163982,
                     "endLine": 1958,
                     "endColumn": 12,
-                    "endOffset": 164083
+                    "endOffset": 164079
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8903,10 +8910,10 @@
                 "to": {
                     "startLine": 1959,
                     "startColumn": 4,
-                    "startOffset": 164088,
+                    "startOffset": 164084,
                     "endLine": 1960,
                     "endColumn": 12,
-                    "endOffset": 164203
+                    "endOffset": 164199
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8916,10 +8923,10 @@
                 "to": {
                     "startLine": 1961,
                     "startColumn": 4,
-                    "startOffset": 164208,
+                    "startOffset": 164204,
                     "endLine": 1962,
                     "endColumn": 12,
-                    "endOffset": 164325
+                    "endOffset": 164321
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8929,9 +8936,9 @@
                 "to": {
                     "startLine": 1963,
                     "startColumn": 4,
-                    "startOffset": 164330,
+                    "startOffset": 164326,
                     "endColumn": 81,
-                    "endOffset": 164407
+                    "endOffset": 164403
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8941,9 +8948,9 @@
                 "to": {
                     "startLine": 1964,
                     "startColumn": 4,
-                    "startOffset": 164412,
+                    "startOffset": 164408,
                     "endColumn": 103,
-                    "endOffset": 164511
+                    "endOffset": 164507
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8953,9 +8960,9 @@
                 "to": {
                     "startLine": 1965,
                     "startColumn": 4,
-                    "startOffset": 164516,
+                    "startOffset": 164512,
                     "endColumn": 119,
-                    "endOffset": 164631
+                    "endOffset": 164627
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8965,9 +8972,9 @@
                 "to": {
                     "startLine": 1966,
                     "startColumn": 4,
-                    "startOffset": 164636,
+                    "startOffset": 164632,
                     "endColumn": 125,
-                    "endOffset": 164757
+                    "endOffset": 164753
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8977,9 +8984,9 @@
                 "to": {
                     "startLine": 1967,
                     "startColumn": 4,
-                    "startOffset": 164762,
+                    "startOffset": 164758,
                     "endColumn": 97,
-                    "endOffset": 164855
+                    "endOffset": 164851
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -8989,9 +8996,9 @@
                 "to": {
                     "startLine": 1968,
                     "startColumn": 4,
-                    "startOffset": 164860,
+                    "startOffset": 164856,
                     "endColumn": 93,
-                    "endOffset": 164949
+                    "endOffset": 164945
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9001,9 +9008,9 @@
                 "to": {
                     "startLine": 1969,
                     "startColumn": 4,
-                    "startOffset": 164954,
+                    "startOffset": 164950,
                     "endColumn": 87,
-                    "endOffset": 165037
+                    "endOffset": 165033
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9013,9 +9020,9 @@
                 "to": {
                     "startLine": 1970,
                     "startColumn": 4,
-                    "startOffset": 165042,
+                    "startOffset": 165038,
                     "endColumn": 111,
-                    "endOffset": 165149
+                    "endOffset": 165145
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9025,9 +9032,9 @@
                 "to": {
                     "startLine": 1971,
                     "startColumn": 4,
-                    "startOffset": 165154,
+                    "startOffset": 165150,
                     "endColumn": 115,
-                    "endOffset": 165265
+                    "endOffset": 165261
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9037,9 +9044,9 @@
                 "to": {
                     "startLine": 1972,
                     "startColumn": 4,
-                    "startOffset": 165270,
+                    "startOffset": 165266,
                     "endColumn": 121,
-                    "endOffset": 165387
+                    "endOffset": 165383
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9049,9 +9056,9 @@
                 "to": {
                     "startLine": 1973,
                     "startColumn": 4,
-                    "startOffset": 165392,
+                    "startOffset": 165388,
                     "endColumn": 111,
-                    "endOffset": 165499
+                    "endOffset": 165495
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9061,10 +9068,10 @@
                 "to": {
                     "startLine": 1974,
                     "startColumn": 4,
-                    "startOffset": 165504,
+                    "startOffset": 165500,
                     "endLine": 1976,
                     "endColumn": 12,
-                    "endOffset": 165674
+                    "endOffset": 165670
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9074,9 +9081,9 @@
                 "to": {
                     "startLine": 1977,
                     "startColumn": 4,
-                    "startOffset": 165679,
+                    "startOffset": 165675,
                     "endColumn": 115,
-                    "endOffset": 165790
+                    "endOffset": 165786
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9086,9 +9093,9 @@
                 "to": {
                     "startLine": 1978,
                     "startColumn": 4,
-                    "startOffset": 165795,
+                    "startOffset": 165791,
                     "endColumn": 85,
-                    "endOffset": 165876
+                    "endOffset": 165872
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9098,9 +9105,9 @@
                 "to": {
                     "startLine": 1979,
                     "startColumn": 4,
-                    "startOffset": 165881,
+                    "startOffset": 165877,
                     "endColumn": 91,
-                    "endOffset": 165968
+                    "endOffset": 165964
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9110,10 +9117,10 @@
                 "to": {
                     "startLine": 1980,
                     "startColumn": 4,
-                    "startOffset": 165973,
+                    "startOffset": 165969,
                     "endLine": 1981,
                     "endColumn": 12,
-                    "endOffset": 166080
+                    "endOffset": 166076
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9123,10 +9130,10 @@
                 "to": {
                     "startLine": 1982,
                     "startColumn": 4,
-                    "startOffset": 166085,
+                    "startOffset": 166081,
                     "endLine": 1983,
                     "endColumn": 12,
-                    "endOffset": 166204
+                    "endOffset": 166200
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9136,9 +9143,9 @@
                 "to": {
                     "startLine": 1984,
                     "startColumn": 4,
-                    "startOffset": 166209,
+                    "startOffset": 166205,
                     "endColumn": 66,
-                    "endOffset": 166271
+                    "endOffset": 166267
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9148,10 +9155,10 @@
                 "to": {
                     "startLine": 1985,
                     "startColumn": 4,
-                    "startOffset": 166276,
+                    "startOffset": 166272,
                     "endLine": 1986,
                     "endColumn": 12,
-                    "endOffset": 166397
+                    "endOffset": 166393
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9161,9 +9168,9 @@
                 "to": {
                     "startLine": 1987,
                     "startColumn": 4,
-                    "startOffset": 166402,
+                    "startOffset": 166398,
                     "endColumn": 67,
-                    "endOffset": 166465
+                    "endOffset": 166461
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9173,10 +9180,10 @@
                 "to": {
                     "startLine": 1988,
                     "startColumn": 4,
-                    "startOffset": 166470,
+                    "startOffset": 166466,
                     "endLine": 1989,
                     "endColumn": 12,
-                    "endOffset": 166593
+                    "endOffset": 166589
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9186,10 +9193,10 @@
                 "to": {
                     "startLine": 1990,
                     "startColumn": 4,
-                    "startOffset": 166598,
+                    "startOffset": 166594,
                     "endLine": 1991,
                     "endColumn": 12,
-                    "endOffset": 166737
+                    "endOffset": 166733
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9199,10 +9206,10 @@
                 "to": {
                     "startLine": 1992,
                     "startColumn": 4,
-                    "startOffset": 166742,
+                    "startOffset": 166738,
                     "endLine": 1993,
                     "endColumn": 12,
-                    "endOffset": 166865
+                    "endOffset": 166861
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9212,9 +9219,9 @@
                 "to": {
                     "startLine": 1994,
                     "startColumn": 4,
-                    "startOffset": 166870,
+                    "startOffset": 166866,
                     "endColumn": 68,
-                    "endOffset": 166934
+                    "endOffset": 166930
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9224,9 +9231,9 @@
                 "to": {
                     "startLine": 1995,
                     "startColumn": 4,
-                    "startOffset": 166939,
+                    "startOffset": 166935,
                     "endColumn": 94,
-                    "endOffset": 167029
+                    "endOffset": 167025
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9236,9 +9243,9 @@
                 "to": {
                     "startLine": 1996,
                     "startColumn": 4,
-                    "startOffset": 167034,
+                    "startOffset": 167030,
                     "endColumn": 114,
-                    "endOffset": 167144
+                    "endOffset": 167140
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9248,9 +9255,9 @@
                 "to": {
                     "startLine": 1997,
                     "startColumn": 4,
-                    "startOffset": 167149,
+                    "startOffset": 167145,
                     "endColumn": 112,
-                    "endOffset": 167257
+                    "endOffset": 167253
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9260,9 +9267,9 @@
                 "to": {
                     "startLine": 1998,
                     "startColumn": 4,
-                    "startOffset": 167262,
+                    "startOffset": 167258,
                     "endColumn": 98,
-                    "endOffset": 167356
+                    "endOffset": 167352
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9272,9 +9279,9 @@
                 "to": {
                     "startLine": 1999,
                     "startColumn": 4,
-                    "startOffset": 167361,
+                    "startOffset": 167357,
                     "endColumn": 108,
-                    "endOffset": 167465
+                    "endOffset": 167461
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9284,9 +9291,9 @@
                 "to": {
                     "startLine": 2000,
                     "startColumn": 4,
-                    "startOffset": 167470,
+                    "startOffset": 167466,
                     "endColumn": 110,
-                    "endOffset": 167576
+                    "endOffset": 167572
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9296,9 +9303,9 @@
                 "to": {
                     "startLine": 2001,
                     "startColumn": 4,
-                    "startOffset": 167581,
+                    "startOffset": 167577,
                     "endColumn": 110,
-                    "endOffset": 167687
+                    "endOffset": 167683
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9308,9 +9315,9 @@
                 "to": {
                     "startLine": 2002,
                     "startColumn": 4,
-                    "startOffset": 167692,
+                    "startOffset": 167688,
                     "endColumn": 100,
-                    "endOffset": 167788
+                    "endOffset": 167784
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9320,9 +9327,9 @@
                 "to": {
                     "startLine": 2003,
                     "startColumn": 4,
-                    "startOffset": 167793,
+                    "startOffset": 167789,
                     "endColumn": 104,
-                    "endOffset": 167893
+                    "endOffset": 167889
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9332,9 +9339,9 @@
                 "to": {
                     "startLine": 2004,
                     "startColumn": 4,
-                    "startOffset": 167898,
+                    "startOffset": 167894,
                     "endColumn": 99,
-                    "endOffset": 167993
+                    "endOffset": 167989
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9344,10 +9351,10 @@
                 "to": {
                     "startLine": 2005,
                     "startColumn": 4,
-                    "startOffset": 167998,
+                    "startOffset": 167994,
                     "endLine": 2006,
                     "endColumn": 12,
-                    "endOffset": 168123
+                    "endOffset": 168119
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9357,9 +9364,9 @@
                 "to": {
                     "startLine": 2007,
                     "startColumn": 4,
-                    "startOffset": 168128,
+                    "startOffset": 168124,
                     "endColumn": 90,
-                    "endOffset": 168214
+                    "endOffset": 168210
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9369,9 +9376,9 @@
                 "to": {
                     "startLine": 2008,
                     "startColumn": 4,
-                    "startOffset": 168219,
+                    "startOffset": 168215,
                     "endColumn": 122,
-                    "endOffset": 168337
+                    "endOffset": 168333
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9381,9 +9388,9 @@
                 "to": {
                     "startLine": 2009,
                     "startColumn": 4,
-                    "startOffset": 168342,
+                    "startOffset": 168338,
                     "endColumn": 93,
-                    "endOffset": 168431
+                    "endOffset": 168427
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9393,10 +9400,10 @@
                 "to": {
                     "startLine": 2010,
                     "startColumn": 4,
-                    "startOffset": 168436,
+                    "startOffset": 168432,
                     "endLine": 2011,
                     "endColumn": 12,
-                    "endOffset": 168543
+                    "endOffset": 168539
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9406,9 +9413,9 @@
                 "to": {
                     "startLine": 2012,
                     "startColumn": 4,
-                    "startOffset": 168548,
+                    "startOffset": 168544,
                     "endColumn": 85,
-                    "endOffset": 168629
+                    "endOffset": 168625
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9418,9 +9425,9 @@
                 "to": {
                     "startLine": 2013,
                     "startColumn": 4,
-                    "startOffset": 168634,
+                    "startOffset": 168630,
                     "endColumn": 103,
-                    "endOffset": 168733
+                    "endOffset": 168729
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9430,9 +9437,9 @@
                 "to": {
                     "startLine": 2014,
                     "startColumn": 4,
-                    "startOffset": 168738,
+                    "startOffset": 168734,
                     "endColumn": 95,
-                    "endOffset": 168829
+                    "endOffset": 168825
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9442,9 +9449,9 @@
                 "to": {
                     "startLine": 2015,
                     "startColumn": 4,
-                    "startOffset": 168834,
+                    "startOffset": 168830,
                     "endColumn": 87,
-                    "endOffset": 168917
+                    "endOffset": 168913
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9454,10 +9461,10 @@
                 "to": {
                     "startLine": 2016,
                     "startColumn": 4,
-                    "startOffset": 168922,
+                    "startOffset": 168918,
                     "endLine": 2017,
                     "endColumn": 12,
-                    "endOffset": 169035
+                    "endOffset": 169031
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9467,10 +9474,10 @@
                 "to": {
                     "startLine": 2018,
                     "startColumn": 4,
-                    "startOffset": 169040,
+                    "startOffset": 169036,
                     "endLine": 2019,
                     "endColumn": 12,
-                    "endOffset": 169139
+                    "endOffset": 169135
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9480,10 +9487,10 @@
                 "to": {
                     "startLine": 2020,
                     "startColumn": 4,
-                    "startOffset": 169144,
+                    "startOffset": 169140,
                     "endLine": 2021,
                     "endColumn": 12,
-                    "endOffset": 169243
+                    "endOffset": 169239
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9493,10 +9500,10 @@
                 "to": {
                     "startLine": 2022,
                     "startColumn": 4,
-                    "startOffset": 169248,
+                    "startOffset": 169244,
                     "endLine": 2023,
                     "endColumn": 12,
-                    "endOffset": 169369
+                    "endOffset": 169365
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9506,9 +9513,9 @@
                 "to": {
                     "startLine": 2024,
                     "startColumn": 4,
-                    "startOffset": 169374,
+                    "startOffset": 169370,
                     "endColumn": 87,
-                    "endOffset": 169457
+                    "endOffset": 169453
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9518,9 +9525,9 @@
                 "to": {
                     "startLine": 2025,
                     "startColumn": 4,
-                    "startOffset": 169462,
+                    "startOffset": 169458,
                     "endColumn": 107,
-                    "endOffset": 169565
+                    "endOffset": 169561
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9530,9 +9537,9 @@
                 "to": {
                     "startLine": 2026,
                     "startColumn": 4,
-                    "startOffset": 169570,
+                    "startOffset": 169566,
                     "endColumn": 99,
-                    "endOffset": 169665
+                    "endOffset": 169661
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9542,9 +9549,9 @@
                 "to": {
                     "startLine": 2027,
                     "startColumn": 4,
-                    "startOffset": 169670,
+                    "startOffset": 169666,
                     "endColumn": 89,
-                    "endOffset": 169755
+                    "endOffset": 169751
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9554,9 +9561,9 @@
                 "to": {
                     "startLine": 2028,
                     "startColumn": 4,
-                    "startOffset": 169760,
+                    "startOffset": 169756,
                     "endColumn": 109,
-                    "endOffset": 169865
+                    "endOffset": 169861
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9566,9 +9573,9 @@
                 "to": {
                     "startLine": 2029,
                     "startColumn": 4,
-                    "startOffset": 169870,
+                    "startOffset": 169866,
                     "endColumn": 83,
-                    "endOffset": 169949
+                    "endOffset": 169945
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9578,9 +9585,9 @@
                 "to": {
                     "startLine": 2030,
                     "startColumn": 4,
-                    "startOffset": 169954,
+                    "startOffset": 169950,
                     "endColumn": 101,
-                    "endOffset": 170051
+                    "endOffset": 170047
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9590,9 +9597,9 @@
                 "to": {
                     "startLine": 2031,
                     "startColumn": 4,
-                    "startOffset": 170056,
+                    "startOffset": 170052,
                     "endColumn": 83,
-                    "endOffset": 170135
+                    "endOffset": 170131
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9602,9 +9609,9 @@
                 "to": {
                     "startLine": 2032,
                     "startColumn": 4,
-                    "startOffset": 170140,
+                    "startOffset": 170136,
                     "endColumn": 53,
-                    "endOffset": 170189
+                    "endOffset": 170185
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9614,9 +9621,9 @@
                 "to": {
                     "startLine": 2033,
                     "startColumn": 4,
-                    "startOffset": 170194,
+                    "startOffset": 170190,
                     "endColumn": 63,
-                    "endOffset": 170253
+                    "endOffset": 170249
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9626,9 +9633,9 @@
                 "to": {
                     "startLine": 2034,
                     "startColumn": 4,
-                    "startOffset": 170258,
+                    "startOffset": 170254,
                     "endColumn": 105,
-                    "endOffset": 170359
+                    "endOffset": 170355
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9638,9 +9645,9 @@
                 "to": {
                     "startLine": 2035,
                     "startColumn": 4,
-                    "startOffset": 170364,
+                    "startOffset": 170360,
                     "endColumn": 109,
-                    "endOffset": 170469
+                    "endOffset": 170465
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9650,9 +9657,9 @@
                 "to": {
                     "startLine": 2036,
                     "startColumn": 4,
-                    "startOffset": 170474,
+                    "startOffset": 170470,
                     "endColumn": 83,
-                    "endOffset": 170553
+                    "endOffset": 170549
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9662,9 +9669,9 @@
                 "to": {
                     "startLine": 2037,
                     "startColumn": 4,
-                    "startOffset": 170558,
+                    "startOffset": 170554,
                     "endColumn": 119,
-                    "endOffset": 170673
+                    "endOffset": 170669
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values/values.xml"
@@ -9674,10 +9681,10 @@
                 "to": {
                     "startLine": 2038,
                     "startColumn": 4,
-                    "startOffset": 170678,
+                    "startOffset": 170674,
                     "endLine": 2039,
                     "endColumn": 12,
-                    "endOffset": 170773
+                    "endOffset": 170769
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9687,10 +9694,10 @@
                 "to": {
                     "startLine": 2040,
                     "startColumn": 4,
-                    "startOffset": 170778,
+                    "startOffset": 170774,
                     "endLine": 2046,
                     "endColumn": 12,
-                    "endOffset": 171228
+                    "endOffset": 171224
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9700,10 +9707,10 @@
                 "to": {
                     "startLine": 2047,
                     "startColumn": 4,
-                    "startOffset": 171233,
+                    "startOffset": 171229,
                     "endLine": 2050,
                     "endColumn": 12,
-                    "endOffset": 171435
+                    "endOffset": 171431
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9713,10 +9720,10 @@
                 "to": {
                     "startLine": 2051,
                     "startColumn": 4,
-                    "startOffset": 171440,
+                    "startOffset": 171436,
                     "endLine": 2053,
                     "endColumn": 12,
-                    "endOffset": 171594
+                    "endOffset": 171590
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9726,10 +9733,10 @@
                 "to": {
                     "startLine": 2054,
                     "startColumn": 4,
-                    "startOffset": 171599,
+                    "startOffset": 171595,
                     "endLine": 2062,
                     "endColumn": 12,
-                    "endOffset": 172159
+                    "endOffset": 172155
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9739,10 +9746,10 @@
                 "to": {
                     "startLine": 2063,
                     "startColumn": 4,
-                    "startOffset": 172164,
+                    "startOffset": 172160,
                     "endLine": 2068,
                     "endColumn": 12,
-                    "endOffset": 172520
+                    "endOffset": 172516
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9752,10 +9759,10 @@
                 "to": {
                     "startLine": 2069,
                     "startColumn": 4,
-                    "startOffset": 172525,
+                    "startOffset": 172521,
                     "endLine": 2071,
                     "endColumn": 12,
-                    "endOffset": 172649
+                    "endOffset": 172645
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9765,10 +9772,10 @@
                 "to": {
                     "startLine": 2072,
                     "startColumn": 4,
-                    "startOffset": 172654,
+                    "startOffset": 172650,
                     "endLine": 2081,
                     "endColumn": 12,
-                    "endOffset": 173393
+                    "endOffset": 173389
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9778,10 +9785,10 @@
                 "to": {
                     "startLine": 2082,
                     "startColumn": 4,
-                    "startOffset": 173398,
+                    "startOffset": 173394,
                     "endLine": 2085,
                     "endColumn": 12,
-                    "endOffset": 173573
+                    "endOffset": 173569
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9791,10 +9798,10 @@
                 "to": {
                     "startLine": 2086,
                     "startColumn": 4,
-                    "startOffset": 173578,
+                    "startOffset": 173574,
                     "endLine": 2091,
                     "endColumn": 12,
-                    "endOffset": 174014
+                    "endOffset": 174010
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/res/values/values.xml"
@@ -9804,10 +9811,10 @@
                 "to": {
                     "startLine": 2092,
                     "startColumn": 4,
-                    "startOffset": 174019,
+                    "startOffset": 174015,
                     "endLine": 2099,
                     "endColumn": 12,
-                    "endOffset": 174534
+                    "endOffset": 174530
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values/values.xml"
@@ -9817,10 +9824,10 @@
                 "to": {
                     "startLine": 2100,
                     "startColumn": 4,
-                    "startOffset": 174539,
+                    "startOffset": 174535,
                     "endLine": 2107,
                     "endColumn": 12,
-                    "endOffset": 175041
+                    "endOffset": 175037
                 },
                 "from": {
                     "file": "/home/summerjob/Documents/CESAR/MapTest/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/values/values.xml"

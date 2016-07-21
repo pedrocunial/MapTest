@@ -491,10 +491,10 @@ public final class R {
 		public static final int abc_textfield_search_activated_mtrl_alpha = 0x7f020049;
 		public static final int abc_textfield_search_default_mtrl_alpha = 0x7f02004a;
 		public static final int abc_textfield_search_material = 0x7f02004b;
-		public static final int notification_template_icon_bg = 0x7f0200f0;
+		public static final int notification_template_icon_bg = 0x7f0200f1;
 	}
 	public static final class id {
-		public static final int action0 = 0x7f0e00f7;
+		public static final int action0 = 0x7f0e00f6;
 		public static final int action_bar = 0x7f0e00a0;
 		public static final int action_bar_activity_content = 0x7f0e0000;
 		public static final int action_bar_container = 0x7f0e009f;
@@ -503,7 +503,7 @@ public final class R {
 		public static final int action_bar_subtitle = 0x7f0e0080;
 		public static final int action_bar_title = 0x7f0e007f;
 		public static final int action_context_bar = 0x7f0e00a1;
-		public static final int action_divider = 0x7f0e00fb;
+		public static final int action_divider = 0x7f0e00fa;
 		public static final int action_menu_divider = 0x7f0e0002;
 		public static final int action_menu_presenter = 0x7f0e0003;
 		public static final int action_mode_bar = 0x7f0e009d;
@@ -516,9 +516,9 @@ public final class R {
 		public static final int beginning = 0x7f0e0048;
 		public static final int bottom = 0x7f0e0026;
 		public static final int buttonPanel = 0x7f0e0089;
-		public static final int cancel_action = 0x7f0e00f8;
+		public static final int cancel_action = 0x7f0e00f7;
 		public static final int checkbox = 0x7f0e0097;
-		public static final int chronometer = 0x7f0e00fe;
+		public static final int chronometer = 0x7f0e00fd;
 		public static final int collapseActionView = 0x7f0e0053;
 		public static final int contentPanel = 0x7f0e008f;
 		public static final int custom = 0x7f0e0095;
@@ -528,7 +528,7 @@ public final class R {
 		public static final int disableHome = 0x7f0e0013;
 		public static final int edit_query = 0x7f0e00a2;
 		public static final int end = 0x7f0e002a;
-		public static final int end_padder = 0x7f0e0101;
+		public static final int end_padder = 0x7f0e0100;
 		public static final int expand_activities_button = 0x7f0e0083;
 		public static final int expanded_menu = 0x7f0e0096;
 		public static final int home = 0x7f0e0009;
@@ -536,12 +536,12 @@ public final class R {
 		public static final int icon = 0x7f0e0087;
 		public static final int ifRoom = 0x7f0e0054;
 		public static final int image = 0x7f0e0084;
-		public static final int info = 0x7f0e0100;
-		public static final int line1 = 0x7f0e00fc;
-		public static final int line3 = 0x7f0e00ff;
+		public static final int info = 0x7f0e00ff;
+		public static final int line1 = 0x7f0e00fb;
+		public static final int line3 = 0x7f0e00fe;
 		public static final int listMode = 0x7f0e0010;
 		public static final int list_item = 0x7f0e0086;
-		public static final int media_actions = 0x7f0e00fa;
+		public static final int media_actions = 0x7f0e00f9;
 		public static final int middle = 0x7f0e0049;
 		public static final int multiply = 0x7f0e0020;
 		public static final int never = 0x7f0e0055;
@@ -575,14 +575,14 @@ public final class R {
 		public static final int src_atop = 0x7f0e0022;
 		public static final int src_in = 0x7f0e0023;
 		public static final int src_over = 0x7f0e0024;
-		public static final int status_bar_latest_event_content = 0x7f0e00f9;
+		public static final int status_bar_latest_event_content = 0x7f0e00f8;
 		public static final int submenuarrow = 0x7f0e009a;
 		public static final int submit_area = 0x7f0e00ab;
 		public static final int tabMode = 0x7f0e0012;
-		public static final int text = 0x7f0e00cc;
+		public static final int text = 0x7f0e00cb;
 		public static final int text2 = 0x7f0e0043;
 		public static final int textSpacerNoButtons = 0x7f0e0092;
-		public static final int time = 0x7f0e00fd;
+		public static final int time = 0x7f0e00fc;
 		public static final int title = 0x7f0e0088;
 		public static final int title_template = 0x7f0e008d;
 		public static final int top = 0x7f0e002f;
