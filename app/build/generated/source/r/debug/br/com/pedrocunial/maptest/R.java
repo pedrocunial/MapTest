@@ -3917,7 +3917,7 @@ containing a value of this type.
         public static final int noaudio=0x7f0200d5;
         public static final int nochannel=0x7f0200d6;
         public static final int nosignal=0x7f0200d7;
-        public static final int notification_template_icon_bg=0x7f0200f1;
+        public static final int notification_template_icon_bg=0x7f0200f2;
         public static final int password=0x7f0200d8;
         public static final int places_ic_clear=0x7f0200d9;
         public static final int places_ic_search=0x7f0200da;
@@ -3943,6 +3943,7 @@ containing a value of this type.
         public static final int route=0x7f0200ee;
         public static final int shadow_10331=0x7f0200ef;
         public static final int starring_cat=0x7f0200f0;
+        public static final int zeus_cat_cut=0x7f0200f1;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f0e00de;

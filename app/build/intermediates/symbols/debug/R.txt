@@ -984,7 +984,7 @@ int drawable ms__shadow_background 0x7f0200d4
 int drawable noaudio 0x7f0200d5
 int drawable nochannel 0x7f0200d6
 int drawable nosignal 0x7f0200d7
-int drawable notification_template_icon_bg 0x7f0200f1
+int drawable notification_template_icon_bg 0x7f0200f2
 int drawable password 0x7f0200d8
 int drawable places_ic_clear 0x7f0200d9
 int drawable places_ic_search 0x7f0200da
@@ -1010,6 +1010,7 @@ int drawable quantum_ic_stop_white_24 0x7f0200ed
 int drawable route 0x7f0200ee
 int drawable shadow_10331 0x7f0200ef
 int drawable starring_cat 0x7f0200f0
+int drawable zeus_cat_cut 0x7f0200f1
 int id RelativeLayout1 0x7f0e00de
 int id action0 0x7f0e00f7
 int id action_bar 0x7f0e00a0
