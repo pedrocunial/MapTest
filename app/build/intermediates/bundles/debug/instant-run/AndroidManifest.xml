@@ -38,6 +38,7 @@
         android:required="true" />
 
     <application
+        name="android.support.multidex.MultiDexApplication"
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

@@ -4,21 +4,21 @@
     api-level="21"
     density="xxxhdpi"
     format="7"
-    timestamp="586610473033"
+    timestamp="2980174883732"
     token="2492074114906515578" >
 
     <task
         name="javac"
-        duration="5222" />
+        duration="593" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="188" />
+        duration="143" />
     <task
         name="verifier"
-        duration="99" />
+        duration="18" />
 
     <artifact
         location="/home/summerjob/Documents/CESAR/MapTest/app/build/outputs/apk/app-debug.apk"

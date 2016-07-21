@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.multidex.MultiDex;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -178,6 +179,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         // Create the AlertDialog
         dialog = builder.create();
+    }
+
+    // Fixing the 64K multidex error
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+        MultiDex.install(this);
     }
 
     private void setupDrawer() {

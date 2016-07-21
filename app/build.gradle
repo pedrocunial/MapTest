@@ -8,6 +8,8 @@ android {
         applicationId "br.com.pedrocunial.maptest"
         minSdkVersion 17
         targetSdkVersion 23
+        // Enabling multidex
+        multiDexEnabled=true
         versionCode 1
         versionName "1.0"
     }
@@ -23,6 +25,7 @@ dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     testCompile 'junit:junit:4.12'
+    compile 'com.android.support:multidex:1.0.0'
     compile 'com.android.support:design:24.0.0'
     compile 'com.android.support:design:22.2.0'
     compile 'com.android.support:recyclerview-v7:24.0.0'

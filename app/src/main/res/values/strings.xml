@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Map Test</string>
-    <string name="title_activity_maps">SKY</string>
-    <string name="title_activity_login">SKY</string>
+    <string name="title_activity_maps">Map Test</string>
+    <string name="title_activity_login">Map Test</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="enter_btn">Entrar</string>

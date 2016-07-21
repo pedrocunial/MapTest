@@ -965,7 +965,7 @@ int drawable ms__shadow_background 0x7f0200d3
 int drawable noaudio 0x7f0200d4
 int drawable nochannel 0x7f0200d5
 int drawable nosignal 0x7f0200d6
-int drawable notification_template_icon_bg 0x7f0200f1
+int drawable notification_template_icon_bg 0x7f0200f2
 int drawable password 0x7f0200d7
 int drawable places_ic_clear 0x7f0200d8
 int drawable places_ic_search 0x7f0200d9
@@ -992,6 +992,7 @@ int drawable round_button 0x7f0200ed
 int drawable route 0x7f0200ee
 int drawable shadow_10331 0x7f0200ef
 int drawable sky 0x7f0200f0
+int drawable starring_cat 0x7f0200f1
 int id RelativeLayout1 0x7f0f00df
 int id action0 0x7f0f00f7
 int id action_bar 0x7f0f00a0
