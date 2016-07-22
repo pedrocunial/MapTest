@@ -1159,6 +1159,7 @@ int id omnibox_title_section 0x7f0e005f
 int id omnibox_url_section 0x7f0e0060
 int id parallax 0x7f0e0030
 int id parentPanel 0x7f0e008b
+int id passText 0x7f0e00e6
 int id pin 0x7f0e0031
 int id place_autocomplete_clear_button 0x7f0e0104
 int id place_autocomplete_powered_by_google 0x7f0e0106
@@ -1201,7 +1202,6 @@ int id search_voice_btn 0x7f0e00ad
 int id select_dialog_listview 0x7f0e00ae
 int id selectionDetails 0x7f0e006d
 int id send_btn 0x7f0e00b6
-int id senhaText 0x7f0e00e6
 int id settings 0x7f0e00ec
 int id shortcut 0x7f0e0098
 int id showCustom 0x7f0e0016

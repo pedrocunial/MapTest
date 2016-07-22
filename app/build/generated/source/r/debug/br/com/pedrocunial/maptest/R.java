@@ -4000,6 +4000,7 @@ containing a value of this type.
         public static final int omnibox_url_section=0x7f0e0060;
         public static final int parallax=0x7f0e0030;
         public static final int parentPanel=0x7f0e008b;
+        public static final int passText=0x7f0e00e6;
         public static final int pin=0x7f0e0031;
         public static final int place_autocomplete_clear_button=0x7f0e0104;
         public static final int place_autocomplete_powered_by_google=0x7f0e0106;
@@ -4042,7 +4043,6 @@ containing a value of this type.
         public static final int select_dialog_listview=0x7f0e00ae;
         public static final int selectionDetails=0x7f0e006d;
         public static final int send_btn=0x7f0e00b6;
-        public static final int senhaText=0x7f0e00e6;
         public static final int settings=0x7f0e00ec;
         public static final int shortcut=0x7f0e0098;
         public static final int showCustom=0x7f0e0016;

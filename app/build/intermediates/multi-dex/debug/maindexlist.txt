@@ -175,6 +175,7 @@ com/google/android/gms/internal/zzlr.class
 android/support/v4/os/UserManagerCompat.class
 com/google/android/gms/internal/zzpb$zzb.class
 com/google/android/gms/internal/zzez.class
+br/com/pedrocunial/maptest/LoginRequest.class
 com/google/android/gms/nearby/messages/internal/SubscribeRequest.class
 com/google/ads/mediation/MediationBannerAdapter.class
 com/rengwuxian/materialedittext/R.class
@@ -199,6 +200,7 @@ android/support/annotation/AnyRes.class
 android/support/v4/view/ViewCompat$BaseViewCompatImpl.class
 android/support/design/widget/Snackbar$Callback$DismissEvent.class
 android/support/v4/media/session/MediaSessionCompat$MediaSessionImplBase.class
+br/com/pedrocunial/maptest/LoginActivity$2.class
 android/support/design/widget/HeaderScrollingViewBehavior.class
 com/google/android/gms/internal/zzci.class
 android/support/v4/view/ScrollingView.class
@@ -675,6 +677,7 @@ android/support/v4/util/DebugUtils.class
 com/google/android/gms/internal/zzer.class
 android/support/v4/view/ViewPager$4.class
 android/support/design/widget/Snackbar$2.class
+br/com/pedrocunial/maptest/LoginRequest$LoginResponse.class
 android/support/annotation/ColorInt.class
 android/support/design/widget/FloatingActionButtonImpl.class
 android/support/annotation/RawRes.class

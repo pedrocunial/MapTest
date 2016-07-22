@@ -84,7 +84,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="textPassword"
                     android:ems="10"
-                    android:id="@+id/senhaText"
+                    android:id="@+id/passText"
                     android:hint="@string/password_text"
                     android:layout_centerVertical="true"
                     android:layout_gravity="center_horizontal"
