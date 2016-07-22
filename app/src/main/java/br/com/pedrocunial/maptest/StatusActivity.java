@@ -10,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -45,8 +44,6 @@ public class StatusActivity extends AppCompatActivity {
     private final int    EMAIL_SEND_FAIL       = 3;
     private final String TAG                   = "StatusActivity";
     private final String EMAIL_SUBJECT         = "Assistência técnica ZeusTV";
-
-    protected static final int CAMERA_PIC_REQUEST    = 0;
 
     private boolean mailClientOpened = false;
 
@@ -87,45 +84,50 @@ public class StatusActivity extends AppCompatActivity {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Opens camera app
-                foto = true;
-                Intent takePictureIntent = new Intent(android.provider.
-                        MediaStore.ACTION_IMAGE_CAPTURE);
-                // Ensure that there's a camera activity to handle the intent
-                if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
-                    // Create the File where the photo should go
-                    problemPicture = null;
-                    File outputDir = view.getContext().getCacheDir();
-                    try {
-                        problemPicture = File.createTempFile("visit", ".png", outputDir);
-                    } catch(IOException e) {
-                        e.printStackTrace();
-                    }
-                    // Continue only if the File was successfully created
-                    if (problemPicture != null) {
-                        // create a file to save the image
-                        fileUri = Uri.fromFile(problemPicture);
-                        // set the image file name
-                        takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
-                        // Process it!
-                        startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
-                    }
-                }
-
+                takePicture(view);
             }
         });
         buttonNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                sendEmail2();
+                sendEmail();
              }
         });
 
     }
 
+    private void takePicture(View view) {
+        //Opens camera app
+        foto = true;
+        Intent takePictureIntent = new Intent(android.provider.
+                                                      MediaStore.ACTION_IMAGE_CAPTURE);
+        // Ensure that there's a camera activity to handle the intent
+        if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
+            // Create the File where the photo should go
+            problemPicture = null;
+            File outputDir = view.getContext().getCacheDir();
+            try {
+                problemPicture = File.createTempFile("visit", ".png", outputDir);
+            } catch(IOException e) {
+                e.printStackTrace();
+            }
+            // Continue only if the File was successfully created
+            if (problemPicture != null) {
+                // create a file to save the image
+                fileUri = Uri.fromFile(problemPicture);
+                // set the image file name
+                takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
+                // Process it!
+                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+            }
+        }
+    }
+
     private void endActivity() {
         //Back to Maps Activity
         boolean success = false;
+
+        // Try to delete the picture taken
         try {
             success = problemPicture.delete();
         } catch(NullPointerException e) {
@@ -137,6 +139,8 @@ public class StatusActivity extends AppCompatActivity {
             Log.i(TAG, "Picture could not be deleted");
         }
 
+        // Try to delete the picture taken a different way (may be
+        // useful for different versions of Android
         success = deleteFile("problemPicture.png");
 
         if(success) {
@@ -168,6 +172,7 @@ public class StatusActivity extends AppCompatActivity {
             endActivity();
         }
     }
+
     public void setSpinnerList(){
         //Set Spinner Dropdown List
         MaterialSpinner spinner = (MaterialSpinner) findViewById(R.id.status_op);
@@ -214,62 +219,9 @@ public class StatusActivity extends AppCompatActivity {
         buttonNext.setEnabled(b);
     }
 
-    public void sendEmail(){
-        Intent i = new Intent(Intent.ACTION_SEND);
-        if(foto) { //if user attached a pic
-            i.setType("message/rfc822");
-            i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
-            i.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
-            i.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(problemPicture));
-            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
-            try {
-                startActivityForResult(Intent.createChooser(i, "Enviando Email..."),
-                                       EMAIL_SEND_SUCCESS);
-            } catch (android.content.ActivityNotFoundException ex) {
-                Log.i(TAG, "Communication failed");
-            }
-            try {
-                // We try to delete the picture
-                boolean success = problemPicture.delete();
-                if(success) {
-                    Log.i(TAG, "File deleted successfully");
-                } else {
-                    if(problemPicture.isDirectory()) {
-                        success = deleteDirectory(problemPicture);
-                        if(success) {
-                            Log.i(TAG, "Directory deleted successfully!");
-                        } else {
-                            Log.i(TAG, "Could not delete directory");
-                        }
-                    }
-                    Log.i(TAG, "File could not be deleted");
-                }
-            } catch (NullPointerException e) {
-                // In case we don't find it
-                Log.i(TAG, "File not found");
-            }
-
-            try {
-                deleteFile("problemPicture.png");
-            } catch(NullPointerException e) {
-                Log.i(TAG, "Context file not found");
-            }
-        }
-        else {
-            i.setType("message/rfc822");
-            i.putExtra(Intent.EXTRA_EMAIL  , new String[]{"cflavs.7@gmail.com"});
-            i.putExtra(Intent.EXTRA_SUBJECT, EMAIL_SUBJECT);
-            i.putExtra(Intent.EXTRA_TEXT, commentText.getText());
-            try {
-                startActivityForResult(Intent.createChooser(i, "Enviando Email..."),
-                                       EMAIL_SEND_FAIL);
-            } catch (android.content.ActivityNotFoundException ex) {
-                Log.i(TAG, "Communication Failed");
-            }
-        }
-    }
-
-    private void sendEmail2() {
+    private void sendEmail() {
+        // Creates an email with the infos from this page and give the user
+        // the option to send it
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rcf822");
         intent.putExtra(Intent.EXTRA_EMAIL,
@@ -292,17 +244,4 @@ public class StatusActivity extends AppCompatActivity {
             }
         }
     }
-
-    private boolean deleteDirectory(File file) {
-        File[] files = file.listFiles(); // get files inside dir
-        for(File f : files) {
-            if(f.isDirectory()) {
-                deleteDirectory(f);
-            } else {
-                f.delete();
-            }
-        }
-        return file.delete();
-    }
-
 }
