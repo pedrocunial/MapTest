@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/sky/MapTest/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/ms__menu_down.png",
+        "source": "/home/summerjob/AndroidStudioProjects/sky/MapTest/app/build/intermediates/exploded-aar/com.jaredrummler/material-spinner/1.0.9/res/drawable-ldpi-v4/ms__menu_down.png"
+    },
+    {
+        "merged": "/home/summerjob/AndroidStudioProjects/sky/MapTest/app/build/intermediates/res/merged/debug/drawable-ldpi-v4/common_ic_googleplayservices.png",
+        "source": "/home/summerjob/AndroidStudioProjects/sky/MapTest/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-ldpi-v4/common_ic_googleplayservices.png"
+    }
+]

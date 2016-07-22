@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Footer -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFF"
+    android:id="@+id/footer"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Behind the problem symbol -->
+    <Space
+        android:layout_width="120dp"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Address -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dest"
+            android:textSize="20sp"
+            android:maxLines="1"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="7sp"/>
+
+        <!-- TBD -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/problem_code"
+            android:maxLines="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
