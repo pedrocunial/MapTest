@@ -162,19 +162,6 @@ public class StatusActivity extends AppCompatActivity {
                 Log.i(TAG, "Could not set thumbnail");
             }
             image.setImageBitmap(thumbnail);
-
-//            try {
-//                File root = Environment.getExternalStorageDirectory();
-//                if (root.canWrite()){
-//                    // We + "/MapTest" to make it storage on a deeper directory for our application
-//                    out = new FileOutputStream(problemPicture);
-//                    thumbnail.compress(Bitmap.CompressFormat.PNG, 100, out);
-//                    out.flush();
-//                    out.close();
-//                }
-//            } catch (IOException e) {
-//                Log.e("BROKEN", "Could not write file " + e.getMessage());
-//            }
         } else if(requestCode == EMAIL_SEND_SUCCESS && mailClientOpened) {
             endActivity();
         } else if(requestCode == EMAIL_SEND_FAIL && mailClientOpened) {
